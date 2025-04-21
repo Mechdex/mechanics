@@ -27,3 +27,7 @@ Mechanics are stored in the following (highly inefficient but easy to write) way
   3. Within this new folder, create a file `mechanic.yaml` (verbatim). Use another mechanic as a template and fill in the details of this mechanic.
   4. Once done, update the `index.json` file of the category's folder to include your new mechanic's symbol, name and short description.
   5. Submit a pull request back to this repository. It'll be reviewed and merged.
+
+## Exporting Data
+You can run `generate_mechanics_table.py` to get a markdown representation of the entire data for further processing. The properties of the table are:
+Name, Symbol, Category, Short Description, Long Description, Examples, Solved Problems.
