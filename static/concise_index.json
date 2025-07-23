@@ -111,7 +111,7 @@
         "symbol": "Pa",
         "name": "Positional Audio",
         "category": "Audio",
-        "short_description": "Spatial sound for immersive gameplay."
+        "short_description": "Spatial sound for in-game elements."
     },
     {
         "symbol": "Vc",
@@ -189,7 +189,7 @@
         "symbol": "CmB",
         "name": "Combo System",
         "category": "Combat",
-        "short_description": "Chain attacks into combos."
+        "short_description": "Chain attacks into stronger combos."
     },
     {
         "symbol": "CsH",
