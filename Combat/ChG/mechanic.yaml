@@ -4,7 +4,7 @@ mechanic:
   category: Combat
   long_description: Builds up attack power over time to deliver a powerful strike.
     Prominent in games like Bayonetta.
-  short_description: Build and release powerful attacks.
+  short_description: Build and release powerful attacks with timing.
   solved_problems: Offers a high-risk, high-reward combat option.
   examples:
   - 'Bayonetta: Charge attacks for massive damage.'

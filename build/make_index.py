@@ -24,9 +24,11 @@ for doc in docs:
     concise_docs.append(cd)
 
 print("Wrote concise docs.")
-print(json.dumps(json.load(open("../static.concise_index.json", "r")), indent=4))
+print(json.dumps(json.load(open("../static/concise_index.json", "r")), indent=4))
 with open("../static/concise_index.json", "w") as f:
     f.write(json.dumps(concise_docs, indent=4))
+print(json.dumps(json.load(open("../static/concise_index.json", "r")), indent=4))
+
 # build the index
 idx = lunr(
     ref="symbol",
