@@ -1,0 +1,41 @@
+name: Build Search Index
+
+on:
+  push:
+    branches:
+      - main                     # trigger on every push to the main branch
+    paths-ignore:
+      - 'static/*'  # avoid triggering on index updates
+  workflow_dispatch:             # manual trigger from Actions tab
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true   # allows the next push step to use the GITHUB_TOKEN
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install lunr pyyaml
+
+      - name: Run indexer
+        working-directory: build    # run from the build directory
+        run: |
+          python make_index.py       # writes to ../static/search_index.json
+
+      - name: Commit & push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/search_index.json
+          git diff --quiet || git commit -m "🔄 rebuild search index [skip ci]"
+          git push
