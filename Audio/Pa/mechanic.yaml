@@ -4,7 +4,7 @@ mechanic:
   category: Audio
   long_description: 'Provides spatial sound cues that help locate sources of sound
     in the game world. Integral in Hellblade: Senua''s Sacrifice.'
-  short_description: Spatial sound for immersive gameplay.
+  short_description: Spatial sound for in-game elements.
   solved_problems: Improves situational awareness through sound localization.
   examples:
   - 'Hellblade: Senua''s Sacrifice: Uses positional audio for environmental cues.'
