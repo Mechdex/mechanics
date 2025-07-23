@@ -40,6 +40,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add static/search_index.json
+          git add static/search_index.json static/concise_index.json
           git diff --quiet || git commit -m "🔄 rebuild search index [skip ci]"
           git push
