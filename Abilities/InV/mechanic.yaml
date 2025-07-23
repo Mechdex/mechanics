@@ -6,7 +6,7 @@ mechanic:
     Invisibility makes a character undetectable by enemies, either through a temporary ability or a permanent effect. It is commonly used in stealth gameplay to avoid detection or in combat to reposition without being attacked. Some implementations allow only visual invisibility, meaning enemies can still detect sound or disturbances.
     
     The mechanic can be balanced using limitations such as duration, energy consumption, or revealing the player when interacting with objects or attacking. Certain games also feature counters to invisibility, such as enemy AI detecting footprints, motion, or heat signatures. Some implementations of invisibility create a "partial" effect, where enemies notice disturbances but do not immediately attack, adding tension and requiring careful movement.
-  short_description: Become unseen to stealth past enemies..
+  short_description: Become unseen to stealth past enemies.
   solved_problems: null
   examples:
   - 'Dishonored: Blink and Shadow Kill abilities allow players to remain unseen while eliminating targets. Invisibility is balanced with sound-based detection and limited energy, requiring careful planning.'
