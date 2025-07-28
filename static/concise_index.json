@@ -6,7 +6,7 @@
         "short_description": "Slow time for precision and evasion."
     },
     {
-        "symbol": "Inv",
+        "symbol": "InV",
         "name": "Invisibility",
         "category": "Abilities",
         "short_description": "Become unseen to stealth past enemies."
@@ -183,7 +183,7 @@
         "symbol": "ChG",
         "name": "Charge Attack",
         "category": "Combat",
-        "short_description": "Build and release powerful attacks."
+        "short_description": "Build and release powerful attacks with timing."
     },
     {
         "symbol": "CmB",
@@ -312,7 +312,7 @@
         "short_description": "Use gestures to control actions."
     },
     {
-        "symbol": "Mtc",
+        "symbol": "MtC",
         "name": "Motion Controls",
         "category": "Input",
         "short_description": "Control gameplay with physical motion."
@@ -618,7 +618,7 @@
         "short_description": "On-screen game information display."
     },
     {
-        "symbol": "Mmi",
+        "symbol": "Mm",
         "name": "Minimap",
         "category": "UI",
         "short_description": "Miniature map for navigation."

@@ -1,5 +1,5 @@
 mechanic:
-  symbol: Mtc
+  symbol: MtC
   name: Motion Controls
   category: Input
   long_description: Uses physical movement to control game actions, popularized by

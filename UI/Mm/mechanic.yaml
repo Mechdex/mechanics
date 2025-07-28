@@ -1,5 +1,5 @@
 mechanic:
-  symbol: Mmi
+  symbol: Mm
   name: Minimap
   category: UI
   long_description: Provides a small map overlay to help with navigation. Widely used
