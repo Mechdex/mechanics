@@ -31,7 +31,9 @@ jobs:
       - name: Install dependencies
         run: |
           pip install lunr pyyaml
-
+      - name: Test
+        run: |
+          git status
       - name: Run indexer
         working-directory: build    # run from the build directory
         run: |
@@ -42,5 +44,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add static/search_index.json static/concise_index.json
-          git diff --quiet || git commit -m "🔄 rebuild search index [skip ci]"
+          git status
+          git commit -m "🔄 rebuild search index [skip ci]"
           git push
