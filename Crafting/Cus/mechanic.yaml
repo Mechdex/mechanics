@@ -2,10 +2,18 @@ mechanic:
   symbol: Cus
   name: Customization
   category: Crafting
-  long_description: Allows players to modify the appearance or stats of items. Prominent
-    in Skyrim.
-  short_description: Modify items to suit your style.
-  solved_problems: Provides personalization and strategic variety.
+  long_description: |
+    Customization refers to systems that allow players to alter the aesthetic appearance or statistical properties of their characters, equipment, or vehicles. This can range from simple color changes to deep, modular systems where individual components are swapped out. The goal is to provide players with a means of personal expression and/or strategic differentiation.
+  short_description: Modify items and characters to suit your style.
+  solved_problems:
+  - title: Static item progression
+    description: |
+      In a simple loot system, finding a new item with slightly better stats makes the old one obsolete. Customization solves this by allowing players to continually invest in and improve their favorite gear. This creates a more personal attachment to items and provides a deeper, more granular progression path beyond just finding new loot.
   examples:
-  - 'Skyrim: Customizing weapons and armor.'
-  - Many RPGs include item customization.
+  - title: 'The Elder Scrolls V: Skyrim'
+    description: |
+      Through Smithing and Enchanting, players can take a basic piece of armor or a weapon and upgrade it to legendary status, then imbue it with powerful magical effects. This allows for deep build specialization and personalizes the player's gear.
+  - title: Forza (series)
+    description: |
+      Features an extremely deep vehicle customization system. Players can not only apply complex visual liveries but also fine-tune every aspect of the car's performance, from tire pressure to gear ratios, to suit their driving style.
+  isHumanWritten: false

@@ -2,10 +2,18 @@ mechanic:
   symbol: Rec
   name: Recipe System
   category: Crafting
-  long_description: Allows players to combine ingredients based on recipes to craft
-    items. A core mechanic in The Witcher 3.
-  short_description: Craft items using predefined recipes.
-  solved_problems: Simplifies item creation with clear guidelines.
+  long_description: |
+    A Recipe System is a form of crafting where the player collects, learns, or buys specific "recipes." Once a recipe is known, the player can craft the corresponding item at any time, provided they have the required ingredients. This system abstracts the process of combination; the player does not need to remember specific patterns, but rather select the desired item from a list of known recipes.
+  short_description: Craft items using a list of known recipes.
+  solved_problems:
+  - title: Confusing crafting systems
+    description: |
+      Crafting systems that require players to discover combinations through pure trial-and-error can be obtuse and frustrating, often forcing players to consult an external wiki. A recipe system solves this. It provides clear, in-game guidelines for what can be crafted and what ingredients are needed, making the system accessible and self-contained.
   examples:
-  - 'The Witcher 3: Detailed alchemy recipes.'
-  - Other RPGs use recipe systems for crafting.
+  - title: 'The Witcher 3: Wild Hunt'
+    description: |
+      Geralt's alchemy is entirely recipe-based. Players find or purchase manuscripts for potions, oils, and bombs. Once learned, the recipe is permanently available, and the system even shows which required ingredients are missing.
+  - title: Stardew Valley
+    description: |
+      Recipes for cooking and crafting are learned by watching TV shows, befriending townsfolk, and leveling up skills. This integrates the recipe discovery process directly into the game's core social and progression systems.
+  isHumanWritten: false

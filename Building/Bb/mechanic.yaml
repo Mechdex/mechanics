@@ -1,11 +1,22 @@
 mechanic:
-  symbol: Bb
-  name: Base Building
-  category: Building
-  long_description: Allows players to construct and customize their own bases or settlements.
-    Prominent in Fallout 4.
-  short_description: Construct and customize bases.
-  solved_problems: Offers creative freedom and strategic placement.
+  symbol: "Bb"
+  name: "Base Building"
+  category: "Building"
+  long_description: |
+    Base Building is a system that allows players to construct persistent, customized structures and settlements using in-game resources. It functions as a core gameplay loop in many survival and sandbox games, offering a functional hub for crafting and storage, as well as a canvas for player creativity. The systems can range from placing pre-fabricated structures to free-form construction using individual pieces like walls and floors.
+  short_description: "Construct and customize bases."
+  solved_problems:
+    - title: "Lack of long-term player goals"
+      description: |
+        In open-ended sandbox games, players can run out of directed content, leading to disengagement. Base building provides a long-term, self-directed project. It gives players a creative outlet and a persistent investment in the world, keeping them engaged long after scripted quests are complete.
+    - title: "Generic game worlds"
+      description: |
+        It's a design challenge to make a large game world feel personal to every player. Base building solves this by allowing players to physically alter the world and create a unique home. This fosters a strong sense of ownership and attachment that a pre-designed world cannot.
   examples:
-  - 'Fallout 4: Settlement building mechanics.'
-  - Survival games like ARK also implement base building.
+    - title: "Fallout 4"
+      description: |
+        The settlement system allows players to build and manage entire communities, linking crafting, defense, and NPC management into a single, cohesive loop that directly impacts the game world.
+    - title: "Valheim"
+      description: |
+        Features a free-form, piece-by-piece building system with structural integrity physics. This design turns base building into an engineering puzzle, where players must create structurally sound and aesthetically pleasing Norse longhouses.
+  isHumanWritten: false

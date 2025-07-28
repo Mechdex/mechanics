@@ -1,11 +1,22 @@
 mechanic:
-  symbol: Bp
-  name: Blueprints
-  category: Building
-  long_description: Provides pre-designed plans that players can use to construct
-    buildings efficiently. Notable in Fallout 4.
-  short_description: Pre-designed construction plans.
-  solved_problems: Speeds up building by offering ready-made designs.
+  symbol: "Bp"
+  name: "Blueprints"
+  category: "Building"
+  long_description: |
+    A Blueprint is a system that saves a structure's layout, either as a pre-designed template from the developer or as a player-created design. This saved data is then used to project a "ghost" image of the structure into the world. Players can then either automatically build the structure by providing the required resources, or use the projection as a guide for manual construction.
+  short_description: "Pre-designed construction plans."
+  solved_problems:
+    - title: "Repetitive construction tasks"
+      description: |
+        Manually building complex or identical structures over and over is tedious and discourages large-scale projects. The Blueprint system automates this repetition. It lets players save their favorite designs and deploy them instantly, turning a time-consuming chore into a satisfying strategic decision.
+    - title: "High barrier to entry for building"
+      description: |
+        The complexity of a building system can intimidate less creative players who don't know where to start. Blueprints, when offered as pre-designed templates, provide an accessible entry point. They give players functional and cool-looking structures immediately, letting them enjoy the benefits of building without needing to be an expert architect.
   examples:
-  - 'Fallout 4: Blueprints simplify settlement construction.'
-  - Other games use blueprint systems for building.
+    - title: "Factorio"
+      description: |
+        Blueprints are an essential tool for managing the immense complexity of factory design. Players can save, share, and deploy vast, intricate production lines, making automation on a massive scale manageable.
+    - title: "Subnautica"
+      description: |
+        Players discover blueprints for new base components and vehicles by scanning fragments in the world. This design integrates blueprints directly into the core exploration and progression loop.
+  isHumanWritten: false

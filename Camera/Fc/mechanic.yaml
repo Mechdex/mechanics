@@ -2,10 +2,18 @@ mechanic:
   symbol: Fc
   name: Free Camera
   category: Camera
-  long_description: Allows players to move the camera independently of the character,
-    providing full environmental views. Seen in GTA V.
-  short_description: Independent camera control.
-  solved_problems: Enhances exploration and scene capture.
+  long_description: |
+    A Free Camera is a mode, often distinct from normal gameplay, where the player can detach the viewpoint from the character and move it independently through the 3D space. This mode frequently includes a suite of photographic tools, such as field-of-view (FoV) adjustment, depth of field controls, color filters, and the ability to pause or advance time. It is the core component of a "Photo Mode."
+  short_description: Independent camera control for photography.
+  solved_problems:
+  - title: Limited player expression
+    description: |
+      Players often want to capture and share their unique experiences, but the standard game camera is restrictive and utilitarian. A free camera, especially in a 'Photo Mode,' provides a creative toolset for players to engage with the game world non-destructively. It fosters community engagement by turning the game into a virtual photography studio.
   examples:
-  - 'GTA V: Free camera for photo modes.'
-  - Other open-world games offer similar features.
+  - title: Marvel's Spider-Man
+    description: |
+      Features a robust photo mode with a free camera that allows players to pause the action at any moment. They can then add stickers, change character expressions, and set up spectacular action shots that would be impossible to frame during normal gameplay.
+  - title: The Last of Us Part I
+    description: |
+      Its photo mode allows players to set up complex lighting rigs within a scene in addition to standard free camera controls. This gives players an incredible amount of creative power to re-light and re-frame the game's world.
+  isHumanWritten: false

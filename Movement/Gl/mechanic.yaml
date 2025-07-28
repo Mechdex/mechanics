@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Gl
-  name: Glide
-  category: Movement
-  long_description: Enables players to slow their descent by gliding through the air.
-    Seen in games like Just Cause.
-  short_description: Slow descent by gliding.
-  solved_problems: Offers controlled aerial movement.
+  symbol: "Gl"
+  name: "Glide"
+  category: "Movement"
+  long_description: |
+    A Glide is a movement mechanic that allows a player in mid-air to dramatically slow their rate of descent and gain significant horizontal air travel. It is typically activated by holding a button after a jump. The system converts vertical momentum into controlled forward movement, allowing the player to cross large gaps or descend from great heights safely.
+  short_description: "Slow descent and travel horizontally through the air."
+  solved_problems:
+    - title: "Punishing fall damage"
+      description: |
+        In worlds with extreme verticality, a small misstep can lead to a long, fatal fall, which can be frustrating. A glide mechanic solves this by turning a potential punishment into an opportunity. It gives the player a safe and engaging way to descend from great heights and traverse massive gaps, making vertical exploration a core part of the game.
   examples:
-  - 'Just Cause: Gliding to traverse large gaps.'
-  - Open-world games sometimes include glide mechanics.
+    - title: "The Legend of Zelda: Breath of the Wild"
+      description: |
+        The Paraglider is a core tool for exploration. It allows Link to safely descend from any height and is essential for navigating the game's mountainous terrain, creating a strong sense of freedom.
+    - title: "Batman: Arkham (series)"
+      description: |
+        Batman's cape allows him to glide across the rooftops of Gotham. This is his primary method of long-distance travel, and it can be combined with a grappling hook and dive-bomb maneuver to maintain speed and altitude.
+  isHumanWritten: false

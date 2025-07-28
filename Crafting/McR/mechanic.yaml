@@ -2,10 +2,18 @@ mechanic:
   symbol: McR
   name: Modular Crafting
   category: Crafting
-  long_description: Enables customization by combining interchangeable parts. Notable
-    in Fallout 4's weapon crafting.
-  short_description: Customize items with interchangeable parts.
-  solved_problems: Enhances creativity in item customization.
+  long_description: |
+    Modular Crafting is a specific type of customization where items are composed of distinct, interchangeable parts or "modules" (e.g., a gun's barrel, stock, and scope). Players craft or find these individual modules and then combine them to create a final item with unique stats and behaviors derived from its components. This allows for a vast number of potential combinations from a relatively small set of parts.
+  short_description: Build items by combining interchangeable parts.
+  solved_problems:
+  - title: Superficial crafting choices
+    description: |
+      Many crafting systems offer a linear path where there is always a single 'best' item to craft. Modular crafting solves this by creating a system of trade-offs. A long barrel might increase accuracy but slow down handling, forcing the player to make meaningful, strategic decisions about how they construct their items to fit their specific playstyle.
   examples:
-  - 'Fallout 4: Modular weapon crafting.'
-  - Other games allow for similar crafting systems.
+  - title: Fallout 4
+    description: |
+      The weapon and armor crafting system is entirely modular. Players can take a basic pipe pistol and, by swapping out every component, transform it into a long-range sniper rifle or a rapid-fire automatic weapon.
+  - title: Dead Space (series)
+    description: |
+      Players construct their weapons by combining different tool-tips, frames, and add-ons. This allows for the creation of hybrid weapons, like a plasma cutter that also fires saw blades, encouraging player experimentation.
+  isHumanWritten: false

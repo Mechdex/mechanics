@@ -1,15 +1,21 @@
 mechanic:
-  symbol: PrY
-  name: Parry
-  category: Actions
+  symbol: "PrY"
+  name: "Parry"
+  category: "Actions"
   long_description: |
-    Parrying allows players to deflect an enemy attack with precise timing, often opening the opponent up for a counterattack. Unlike blocking, which mitigates damage, parrying turns an opponent’s strength against them by staggering them or creating a brief vulnerability. 
-    
-    In games like Dark Souls, parrying requires pinpoint timing, rewarding skillful play with devastating ripostes. Sekiro refines this further with a posture system where successful parries weaken an enemy’s defenses, leading to an execution move. Parrying mechanics add risk-versus-reward elements, making combat more engaging for skilled players.
-  short_description: Timed counter to enemy attacks.
-  solved_problems: |
-    - Stale combat: When combat in your game boils down to repeatedly attacking the enemy, it can get boring. A Parry action adds a new dimension to combat, and usually becomes as important to gameplay as your Attack action.
+    A Parry is a high-skill defensive action that deflects an incoming attack if timed correctly within a very brief active window. Unlike a block, which mitigates damage, a successful parry typically negates all damage and immediately puts the attacker into a vulnerable 'stagger' or 'riposte' state. This creates a massive opening for a counter-attack, making it the ultimate risk-versus-reward defensive maneuver.
+
+    The risk is absolute: missing the parry window leaves the player completely open to taking full damage. To ensure fairness, designers often include specific 'unparryable' attacks, telegraphed with a unique visual cue, which force the player to rely on other defensive options.
+  short_description: "Timed counter to enemy attacks."
+  solved_problems:
+    - title: "Defensive stalemates"
+      description: |
+        When both the player and an enemy have strong defensive options, combat can devolve into a stalemate where each party waits for the other to drop their guard. A Parry mechanic breaks this deadlock. It introduces a high-risk, timing-based option that defeats a standard block or attack, instantly turning a defensive situation into a decisive offensive advantage.
   examples:
-  - 'Dark Souls: Parrying enemy attacks with shields or weapons to create openings for counterattacks.'
-  - 'Dead Cells: Parrying is crucial in Dead Cells, and most enemy attacks can be parried. This usually has a rebound effect and damages or stuns the enemy.'
-  - 'Sekiro: Precision-based parrying system that gradually breaks an enemy’s posture, leading to a finishing blow.'
+    - title: "Sekiro: Shadows Die Twice"
+      description: |
+        The 'Deflect' system is the game's central mechanic, used offensively to break enemy 'Posture.' This design makes the parry the primary tool for creating finishing blows, as opposed to just a defensive counter.
+    - title: "Street Fighter III: 3rd Strike"
+      description: |
+        The 'Red Parry' is iconic for its high skill ceiling and its role in competitive history. It allows a player to parry multi-hit super moves by repeatedly timing the input, leading to spectacular, viewer-friendly displays of mastery.
+  isHumanWritten: false

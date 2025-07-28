@@ -1,14 +1,17 @@
 mechanic:
-  symbol: QtE
-  name: Quick Time Event
-  category: Actions
+  symbol: "QtE"
+  name: "Quick Time Event"
+  category: "Actions"
   long_description: |
-    Quick Time Events (QTEs) require players to press buttons within a short window of time to successfully complete an action. These events are often used in cinematic sequences to maintain player engagement during cutscenes or dramatic moments. Some QTEs offer branching outcomes, while others simply determine success or failure. 
-    
-    Games like God of War utilize QTEs for finishing moves and boss battles, adding spectacle to combat. Heavy Rain takes a different approach, integrating QTEs into the core gameplay, where player reactions shape the narrative. While sometimes criticized for being overused, well-implemented QTEs can enhance immersion and tension.
-  short_description: Timed button prompts for cinematic actions.
-  solved_problems: |
-    - Lack of player engagement: QTEs ensure that players remain active participants in dramatic sequences rather than just watching them unfold. In contrast, to keep players engaged, the cutscene would have to be real-time, which is the other extreme. QTEs are a good compromise.
-  examples:
-  - 'God of War: QTEs during boss fights, where timed inputs execute cinematic finishers.'
-  - 'Heavy Rain: Narrative-driven QTEs that influence story outcomes based on player reaction speed and accuracy.'
+    A Quick Time Event (QTE) is a scripted interaction where the player must press a prompted button, or sequence of buttons, within a short time limit. Its primary function is to maintain player engagement during a non-interactive or highly cinematic sequence, effectively bridging the gap between active gameplay and passive cutscenes.
+
+    The design of a QTE is defined by its consequences and presentation. Failure can result in instant death, a minor penalty, or a branching narrative path. Modern implementations often favor less intrusive UI and more meaningful outcomes to avoid breaking player immersion.
+  short_description: "Timed button prompts for cinematic actions."
+  solved_problems:
+    - title: "Non-standard character actions"
+      description: |
+        A game's core verbs (move, jump, attack) can't cover every unique action a cinematic story beat might demand. You may have a specific animation for a dramatic feat, like holding a door shut, with no way to trigger it via the standard controls. QTEs are a simple way to connect one-off actions to the game without breaking immersion or building a massive action set.
+    - title: "Breaking immersion during cutscenes"
+      description: |
+        To keep players engaged during long cinematics, designers need a form of light interaction. QTEs provide this by using minimal, clearly telegraphed prompts for simple actions. This keeps the player focused as an active participant without cluttering the screen with a full UI. As a bonus, it also prevents the jarring 'fumble for the controller' when the scene suddenly demands input.
+  isHumanWritten: false

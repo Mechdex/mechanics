@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ch
-  name: Critical Hits
-  category: Randomness
-  long_description: Occasionally delivers extra damage based on chance. Common in
-    Diablo II.
-  short_description: Chance-based extra damage.
-  solved_problems: Introduces risk-reward dynamics in combat.
+  symbol: "Ch"
+  name: "Critical Hits"
+  category: "Randomness"
+  long_description: |
+    A Critical Hit, or "crit," is a combat mechanic where, based on a random chance (a "crit rate" percentage), an attack will deal a significantly increased amount of damage. The damage multiplier (e.g., 200%) and the chance to trigger a crit are often key stats that can be improved by a character's attributes or gear.
+  short_description: "A chance-based attack that deals bonus damage."
+  solved_problems:
+    - title: "Predictable combat outcomes"
+      description: |
+        If every attack deals a fixed amount of damage, combat can become a purely mathematical and predictable exercise. Critical hits solve this by introducing an element of random chance. The possibility of a sudden burst of damage adds a layer of excitement and unpredictability to every encounter, creating memorable high-roll moments.
   examples:
-  - 'Diablo II: Critical hits change battle outcomes.'
-  - Other RPGs implement critical hit mechanics.
+    - title: "Diablo (series)"
+      description: |
+        Critical Hit Chance and Critical Hit Damage are two of the most important stats for increasing a character's damage output. The entire end-game gearing process revolves around maximizing these stats to create massive, screen-clearing bursts of damage.
+    - title: "XCOM: Enemy Unknown"
+      description: |
+        Critical hits are a core part of the game's brutal probability-based combat. A well-timed critical hit can save a mission, while an enemy landing a lucky crit on a key soldier can be devastating, creating high-stakes tension.
+  isHumanWritten: false

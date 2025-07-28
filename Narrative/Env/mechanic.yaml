@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Env
-  name: Environmental Storytelling
-  category: Narrative
-  long_description: Conveys narrative elements through the game world itself without
-    explicit dialogue. Used in Bioshock.
-  short_description: Story told through environment.
-  solved_problems: Immerses players in the lore without overt exposition.
+  symbol: "Env"
+  name: "Environmental Storytelling"
+  category: "Narrative"
+  long_description: |
+    Environmental Storytelling is a narrative technique where the history, lore, and events of the game world are communicated to the player through the level design and art direction, rather than through explicit text or dialogue. It involves telling a story through the careful placement of objects, the architecture, and the overall state of the environment (e.g., a skeleton clutching a note next to a locked door).
+  short_description: "Telling a story through the world itself."
+  solved_problems:
+    - title: "Forced narrative exposition"
+      description: |
+        It's a design challenge to deliver lore and backstory without halting gameplay for a long cutscene or text dump. Environmental storytelling solves this by embedding the narrative directly into the explorable space. It respects player agency by allowing them to discover (or ignore) the story at their own pace, making lore discovery an active, immersive process.
   examples:
-  - 'Bioshock: Environmental details reveal backstory.'
-  - Other games use setting to tell stories.
+    - title: "BioShock"
+      description: |
+        The city of Rapture's story is primarily told through its environment. Propaganda posters, abandoned living quarters, and ghostly apparitions all work together to tell the story of the city's fall without relying on lengthy exposition.
+    - title: "Portal"
+      description: |
+        Hidden behind the clean, corporate test chambers are desperate scrawlings and makeshift dens from a previous test subject. This environmental storytelling creates a haunting secondary narrative that is discovered entirely through player curiosity.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Xp
-  name: Experience Points
-  category: Progression
-  long_description: Grants points for achievements that contribute to character growth.
-    A staple in World of Warcraft.
-  short_description: Earn points to grow stronger.
-  solved_problems: Provides a measurable path for character improvement.
+  symbol: "Xp"
+  name: "Experience Points"
+  category: "Progression"
+  long_description: |
+    Experience Points (XP or EXP) are a numerical value awarded to players for completing in-game actions, such as winning battles, finishing quests, or discovering new locations. XP is the fundamental "currency" for the Leveling Up system; accumulating a specific amount of XP is what causes a character to gain a level and become more powerful.
+  short_description: "Points earned for in-game actions that fuel leveling."
+  solved_problems:
+    - title: "Unrewarded player actions"
+      description: |
+        Players can feel like their time is being wasted if minor actions, like defeating a weak enemy, have no tangible reward. An experience point system solves this. By assigning an XP value to nearly every positive action, it ensures that the player is always making measurable progress towards their next level, no matter how small the task.
   examples:
-  - 'World of Warcraft: XP gained from quests and battles.'
-  - RPGs widely use experience systems.
+    - title: "Final Fantasy (series)"
+      description: |
+        The classic implementation where each defeated enemy grants a set amount of XP, which is divided among the party members. Grinding battles to accumulate XP is a core gameplay loop of the series.
+    - title: "The Elder Scrolls V: Skyrim"
+      description: |
+        Features a skill-based experience system. Instead of getting XP for quests, the player gains XP in a specific skill (e.g., 'One-Handed' or 'Smithing') by using it. Gaining skill levels is what contributes to the overall character level.
+  isHumanWritten: false

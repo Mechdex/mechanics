@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Rp
-  name: Ragdoll Physics
-  category: Physics
-  long_description: Simulates realistic body movements upon impact, adding dynamic
-    visuals. Prominent in Grand Theft Auto IV.
-  short_description: Realistic physics-based body movement.
-  solved_problems: Enhances visual realism in character interactions.
+  symbol: "Rp"
+  name: "Ragdoll Physics"
+  category: "Physics"
+  long_description: |
+    Ragdoll Physics is a procedural animation system that takes over a character's model upon death, incapacitation, or major impact. Instead of playing a pre-canned, static animation, the character's body becomes a collection of rigid bodies connected by joints. This "ragdoll" then reacts realistically to the forces applied to it, causing it to tumble down stairs, slump over ledges, or be thrown by an explosion in a unique, unscripted way every time.
+  short_description: "Physics-based procedural animation for bodies."
+  solved_problems:
+    - title: "Repetitive death animations"
+      description: |
+        Watching the same few pre-scripted death animations over and over is immersion-breaking and repetitive. Ragdoll physics solves this. It creates unique, dynamic, and often comedic death sequences every single time, making these moments feel more visceral and less predictable.
   examples:
-  - 'GTA IV: Ragdoll effects upon collisions.'
-  - Many modern games use ragdoll physics.
+    - title: "Grand Theft Auto IV"
+      description: |
+        Famous for its implementation of the Euphoria physics engine, which created advanced, dynamic ragdoll effects. Characters would realistically stumble, brace for impact, and react to being hit in ways that felt far more believable than in previous titles.
+    - title: "Goat Simulator"
+      description: |
+        This game takes ragdoll physics to its comedic extreme. The entire humor of the game is based on the wacky, unpredictable, and often glitchy behavior of the goat's ragdoll as it crashes into the game world.
+  isHumanWritten: false

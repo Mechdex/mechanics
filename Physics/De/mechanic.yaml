@@ -1,11 +1,19 @@
 mechanic:
-  symbol: De
-  name: Destructible Environments
-  category: Physics
-  long_description: 'Allows parts of the game world to be damaged or destroyed, increasing
-    interactivity. Seen in Red Faction: Guerrilla.'
-  short_description: Environmental elements that can be destroyed.
-  solved_problems: Creates dynamic battlefields.
+  symbol: "De"
+  name: "Destructible Environments"
+  category: "Physics"
+  long_description: |
+    Destructible Environments are a physics-based system that allows game world geometry, such as walls, cover, and entire buildings, to be dynamically damaged and destroyed by player or AI actions. This creates a battlefield that is not static, but is constantly changing and reacting to the forces of combat. Implementations can range from simple, pre-scripted destruction to fully dynamic, physics-based demolition.
+  short_description: "Game world geometry can be damaged and destroyed."
+  solved_problems:
+    - title: "Static, predictable battlefields"
+      description: |
+        In most games, the level geometry is static and indestructible, leading to predictable combat encounters where cover is permanent. Destructible environments solve this by making the battlefield dynamic. Cover can be blown away, new sightlines can be created, and entire strategies are invalidated when a building collapses, forcing players to constantly adapt.
   examples:
-  - 'Red Faction: Guerrilla: Destructible structures.'
-  - Other shooters incorporate destructible elements.
+    - title: "Red Faction: Guerrilla"
+      description: |
+        The game's 'Geo-Mod' engine made every single structure fully destructible. This was not just a visual effect but the core mechanic, as players would strategically demolish buildings to complete objectives or eliminate enemies.
+    - title: "Battlefield (series)"
+      description: |
+        Known for its 'Levolution' system, which features large-scale environmental destruction. Players can do everything from blowing holes in walls to toppling entire skyscrapers, fundamentally altering the map's layout mid-match.
+  isHumanWritten: false

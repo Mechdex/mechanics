@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Dm
-  name: Dynamic Music
-  category: Audio
-  long_description: 'Changes the musical score based on in-game actions or events.
-    A staple in The Legend of Zelda: Breath of the Wild.'
-  short_description: Music adapts to gameplay.
-  solved_problems: Enhances immersion by reflecting game intensity.
+  symbol: "Dm"
+  name: "Dynamic Music"
+  category: "Audio"
+  long_description: |
+    Dynamic Music is a broad term for any musical score that changes in response to gameplay, but it often refers to systems where specific musical cues or motifs are tied to player actions or discoveries. This can be more granular than a fully adaptive soundtrack. For example, a specific melody might play only when a certain character is on-screen, or a percussion layer might be added when the player starts sprinting. It creates a more interactive and responsive musical experience.
+  short_description: "Music reacts to specific actions or events."
+  solved_problems:
+    - title: "Lack of player feedback"
+      description: |
+        Sometimes visual feedback alone isn't enough to make a player's actions feel significant. Dynamic Music can solve this by tying a unique musical sting or flourish to a specific action, like solving a puzzle or discovering a secret location. This provides an additional layer of satisfying, non-diegetic feedback that reinforces the player's success.
   examples:
-  - 'Breath of the Wild: Music shifts with exploration and combat.'
-  - Other open-world games employ dynamic music.
+    - title: "The Legend of Zelda: Breath of the Wild"
+      description: |
+        The music is famously minimalist, but dynamic cues play a huge role. A simple piano flourish occurs when you discover a new location, and a tense stinger plays when a Guardian spots you, providing crucial gameplay information through music.
+    - title: "Celeste"
+      description: |
+        The soundtrack's layers and intensity often shift dynamically to match the difficulty and emotional arc of a specific screen or platforming challenge, with musical elements synching to player actions like dashing.
+  isHumanWritten: false

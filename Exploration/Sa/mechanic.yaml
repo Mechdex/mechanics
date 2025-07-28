@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Sa
-  name: Secret Areas
-  category: Exploration
-  long_description: Hidden zones or easter eggs that reward curious players. Seen
-    in Metroid Prime.
-  short_description: Hidden areas with rewards.
-  solved_problems: Adds depth and replayability.
+  symbol: "Sa"
+  name: "Secret Areas"
+  category: "Exploration"
+  long_description: |
+    Secret Areas are hidden locations within the game world that are not marked on the map and often require keen observation or unconventional use of game mechanics to find. These areas typically contain valuable loot, unique encounters, or narrative easter eggs as a reward for thorough exploration. They are intentionally placed off the main path to reward player curiosity.
+  short_description: "Hidden locations containing special rewards."
+  solved_problems:
+    - title: "Min-maxing player behavior"
+      description: |
+        Players will often follow the 'path of least resistance,' only going where quests and map markers direct them. Secret areas solve this by rewarding curiosity. By hiding valuable content off the main path, it encourages players to slow down, observe their surroundings, and experiment with the game's mechanics in ways they otherwise wouldn't.
   examples:
-  - 'Metroid Prime: Secret rooms and hidden paths.'
-  - Many games include easter eggs and hidden zones.
+    - title: "Dark Souls (series)"
+      description: |
+        The series is famous for its illusory walls—walls that look solid but can be dispelled by attacking or rolling into them. These walls hide entire optional areas, covenants, and powerful items, making them a legendary part of the game's exploration.
+    - title: "Super Metroid"
+      description: |
+        A foundational game for this concept. The entire world is filled with secret passages hidden behind destructible blocks that are visually indistinct from the normal environment, requiring the player to bomb every suspicious surface.
+  isHumanWritten: false

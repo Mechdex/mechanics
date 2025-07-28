@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ow
-  name: Open World
-  category: Exploration
-  long_description: Provides a vast, seamless world for players to explore. Central
-    to Breath of the Wild.
-  short_description: Seamless, expansive environments.
-  solved_problems: Eliminates loading screens and promotes free exploration.
+  symbol: "Ow"
+  name: "Open World"
+  category: "Exploration"
+  long_description: |
+    Open World is a design philosophy for game worlds that emphasizes a large, seamless or near-seamless space with a high degree of player freedom. Unlike linear games that guide the player through a set sequence of levels, an open world allows the player to choose where to go and which activities to pursue, with quests and content spread non-linearly across the map.
+  short_description: "A large, non-linear world prioritizing freedom."
+  solved_problems:
+    - title: "Restrictive linear progression"
+      description: |
+        A strictly linear game can feel restrictive and offer low replayability, as every player has the exact same experience. An open-world design solves this by prioritizing player agency. It provides a sandbox of systems and locations that allows for emergent gameplay and a unique, player-driven narrative path.
   examples:
-  - 'Breath of the Wild: Massive open world.'
-  - 'GTA V: Open world design for exploration.'
+    - title: "The Legend of Zelda: Breath of the Wild"
+      description: |
+        This game's open world is defined by its freedom. After a short tutorial, the player can go anywhere and tackle the main objectives in any order, creating a powerful sense of adventure and self-directed exploration.
+    - title: "Grand Theft Auto V"
+      description: |
+        Provides a massive, detailed modern city as a sandbox. The open world is not just a space for missions but a playground in itself, filled with dynamic events and systems that players can interact with freely.
+  isHumanWritten: false

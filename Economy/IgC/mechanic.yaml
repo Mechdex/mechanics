@@ -1,11 +1,19 @@
 mechanic:
-  symbol: IgC
-  name: In-Game Currency
-  category: Economy
-  long_description: Introduces a system of currency for purchasing goods and services.
-    Central to GTA V.
-  short_description: Currency for in-game transactions.
-  solved_problems: Facilitates trade and economic balance.
+  symbol: "IgC"
+  name: "In-Game Currency"
+  category: "Economy"
+  long_description: |
+    An In-Game Currency is a fungible, universally accepted medium of exchange within the game world (e.g., gold, credits, dollars). It acts as a standardized measure of value for goods and services, forming the backbone of any game economy. It is typically awarded to the player for completing activities and is spent on items, upgrades, and services provided by NPCs or other players.
+  short_description: "A universal medium of exchange for trade."
+  solved_problems:
+    - title: "Bartering system limitations"
+      description: |
+        A pure bartering system (trading items for items) is cumbersome because it requires a "coincidence of wants"—both players must have something the other desires. In-game currency solves this. It provides a universal medium of exchange, allowing players to sell what they have and buy what they need without finding a perfect trading partner.
   examples:
-  - 'GTA V: Money used for vehicles and properties.'
-  - Many open-world games feature in-game currencies.
+    - title: "Grand Theft Auto V"
+      description: |
+        The dollar is central to the game's progression. Earning money through heists and activities allows the player to purchase vehicles, properties, and weapons, making the accumulation of wealth a primary gameplay motivator.
+    - title: "The Elder Scrolls V: Skyrim"
+      description: |
+        Gold, or 'Septims', is the standard currency. It's used not only for purchasing goods but also for services like training skills or buying houses, integrating it deeply into the game's character progression systems.
+  isHumanWritten: false

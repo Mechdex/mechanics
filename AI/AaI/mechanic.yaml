@@ -1,11 +1,19 @@
 mechanic:
-  symbol: AaI
-  name: Adaptive AI
-  category: AI
-  long_description: Adjust enemy behavior dynamically based on player performance and other metrics.
-    Notable in games like Left 4 Dead.
-  short_description: Dynamic adjustment of AI behaviour & difficulty.
-  solved_problems: The game getting boring because of a static AI system.
+  symbol: "AaI"
+  name: "Adaptive AI"
+  category: "AI"
+  long_description: |
+    Adaptive AI, often managed by a system called an "AI Director," dynamically adjusts game parameters in real-time based on player performance. It monitors metrics like player health, accuracy, and progression speed to alter enemy spawns, item placement, and encounter intensity. The goal is to create a tailored challenge that is consistently engaging, preventing the experience from becoming either too frustrating or too easy. This system works in the background to curate the player's experience on the fly.
+  short_description: "Dynamic adjustment of AI behaviour & difficulty."
+  solved_problems:
+    - title: "Static difficulty curves"
+      description: |
+        It's a major design challenge to create a single difficulty curve that is satisfying for all players. A static design is often too hard for some and too easy for others. An Adaptive AI solves this by creating a personalized difficulty curve for each playthrough, ensuring the game remains challenging and engaging regardless of player skill.
   examples:
-  - 'Left 4 Dead: Famous for balancing difficulty of combat based on how well the player is faring against them.'
-  - 'Alien: Isolation: An AI director ensured the primary antagonist of the game never gets too far from the player.'
+    - title: "Left 4 Dead"
+      description: |
+        The "AI Director" is a famous implementation that controls the pacing of the entire game. It dynamically spawns infected hordes, special infected, and crucial supplies based on the players' stress levels and performance, ensuring no two playthroughs are exactly the same.
+    - title: "Alien: Isolation"
+      description: |
+        The Xenomorph's AI is not scripted but adaptive. It learns from the player's habits. If the player hides in lockers too often, the alien will start searching them. This creates a persistent, evolving threat that maintains tension throughout the entire game.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Lu
-  name: Leveling Up
-  category: Progression
-  long_description: Progresses characters through levels based on accumulated experience.
-    Central to Final Fantasy.
-  short_description: Advance levels to enhance abilities.
-  solved_problems: Provides continuous character growth.
+  symbol: "Lu"
+  name: "Leveling Up"
+  category: "Progression"
+  long_description: |
+    Leveling Up is a core RPG progression system where a player character earns Experience Points (XP) for completing tasks. Upon reaching a certain XP threshold, the character's "Level" increases. This typically grants an automatic increase in base statistics (like health and damage) and often awards points to spend in other systems, like Skill Trees or perks.
+  short_description: "Gain levels by earning experience points to grow stronger."
+  solved_problems:
+    - title: "Lack of measurable progress"
+      description: |
+        It can be difficult for players to feel a tangible sense of growth over a long game. A leveling system solves this by providing a clear, quantifiable measure of progress. The constant feedback of gaining XP and leveling up creates a powerful and addictive psychological loop that keeps players invested.
   examples:
-  - 'Final Fantasy: Leveling up through battles.'
-  - Many RPGs feature level progression.
+    - title: "World of Warcraft"
+      description: |
+        The quintessential example of a level-based MMO. The entire game structure, from quests to zones to gear, is built around the player's journey from level 1 to the level cap.
+    - title: "Pokémon (series)"
+      description: |
+        Each Pokémon levels up individually by participating in battles. Leveling up not only increases their stats but is also the primary way they learn new moves and evolve into more powerful forms.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Per
-  name: Perception
-  category: AI
-  long_description: Simulates senses in AI, enabling detection of player actions.
-    Used in games like F.E.A.R.
-  short_description: AI detection of player actions.
-  solved_problems: Enhances realism in enemy behavior and stealth mechanics.
+  symbol: "Per"
+  name: "Perception"
+  category: "AI"
+  long_description: |
+    Perception in AI refers to the systems that simulate senses, primarily sight and hearing, allowing non-player characters to detect and react to the player and the world. This involves defining parameters like an AI's field of view, detection range, and sensitivity to sound. When the player enters a perception trigger (e.g., a line-of-sight check passes), the AI's state changes, for instance from 'patrolling' to 'suspicious' or 'hostile'. This system is fundamental to creating believable and responsive enemies.
+  short_description: "AI detection of player actions via senses."
+  solved_problems:
+    - title: "Omniscient enemy AI"
+      description: |
+        An AI that always knows the player's location is uninteresting for stealth and tactical gameplay. A Perception system solves this by creating rules for how an AI gathers information. It forces the AI to rely on simulated senses, meaning the player can use stealth, darkness, and sound to manipulate the AI's awareness, creating a more dynamic and fair challenge.
   examples:
-  - 'F.E.A.R.: Enemies detect subtle player movements.'
-  - Nearly every stealth game.
+    - title: "Metal Gear Solid V"
+      description: |
+        Features a deep perception system where guards have distinct lines of sight, react to sounds at a distance, and communicate their alert status to others. Players can exploit this by using distractions or staying out of their view cones.
+    - title: "F.E.A.R."
+      description: |
+        The enemy AI's perception is highly tuned, allowing them to react to the player's flashlight, overturned objects, and the sound of gunfire. They use this information to coordinate attacks and suppress the player's last known position.
+  isHumanWritten: false

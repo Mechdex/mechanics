@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Me
-  name: Map Expansion
-  category: Exploration
-  long_description: Mechanics that reveal new parts of the map as the player progresses.
-    Present in Red Dead Redemption 2.
-  short_description: Progressively reveal the game world.
-  solved_problems: Keeps the exploration experience fresh and evolving.
+  symbol: "Me"
+  name: "Map Expansion"
+  category: "Exploration"
+  long_description: |
+    Map Expansion is a narrative and world-design technique where sections of the game map are initially inaccessible to the player and are unlocked as they reach certain milestones in the story or progression. This is often represented by a "fog of war" that gets cleared, but can also be a literal barrier that is removed, revealing a new region of the world.
+  short_description: "Progressively unlock new regions of the world."
+  solved_problems:
+    - title: "Overwhelming the new player"
+      description: |
+        Dropping a new player into a massive open world can be paralyzing and confusing. Map expansion solves this by curating the early-game experience. It guides the player through a smaller, more focused starting area, gradually revealing the full scale of the world as the player becomes more familiar with the game's mechanics.
   examples:
-  - 'Red Dead Redemption 2: Map grows as missions progress.'
-  - Some RPGs feature map expansion mechanics.
+    - title: "The Legend of Zelda: A Link to the Past"
+      description: |
+        A classic example where the player believes they have explored the entire map, only to discover a "Dark World"—a complete second map that mirrors the first—midway through the game, dramatically expanding the scope of exploration.
+    - title: "Grand Theft Auto (series)"
+      description: |
+        In many titles, bridges to other islands of the city are initially closed due to a hurricane warning or police lockdown. They open up systematically as the player progresses through the main story missions.
+  isHumanWritten: false

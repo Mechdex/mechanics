@@ -1,13 +1,21 @@
 mechanic:
-  symbol: Int
-  name: Interact
-  category: Actions
+  symbol: "Int"
+  name: "Interact"
+  category: "Actions"
   long_description: |
-    Interaction mechanics allow players to engage with objects, NPCs, and the environment in meaningful ways. This can include opening doors, talking to characters, picking up items, and solving puzzles. In many games, interaction is context-sensitive, meaning different actions become available depending on the situation. 
-    
-    Open-world games like Grand Theft Auto V and Red Dead Redemption rely heavily on interaction systems to create immersive environments. From looting bodies to petting animals, these mechanics bring the world to life. Some games simplify interactions with a single-button prompt, while others use complex UI systems to offer a variety of contextual choices.
-  short_description: Contextual actions for interacting with the world.
-  solved_problems: null
+    The Interact mechanic is the fundamental bridge between the player and the game world's objects, characters, and systems. The implementation is context-sensitive: the game engine detects when the player is near an interactable entity and presents a prompt for a specific action. This can range from a single-button system where the game determines the action to a menu-based system that offers the player multiple choices.
+
+    Advanced implementations include 'held' interactions, where holding a button for a duration creates tension or represents effort, such as reviving a teammate or disarming a trap.
+  short_description: "Contextual actions for interacting with the world."
+  solved_problems:
+    - title: "Control scheme overload"
+      description: |
+        A rich game world may contain dozens of unique types of interactions, but a controller has a limited number of buttons. Assigning a unique button for every action ('Open Door', 'Talk', 'Loot') would create an impossibly complex control scheme. A context-sensitive Interact mechanic solves this. It funnels dozens of potential world interactions through a single, intelligent input.
   examples:
-  - 'GTA V: Interacting with vehicles, NPCs, and objects in an open-world setting.'
-  - 'Red Dead Redemption: Contextual interactions such as looting, greeting NPCs, and performing small immersive actions.'
+    - title: "Red Dead Redemption 2"
+      description: |
+        Features a deep, context-sensitive system where a single button prompts different interactions based on a secondary choice. This allows for nuanced social interactions with any NPC, making the world feel incredibly alive and reactive to the player's mood and intent.
+    - title: "Death Stranding"
+      description: |
+        Interaction is elevated to a core mechanic where the simple act of picking up, stacking, and managing cargo is a complex, physics-based puzzle. This design turns mundane interactions into the central gameplay loop, focusing on the physicality and challenge of moving through the world.
+  isHumanWritten: false

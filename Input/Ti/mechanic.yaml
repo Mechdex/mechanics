@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ti
-  name: Touch Input
-  category: Input
-  long_description: Utilizes touchscreen interactions to control game elements. Widely
-    used in mobile games like Fruit Ninja.
-  short_description: Interact via touchscreen.
-  solved_problems: Provides intuitive and direct control.
+  symbol: "Ti"
+  name: "Touch Input"
+  category: "Input"
+  long_description: |
+    Touch Input is a control scheme designed for touchscreen devices, where player input is registered through direct physical contact with the screen. This includes gestures like tapping, swiping, pinching to zoom, and dragging. Game controls are rendered as virtual, on-screen elements rather than physical buttons.
+  short_description: "Direct screen interaction on touch devices."
+  solved_problems:
+    - title: "Lack of physical buttons on mobile devices"
+      description: |
+        The primary hardware limitation of smartphones and tablets is the absence of physical buttons and joysticks. Touch input is the design solution for this. It creates a flexible, software-based control scheme that can be adapted to any game genre, from simple taps for puzzle games to complex virtual joysticks for shooters.
   examples:
-  - 'Fruit Ninja: Touch-based slicing mechanics.'
-  - Many mobile games rely on touch input.
+    - title: "Fruit Ninja"
+      description: |
+        A perfect marriage of mechanic and input. The simple, satisfying act of swiping a finger across the screen to slice fruit is intuitive, tactile, and would be impossible to replicate with a traditional controller.
+    - title: "Clash of Clans"
+      description: |
+        Uses touch input for all of its strategic actions: tapping to select units, dragging to place buildings, and pinching to zoom around the player's village. The entire interface is built around direct, tactile control.
+  isHumanWritten: false

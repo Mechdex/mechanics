@@ -2,10 +2,18 @@ mechanic:
   symbol: Lo
   name: Lock-On
   category: Camera
-  long_description: Enables the camera to focus on a target during combat, streamlining
-    attacks. Popular in Dark Souls and Twilight Princess.
-  short_description: Camera focuses on combat targets.
-  solved_problems: Aids in tracking moving targets.
+  long_description: |
+    A Lock-On is a camera and targeting system that, when activated by the player on a specific enemy, forces the game camera to remain focused on that target. Player movement and attacks then become relative to the locked-on enemy (e.g., pushing left on the stick strafes around the enemy). It is a foundational mechanic for readable, one-on-one combat in a 3D space.
+  short_description: Camera focuses on a single combat target.
+  solved_problems:
+  - title: Chaotic 3d melee combat
+    description: |
+      It's a classic design problem: fighting fast-moving enemies in a 3D space requires the player to manage both their character's position and the camera's orientation simultaneously. A lock-on system solves this. It automates the difficult task of camera management, allowing the player to focus purely on the tactical decisions of attacking and defending.
   examples:
-  - 'Dark Souls: Lock-on for precise combat.'
-  - 'Twilight Princess: Enhanced targeting mechanics.'
+  - title: 'The Legend of Zelda: Ocarina of Time'
+    description: |
+      Its 'Z-Targeting' system revolutionized 3D combat. By allowing players to lock onto an enemy, it made dodging, blocking, and circling an opponent intuitive and reliable for the first time on consoles.
+  - title: Dark Souls (series)
+    description: |
+      Lock-on is a critical tool for managing its methodical, stamina-based combat. It ensures attacks are directed at the intended target, but skilled players learn when to toggle it off for greater freedom of movement or to attack other enemies.
+  isHumanWritten: false

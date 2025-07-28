@@ -2,10 +2,18 @@ mechanic:
   symbol: Os
   name: Over-the-Shoulder
   category: Camera
-  long_description: Positions the camera behind the character, balancing perspective
-    and immersion. Widely used in Gears of War.
-  short_description: Camera positioned over the shoulder.
-  solved_problems: Offers a balanced view for combat and exploration.
+  long_description: |
+    An Over-the-Shoulder view is a specific type of third-person perspective where the camera is positioned closely behind and slightly to one side of the player character. This view typically frames the character from the waist up, providing a clear line of sight past them that is ideal for aiming ranged weapons, while still keeping the player character visible for situational awareness.
+  short_description: Close third-person camera for aiming.
+  solved_problems:
+  - title: Aiming vs situational awareness conflict
+    description: |
+      First-person offers perfect aiming but a narrow view, while a traditional distant third-person view offers a wide view but makes aiming imprecise. The over-the-shoulder view is the design solution to this conflict. It offers a clear, unobstructed line of sight for aiming while still keeping the player character in frame for strong situational awareness.
   examples:
-  - 'Gears of War: Over-the-shoulder camera for cover-based shooting.'
-  - Other third-person shooters use this mechanic.
+  - title: Resident Evil 4
+    description: |
+      This game popularized the over-the-shoulder perspective, fundamentally changing the third-person shooter genre. Its camera system created a perfect blend of tense, claustrophobic aiming and situational awareness that became the industry standard.
+  - title: Gears of War (series)
+    description: |
+      Combined the over-the-shoulder view with a cover system. The camera dynamically shifts to give the player the best possible view for aiming out of cover, making tactical, cover-based shooting feel responsive and intuitive.
+  isHumanWritten: false

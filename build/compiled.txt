@@ -1,0 +1,132 @@
+
+
+{
+    "symbol": "Cpr",
+    "name": "Contextual Prompts",
+    "category": "UI",
+    "long_description": "Displays on-screen prompts based on the player's context or environment. Common in The Legend of Zelda: Breath of the Wild.",
+    "short_description": "On-screen action prompts.",
+    "solved_problems": "Guides player actions without clutter.",
+    "examples": [
+        "Breath of the Wild: Contextual prompts for interactions.",
+        "Many adventure games feature similar UI cues."
+    ]
+}
+
+{
+    "symbol": "Dt",
+    "name": "Dynamic Tooltips",
+    "category": "UI",
+    "long_description": "Shows detailed, real-time information about items or abilities. Featured in World of Warcraft.",
+    "short_description": "Real-time detailed information popups.",
+    "solved_problems": "Helps players understand game mechanics and stats.",
+    "examples": [
+        "World of Warcraft: Dynamic tooltips for gear stats.",
+        "Other RPGs use tooltips for clarity."
+    ]
+}
+
+{
+    "symbol": "Hud",
+    "name": "HUD",
+    "category": "UI",
+    "long_description": "Displays vital game information on-screen, such as health and ammo. A staple in Call of Duty.",
+    "short_description": "On-screen game information display.",
+    "solved_problems": "Keeps players informed of critical stats.",
+    "examples": [
+        "Call of Duty: Comprehensive HUD during combat.",
+        "Many shooters utilize detailed HUDs."
+    ]
+}
+
+{
+    "symbol": "Mm",
+    "name": "Minimap",
+    "category": "UI",
+    "long_description": "Provides a small map overlay to help with navigation. Widely used in Grand Theft Auto V.",
+    "short_description": "Miniature map for navigation.",
+    "solved_problems": "Assists in orientation and strategic planning.",
+    "examples": [
+        "GTA V: Minimap for tracking objectives.",
+        "Other open-world games use minimaps."
+    ]
+}
+
+{
+    "symbol": "Rmn",
+    "name": "Radial Menus",
+    "category": "UI",
+    "long_description": "Uses a circular menu for quick selection of options. Popularized by Borderlands 2.",
+    "short_description": "Circular menu for option selection.",
+    "solved_problems": "Simplifies navigation of multiple options.",
+    "examples": [
+        "Borderlands 2: Radial menus for weapon and item selection.",
+        "Other games employ radial interfaces."
+    ]
+}
+
+{
+    "symbol": "DEc",
+    "name": "Dynamic Ecosystem",
+    "category": "World",
+    "long_description": "Simulates a living world where flora and fauna interact dynamically. Prominent in Far Cry.",
+    "short_description": "Living, responsive ecosystems.",
+    "solved_problems": "Creates a believable, evolving game environment.",
+    "examples": [
+        "Far Cry: Wildlife and environment interact dynamically.",
+        "Other open-world games feature dynamic ecosystems."
+    ]
+}
+
+{
+    "symbol": "Dnc",
+    "name": "Day-Night Cycle",
+    "category": "World",
+    "long_description": "Simulates the passage of time with changing day and night. Central to The Legend of Zelda: Breath of the Wild.",
+    "short_description": "Cycle between day and night.",
+    "solved_problems": "Creates a dynamic and immersive world environment.",
+    "examples": [
+        "Breath of the Wild: Realistic day-night transitions.",
+        "Other open-world games simulate time cycles."
+    ]
+}
+
+{
+    "symbol": "Eh",
+    "name": "Environmental Hazards",
+    "category": "World",
+    "long_description": "Introduces natural dangers such as lava, quicksand, or toxic zones. Seen in Minecraft.",
+    "short_description": "Natural hazards in the game world.",
+    "solved_problems": "Adds challenge and realism to exploration.",
+    "examples": [
+        "Minecraft: Environmental hazards like lava and water.",
+        "Survival games incorporate hazardous terrain."
+    ]
+}
+
+{
+    "symbol": "Owm",
+    "name": "Open World Map",
+    "category": "World",
+    "long_description": "Provides a detailed map of a vast, open game world. Featured in Skyrim.",
+    "short_description": "Detailed map of a large world.",
+    "solved_problems": "Helps players navigate expansive environments.",
+    "examples": [
+        "Skyrim: Open world map for exploration.",
+        "Other RPGs provide detailed world maps."
+    ]
+}
+
+{
+    "symbol": "Ws",
+    "name": "Weather Systems",
+    "category": "World",
+    "long_description": "Introduces dynamic weather that affects gameplay and atmosphere. Prominent in Red Dead Redemption 2.",
+    "short_description": "Dynamic weather effects.",
+    "solved_problems": "Impacts visibility and environmental interactions.",
+    "examples": [
+        "Red Dead Redemption 2: Changing weather impacting gameplay.",
+        "Other titles use weather to enhance realism."
+    ]
+}
+

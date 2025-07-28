@@ -2,10 +2,18 @@ mechanic:
   symbol: QtC
   name: Quick Time Combat
   category: Combat
-  long_description: Integrates quick time events into combat sequences for dramatic
-    and interactive battles. Featured in God of War.
-  short_description: QTE integrated combat sequences.
-  solved_problems: Adds cinematic flair to combat.
+  long_description: |
+    Quick Time Combat is the specific application of Quick Time Events (QTEs) within a combat encounter, often as a finishing move or a way to handle a large, unique enemy. Instead of using the standard combat controls, the player is prompted with a series of timed button presses to execute a pre-scripted, cinematic combat animation. Success usually results in defeating the enemy, while failure may deal damage or reset the sequence.
+  short_description: QTEs used for cinematic combat sequences.
+  solved_problems:
+  - title: Non-standard character actions
+    description: |
+      A game's core verbs (move, jump, attack) can't cover every unique action a cinematic combat beat might demand, like climbing a titan or tearing a monster's jaw open. Quick Time Combat is a simple way to connect these one-off actions to the game without building a massive, complex action set for a single encounter.
   examples:
-  - 'God of War: Quick time combat moments.'
-  - Narrative-driven games use similar mechanics.
+  - title: God of War (Original Trilogy)
+    description: |
+      The series is famous for its brutal QTE finishers. After weakening a boss or mythological creature, a button prompt appears, initiating a cinematic sequence where the player performs a series of inputs to spectacularly execute the enemy.
+  - title: Resident Evil 4
+    description: |
+      QTEs are integrated into boss fights and specific enemy encounters. For example, the player must complete a QTE to win a knife fight with Krauser or to dodge an attack from the 'El Gigante' boss.
+  isHumanWritten: false

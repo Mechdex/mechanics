@@ -2,10 +2,18 @@ mechanic:
   symbol: CsH
   name: Cover Shooting
   category: Combat
-  long_description: Combines shooting mechanics with cover systems, allowing players
-    to shoot from protected positions. Central to Gears of War.
-  short_description: Shoot while in cover.
-  solved_problems: Enhances tactical combat by integrating cover.
+  long_description: |
+    Cover Shooting is a combat style that merges a Cover System with ranged combat mechanics. It allows a character to "stick" to environmental objects for protection, and from that safe position, perform a variety of actions like peeking out to aim, firing blindly over the top, or moving to adjacent cover points. It is the defining mechanic of many modern third-person shooters.
+  short_description: Engage in ranged combat from protected positions.
+  solved_problems:
+  - title: Dynamic battlefield positioning
+    description: |
+      In a shooter without cover, combat can devolve into static "run-and-gun" scenarios. A Cover Shooting system introduces tactical positioning as a core pillar of combat. It breaks up sightlines and creates a battlefield with distinct safe and dangerous zones, forcing players to constantly evaluate their position and maneuver for an advantage.
   examples:
-  - 'Gears of War: Players shoot from behind cover.'
-  - Modern shooters often incorporate cover shooting.
+  - title: Gears of War (series)
+    description: |
+      This series defined the modern cover shooter. The weight of the characters and the satisfying "thunk" of snapping into cover became iconic, creating a deliberate, tactical combat rhythm of suppression and flanking.
+  - title: The Division (series)
+    description: |
+      Features a cover-to-cover movement system that allows players to seamlessly move between protected positions with a single button press. This makes repositioning under fire a fluid and core part of its tactical, squad-based encounters.
+  isHumanWritten: false

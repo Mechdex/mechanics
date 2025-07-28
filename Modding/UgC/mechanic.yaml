@@ -1,11 +1,19 @@
 mechanic:
-  symbol: UgC
-  name: User-Generated Content
-  category: Modding
-  long_description: Allows players to create and share their own content within the
-    game. Iconic in LittleBigPlanet.
-  short_description: Create and share custom content.
-  solved_problems: Extends game longevity through community creations.
+  symbol: "UgC"
+  name: "User-Generated Content"
+  category: "Modding"
+  long_description: |
+    User-Generated Content (UGC) is a broad category for mechanics that allow players to create content (like levels, quests, or characters) using in-game tools and then share that content with other players through a centralized, integrated service. The focus is on providing a seamless loop of creating, sharing, and playing community-made content, all within the game itself.
+  short_description: "Create and share custom game content."
+  solved_problems:
+    - title: "Finite game content"
+      description: |
+        A development team can only create a finite number of levels or quests. A user-generated content system solves this by outsourcing content creation to the entire player base. This creates a near-infinite stream of new experiences, keeping the game fresh and extending its lifespan long after players have completed the official content.
   examples:
-  - 'LittleBigPlanet: Players design their own levels.'
-  - Other sandbox games embrace user-generated content.
+    - title: "LittleBigPlanet"
+      description: |
+        The game's motto is 'Play, Create, Share.' Its powerful but intuitive level editor allows players to create everything from simple platforming stages to complex contraptions and short films, all of which can be easily shared and played by the community.
+    - title: "Roblox"
+      description: |
+        An entire platform built on UGC. The company provides the engine and the tools, and the community of creators builds and monetizes every single game, or 'experience,' available to play.
+  isHumanWritten: false

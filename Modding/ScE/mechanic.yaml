@@ -1,11 +1,19 @@
 mechanic:
-  symbol: ScE
-  name: Script Extensibility
-  category: Modding
-  long_description: Enables modification of game behavior through custom scripts.
-    Widely seen in Skyrim modding.
-  short_description: Extend game functionality with custom scripts.
-  solved_problems: Allows deep customization and new gameplay experiences.
+  symbol: "ScE"
+  name: "Script Extensibility"
+  category: "Modding"
+  long_description: |
+    Script Extensibility is the capacity for a game's engine to be modified by user-created scripts. This is often enabled through an exposed Application Programming Interface (API) or a dedicated scripting language (like Lua or Papyrus). This allows modders to go beyond simple asset swaps and fundamentally alter or add new gameplay logic, AI behaviors, and complex mechanics that were not present in the original game.
+  short_description: "Allows modders to alter game logic via scripts."
+  solved_problems:
+    - title: "Fixed gameplay systems"
+      description: |
+        It's a design limitation that a game's core mechanics are typically fixed and can't be altered by the player. Script extensibility solves this by giving the modding community direct access to the game's logic. This allows for the creation of entirely new gameplay systems that the original developers never envisioned, dramatically increasing the game's depth and longevity.
   examples:
-  - 'Skyrim: Extensive modding with script extenders.'
-  - Other moddable games support scripting.
+    - title: "The Elder Scrolls V: Skyrim"
+      description: |
+        The Skyrim Script Extender (SKSE) is a third-party tool that has become essential for the modding scene. It allows mods to add complex new features like entirely new magic systems, survival mechanics, and user interface overhauls that would be impossible otherwise.
+    - title: "Garry's Mod"
+      description: |
+        The entire game is a platform built on the Lua scripting language. Users can write their own scripts to create thousands of unique game modes, from role-playing servers to physics-based puzzle games, all within the same engine.
+  isHumanWritten: false

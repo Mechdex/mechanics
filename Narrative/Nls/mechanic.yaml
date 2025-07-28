@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Nls
-  name: Non-linear Story
-  category: Narrative
-  long_description: Allows players to experience the story in a non-sequential manner,
-    promoting exploration. Seen in The Witcher 3.
-  short_description: Experience the story out of order.
-  solved_problems: Encourages exploration of multiple story paths.
+  symbol: "Nls"
+  name: "Non-linear Story"
+  category: "Narrative"
+  long_description: |
+    A Non-linear Story is a narrative structure where major plot points, quests, and story arcs can be completed in an order chosen by the player. Unlike a linear story that follows a fixed A->B->C sequence, a non-linear narrative presents multiple paths that can be pursued in parallel. These paths can converge or influence each other, and player choices can lead to significantly different outcomes.
+  short_description: "A story that can be experienced in a flexible order."
+  solved_problems:
+    - title: "Low replay value"
+      description: |
+        A strictly linear game offers the exact same experience on every playthrough, which limits its replayability. A non-linear story solves this by creating a branching structure. It encourages multiple playthroughs as players want to see how different choices and quest orders will affect the overall narrative and world state.
   examples:
-  - 'The Witcher 3: Non-linear narrative structure.'
-  - Other open-world RPGs embrace non-linearity.
+    - title: "The Witcher 3: Wild Hunt"
+      description: |
+        While there is a main quest line, the player is free to pursue massive, multi-part side stories in any order they wish. The outcomes of these quests can then have significant and often surprising impacts on the main narrative and its ending.
+    - title: "Fallout: New Vegas"
+      description: |
+        A classic example where the player is presented with multiple competing factions. The player's choice of which faction to support (or betray) creates radically different narrative paths and endings, offering high replayability.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: MtC
-  name: Motion Controls
-  category: Input
-  long_description: Uses physical movement to control game actions, popularized by
-    the Wii Sports series.
-  short_description: Control gameplay with physical motion.
-  solved_problems: Enhances immersion through active participation.
+  symbol: "MtC"
+  name: "Motion Controls"
+  category: "Input"
+  long_description: |
+    Motion Controls are a control scheme where the physical movement of the controller itself—tilting, swinging, pointing, and shaking—is translated into in-game actions. This is typically achieved through accelerometers and gyroscopes embedded within the controller that report its orientation and movement in 3D space.
+  short_description: "Control gameplay with physical controller movement."
+  solved_problems:
+    - title: "Analog stick aiming limitations"
+      description: |
+        Aiming with a traditional analog stick can be slow and imprecise for some players, especially for fine adjustments. Motion controls offer a solution. By allowing the player to make small, intuitive wrist movements to fine-tune their aim ('gyro aiming'), it can provide a level of speed and precision that is difficult to achieve with a thumbstick alone.
   examples:
-  - 'Wii Sports: Motion controls for sports actions.'
-  - Other motion-enabled games use similar mechanics.
+    - title: "Wii Sports"
+      description: |
+        The title that popularized motion controls for a mass audience. The physical act of swinging the Wii Remote was translated into swinging a tennis racket or baseball bat, creating a simple and highly intuitive control scheme.
+    - title: "The Legend of Zelda: Breath of the Wild"
+      description: |
+        Uses motion controls for aiming the bow and other ranged weapons. This allows for quick and precise aiming that feels more fluid and accurate than using the analog stick alone, especially for hitting distant or moving targets.
+  isHumanWritten: false

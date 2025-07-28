@@ -3,25 +3,22 @@ mechanic:
   name: "Shield"
   category: "Abilities"
   long_description: |
-    A Shield is a layer of damage mitigation that sits on top of a character's core health pool, designed to absorb damage before it becomes permanent. The most common implementation is a regenerating energy shield, defined by key design levers: its total capacity, the "recharge delay" (time required out of combat to recover), and the "recharge rate." A second type is a finite shield, such as armor plating, that provides a non-regenerating block of protection that is gone once depleted.
+    A Shield is a layer of damage mitigation that sits on top of a character's core health pool, designed to absorb damage before it becomes permanent. The most common implementation is a regenerating energy shield, defined by key design levers: its total capacity, the "recharge delay" (time required out of combat to recover), and the "recharge rate." A second type is a finite shield, like armor plating, that provides a non-regenerating block of protection.
 
-    Effective shield design requires clear player feedback, including distinct audio cues for shield versus health damage, a visible UI element for shield integrity, and a prominent "shatter" effect when it breaks. Advanced systems include "shield gating," a critical mechanic where any amount of shield absorbs a full instance of damage to prevent one-shot kills from high-damage sources.
+    Effective shield design requires clear player feedback, including distinct audio cues for shield versus health damage and a prominent "shatter" effect when it breaks. Advanced systems include "shield gating," a critical mechanic where any amount of shield absorbs a full instance of damage to prevent one-shot kills.
   short_description: "Temporary damage absorption."
   solved_problems:
     - title: "Hyper-passive playstyles"
       description: |
-        When health is a scarce, non-regenerating resource, players play overly cautiously to conserve it, leading to slow gameplay. A regenerating shield solves this by providing a replenishing buffer for minor damage. This encourages players to engage in fights without fear of permanently depleting their core survivability resource.
+        When health is a scarce, non-regenerating resource, players play overly cautiously to conserve it. A regenerating shield solves this by providing a replenishing buffer for minor damage. This encourages players to engage in fights without fear of permanently depleting their core survivability resource.
     - title: "Frustration with difficult enemies"
       description: |
-        High-damage enemies like snipers can kill a player instantly from full health, which feels cheap and unfair. A shield system, especially with 'shield gating,' prevents these one-shot deaths. This guarantees the player can survive at least one major mistake, giving them a chance to learn the threat and react.
+        High-damage enemies like snipers can kill a player instantly from full health, which feels cheap. A shield system, especially with 'shield gating,' prevents these one-shot deaths. This guarantees the player can survive at least one major mistake, giving them a chance to learn the threat and react.
   examples:
     - title: "Halo"
       description: |
         The regenerating energy shield is the core of its combat loop, defining the 'Halo dance.' The system dictates the rhythm of every firefight: engage, take cover to recharge, then re-engage. The distinct audio cues for shield status are critical to its success and player situational awareness.
-    - title: "Dark Souls"
-      description: |
-        This series uses physical shields as a high-commitment defensive tool tied to a stamina resource. Blocking attacks consumes stamina, and a depleted bar leaves the player vulnerable to a 'Guard Break.' This design transforms defense from a passive state into an active, strategic choice of resource management.
     - title: "Borderlands"
       description: |
-        Shields are a core piece of loot with immense statistical varietyâ€”capacity, delay, and unique special effects like elemental novas or damage boosts. This turns a defensive mechanic into a key part of character building and player expression, directly tying survivability to the game's loot-driven reward loop.
+        Shields are a core piece of loot with immense statistical variety—capacity, delay, and unique special effects like elemental novas or damage boosts. This turns a defensive mechanic into a key part of character building and player expression, directly tying survivability to the game's loot-driven reward loop.
   isHumanWritten: false

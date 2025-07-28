@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Vch
-  name: Voice Chat
-  category: Multiplayer
-  long_description: Enables real-time voice communication between players. Popular
-    in Among Us.
-  short_description: Real-time voice communication.
-  solved_problems: Facilitates teamwork and social interaction.
+  symbol: "Vch"
+  name: "Voice Chat"
+  category: "Multiplayer"
+  long_description: |
+    Voice Chat is a system, either native to the game or integrated via a platform service (like Steam Voice or Discord), that allows players in the same session to communicate in real-time using a microphone. It provides a direct, high-bandwidth channel for communication that is far more efficient than text-based chat or in-game ping systems.
+  short_description: "Real-time voice communication between players."
+  solved_problems:
+    - title: "Inefficient team coordination"
+      description: |
+        It's a challenge to coordinate complex, time-sensitive team strategy using only pings or text chat. Integrated voice chat solves this by providing a high-bandwidth, real-time communication channel. It allows for complex strategic callouts and social interaction that would be impossible with other systems.
   examples:
-  - 'Among Us: Voice chat to coordinate strategies.'
-  - Other multiplayer games support voice communication.
+    - title: "Among Us"
+      description: |
+        While not always built-in, voice chat has become integral to the experience. The social deduction loop of accusations and alibis functions at a much higher level when players can talk and hear the emotion in each other's voices.
+    - title: "Rainbow Six Siege"
+      description: |
+        A tactical shooter where precise, real-time communication is mandatory for high-level play. Voice chat is used to make specific callouts about enemy locations, gadget placements, and coordinated breaches.
+  isHumanWritten: false

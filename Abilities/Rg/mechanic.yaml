@@ -3,18 +3,15 @@ mechanic:
   name: "Regeneration"
   category: "Abilities"
   long_description: |
-    Regeneration is a passive character attribute that automatically restores Health Points (HP) over time. Its implementation is governed by several key design levers: the rate (HP restored per second), the delay (the time required out of combat before regeneration begins), and interruptibility (whether taking damage resets the delay). Unlike the burst-healing of consumable items, regeneration provides a slow, continuous resource flow that fundamentally changes the pacing between combat encounters. It ensures players can recover from minor damage without expending finite resources, making it a powerful tool for attrition-based gameplay.
+    Regeneration is a passive character attribute that automatically restores Health Points (HP) over time. Its implementation is governed by key design levers: the rate (HP restored per second), the delay (time required out of combat before regeneration begins), and interruptibility (whether taking damage resets the delay). Unlike the burst-healing of consumable items, regeneration provides a slow, continuous resource flow that fundamentally changes the pacing between combat encounters.
   short_description: "Automatically recover health over time."
   solved_problems:
     - title: "Post-combat downtime"
       description: |
-        After a fight, a low-health player must stop all forward momentum to find healing items, which could mess up the game's pacing. Regeneration solves this by automatically restoring health after a short delay once combat ends. This allows designers to string encounters together more closely and maintain a high-tempo pace.
+        After a fight, a low-health player must stop all forward momentum to find healing items, which can kill the game's pacing. Regeneration solves this by automatically restoring health after a short delay once combat ends. This allows designers to string encounters together more closely and maintain a high-tempo pace.
     - title: "Resource deadlock"
       description: |
-        Designers who use finite healing items risk putting players in an unwinnable state; a player who uses too many health packs early cannot finish the level. Regeneration provides a baseline recovery method that acts as a safety net. This frees the designer from having to meticulously map out consumable placement and protects the player from being permanently punished for early mistakes.
-    - title: "Hyper-passive playstyles"
-      description: |
-        Some players prefer playing slowly, methodically, and out of danger. This might not be the intended experience of the game. By limiting health items and implementing regeneration, they're forced to actually engage in combat before being able to heal. 
+        Using finite healing items risks putting players in an unwinnable state; a player who uses too many health packs early cannot finish the level. Regeneration provides a baseline recovery method that acts as a safety net. This frees the designer from having to meticulously map out consumable placement and protects the player from being permanently punished for early mistakes.
   examples:
     - title: "Call of Duty series"
       description: |
@@ -22,7 +19,4 @@ mechanic:
     - title: "The Elder Scrolls V: Skyrim"
       description: |
         Implemented as a stat on gear or as a racial bonus. The regeneration is a slow trickle, less effective in active combat but highly effective for recovering from minor damage between fights. This reduces the player's reliance on a finite pool of potions for out-of-combat healing.
-    - title: "X-Men Origins: Wolverine"
-      description: |
-        A thematic implementation where rapid, visually represented healing is central to the character fantasy. This enables a hyper-aggressive playstyle where taking damage is expected, as the regeneration is potent enough to allow for continuous engagement with minimal downtime.
   isHumanWritten: false

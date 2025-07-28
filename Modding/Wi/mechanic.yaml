@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Wi
-  name: Workshop Integration
-  category: Modding
-  long_description: Integrates external mod repositories to simplify content sharing.
-    Common in Minecraft.
-  short_description: Easy access to community mods.
-  solved_problems: Streamlines mod discovery and installation.
+  symbol: "Wi"
+  name: "Workshop Integration"
+  category: "Modding"
+  long_description: |
+    Workshop Integration is a system that directly integrates a centralized, user-friendly content distribution platform (like the Steam Workshop) into the game client or launcher. This allows players to easily browse, subscribe to, download, and manage mods and other user-generated content with a single click, automating what was once a complex, manual installation process.
+  short_description: "One-click installation for mods and UGC."
+  solved_problems:
+    - title: "Complex and risky mod installation"
+      description: |
+        It's a major barrier to entry when installing mods requires manually editing game files, risking conflicts or game instability. Workshop integration solves this. It provides a safe, simple, one-click installation process, making modding accessible to a non-technical audience and drastically growing the creative community.
   examples:
-  - 'Minecraft: Steam Workshop for mod sharing.'
-  - Other moddable games support workshop integration.
+    - title: "XCOM 2"
+      description: |
+        Features deep Steam Workshop integration, which has led to a massive library of community-made content. Players can easily add new soldier classes, enemies, and gameplay overhauls directly from the game's launcher.
+    - title: "Cities: Skylines"
+      description: |
+        The Steam Workshop is essential to its longevity, hosting hundreds of thousands of custom assets, maps, and gameplay mods. The one-click integration allows players to easily curate and build their ideal city-building experience.
+  isHumanWritten: false

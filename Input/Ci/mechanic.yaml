@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ci
-  name: Combo Input
-  category: Input
-  long_description: Requires precise sequences of button presses to execute special
-    moves. Prominent in fighting games like Street Fighter.
-  short_description: Execute special moves with button sequences.
-  solved_problems: Rewards skillful and precise input.
+  symbol: "Ci"
+  name: "Combo Input"
+  category: "Input"
+  long_description: |
+    A Combo Input is a method, primarily in fighting games, that requires the player to perform a specific sequence of directional inputs and button presses within a strict timing window to execute a special move. This can range from simple quarter-circle motions (down, down-forward, forward + punch) to complex, multi-step chains of inputs that require significant muscle memory to perform consistently.
+  short_description: "Precise button sequences for special moves."
+  solved_problems:
+    - title: "Limited moveset on a simple controller"
+      description: |
+        It's a fundamental design limitation: a controller has only a few face buttons, which can only support a small number of unique attacks. Combo inputs solve this. They dramatically expand a character's moveset by using sequences and combinations of the same few buttons to unlock dozens of different special moves.
   examples:
-  - 'Street Fighter: Complex combos for special moves.'
-  - Other fighting games rely on combo inputs.
+    - title: "Street Fighter (series)"
+      description: |
+        The franchise codified the use of charge motions (holding back for two seconds, then forward + punch) and circular motions for special moves, creating the foundational input language for the entire fighting game genre.
+    - title: "Mortal Kombat (series)"
+      description: |
+        Known for its 'Fatalities,' which require a long, specific combo input to be performed after winning a match. This turns the finishing move into a final, memorable skill check for the victorious player.
+  isHumanWritten: false

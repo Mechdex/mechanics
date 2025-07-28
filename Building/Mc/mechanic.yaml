@@ -1,11 +1,11 @@
 mechanic:
-  symbol: Mc
-  name: Modular Construction
-  category: Building
-  long_description: Enables building with interchangeable components for flexible
-    design. Seen in Fortnite's Save the World mode.
-  short_description: Flexible building with modular parts.
-  solved_problems: Simplifies complex construction through pre-made modules.
-  examples:
-  - 'Fortnite: Build structures with modular pieces.'
-  - Other titles use similar construction systems.
+  symbol: "Mc"
+  name: "Modular Construction"
+  category: "Building"
+  long_description: |
+    Modular Construction is a "snap-together" building system that uses a limited set of pre-fabricated, interlocking pieces (like floors, walls, and ramps). These pieces are designed to connect to each other seamlessly, often on a grid system, allowing for rapid and intuitive building. This method contrasts with more granular, free-form systems like voxel-based construction.
+  short_description: "Flexible building with modular parts."
+  solved_problems:
+    - title: "High barrier to entry for building"
+      description: |
+        Free-form building systems can be overwhelming and often result in ugly, non-functional structures for unskilled players. A modular system solves this by using a limited set of easy-to-use, snap-together pieces. This guarantees that even novice builders can create structurally sound and aesthetically

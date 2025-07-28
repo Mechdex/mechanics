@@ -1,11 +1,19 @@
 mechanic:
-  symbol: TrD
-  name: Trade System
-  category: Economy
-  long_description: Allows players to exchange goods with NPCs or other players. Prominent
-    in EVE Online.
-  short_description: Exchange goods via trade.
-  solved_problems: Enhances player interaction and economic depth.
+  symbol: "TrD"
+  name: "Trade System"
+  category: "Economy"
+  long_description: |
+    A Trade System is the set of rules and user interface elements that facilitates the direct exchange of items or currency between two or more parties, such as player-to-player or player-to-NPC. This can include simple two-player trading windows with an "accept" button to prevent scams, complex bartering systems with NPCs, or large-scale cargo hauling between different regions in a game world.
+  short_description: "Direct exchange of goods between parties."
+  solved_problems:
+    - title: "Player specialization imbalance"
+      description: |
+        In games with specialized professions (e.g., blacksmith, alchemist), one player cannot do everything. This can be a frustrating roadblock if they need an item they can't craft. A trade system solves this by fostering interdependence. It allows specialists to profit from their skills and enables other players to acquire what they need, creating a healthy, cooperative community.
   examples:
-  - 'EVE Online: Complex trading systems.'
-  - MMORPGs often include robust trade mechanics.
+    - title: "Path of Exile"
+      description: |
+        The game deliberately lacks a centralized auction house, making direct player-to-player trade its primary economic engine. Players use third-party tools to list items and then meet in-game to conduct the exchange, creating a bartering-focused community.
+    - title: "Rocket League"
+      description: |
+        Features a trade system that allows players to exchange cosmetic items like car bodies, wheels, and decals. This created a vibrant secondary market where item rarity and player demand dictate value, entirely separate from gameplay skill.
+  isHumanWritten: false

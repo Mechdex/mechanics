@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Cst
-  name: Customization Tools
-  category: Modding
-  long_description: Provides in-game tools for customizing game elements. Featured
-    in The Sims series.
-  short_description: Tools for in-game customization.
-  solved_problems: Empowers players to tailor game content.
+  symbol: "Cst"
+  name: "Customization Tools"
+  category: "Modding"
+  long_description: |
+    Customization Tools are developer-provided, in-game editors that allow players to create or modify game content without needing external software. These tools can range from deep character creators and vehicle livery editors to fully-featured level builders. They provide a user-friendly, integrated way for players to engage in content creation, effectively bringing the power of modding directly into the game client itself.
+  short_description: "Developer-provided tools for in-game content creation."
+  solved_problems:
+    - title: "High barrier to entry for content creation"
+      description: |
+        Traditional modding requires technical skill and external software, which is a high barrier for most players. In-game customization tools solve this by providing a user-friendly, integrated toolset. This empowers a much wider audience to create and personalize their experience, fostering a more engaged community.
   examples:
-  - 'The Sims: Extensive customization of characters and homes.'
-  - Other simulation games offer similar tools.
+    - title: "The Sims (series)"
+      description: |
+        The series is famous for its powerful 'Create-a-Sim' and 'Build Mode' tools. These user-friendly editors allow players to design everything from their characters' facial structures to the detailed architecture of their homes, forming the core gameplay loop.
+    - title: "Super Mario Maker (series)"
+      description: |
+        This game is essentially a powerful level editor. It provides players with a complete suite of tools to create and share their own Super Mario levels, leading to a near-infinite amount of community-driven content.
+  isHumanWritten: false

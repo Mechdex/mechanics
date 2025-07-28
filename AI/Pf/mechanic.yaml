@@ -1,16 +1,19 @@
 mechanic:
-  symbol: Pf
-  name: Pathfinding
-  category: AI
+  symbol: "Pf"
+  name: "Pathfinding"
+  category: "AI"
   long_description: |
-    Pathfinding allows an NPC to move from one point to another on complex terrain. It employs an algorithm to decide a route of nodes to take. The nodes don't always need to be physical objects in-game. The most common algorithm for this is the A* algorithm, but D* (for dynamic environments) and Dijkstra's algorithm (for generalized searching for a target node) are good choices. 
-    
-    In general, pathfinding requires an AI to find the shortest path between a start and an end point connected in some sort of graph, like an underground subway or metro. Each station is a node. Although the individual algorithms vary, most of them just start from one point and recursively search each connected node until the target node is found. It then backtracks and looks for the path is took to get to that node. This path is the shortest distance, which your AI entities can use.
-    
-    You might consider allowing the algorithm to optimise node-searching based on the distance to the target node, like the A* algorithm. This is far more efficient.
-  short_description: NPC navigation between different points.
-  solved_problems: Improves NPC movement in complex maps.
+    Pathfinding is an AI process that finds a viable route for an entity to move from a starting point to a destination, navigating around obstacles. It operates on a simplified representation of the game world, often a 'navigation mesh' (navmesh) or a grid of waypoints. Algorithms like A* (A-star) are commonly used to calculate the most efficient path through this data structure. The result is a series of points that the AI character follows to reach its target.
+  short_description: "NPC navigation between different points."
+  solved_problems:
+    - title: "NPC traversal in complex environments"
+      description: |
+        It's a fundamental design problem: an NPC needs to get from point A to B, but the level has walls, furniture, and other obstacles. Without a system to navigate these, the character would get stuck or walk through walls, breaking immersion. Pathfinding provides the essential logic for characters to intelligently navigate complex game worlds.
   examples:
-  - 'Age of Empires: NPCs navigate battlefields using pathfinding algorithms.'
-  - Real-time strategy games use similar systems.
-  isHumanWritten: true
+    - title: "The Last of Us"
+      description: |
+        The companion AI relies heavily on pathfinding to navigate the cluttered, post-apocalyptic environments alongside the player, rarely getting stuck or taking nonsensical routes, which is crucial for maintaining immersion.
+    - title: "StarCraft II"
+      description: |
+        In this real-time strategy game, pathfinding is critical for managing hundreds of units at once. Units must efficiently navigate around each other and terrain to engage targets, and the quality of the pathfinding directly impacts the game's tactical depth.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: St
-  name: Skill Trees
-  category: Progression
-  long_description: Offers branching paths for character abilities and improvements.
-    Seen in Diablo III.
-  short_description: Branching upgrade paths for abilities.
-  solved_problems: Allows customized character development.
+  symbol: "St"
+  name: "Skill Trees"
+  category: "Progression"
+  long_description: |
+    A Skill Tree is a visual representation of a character's progression path, where skills and abilities are laid out in a branching, tree-like structure. Players spend points (often earned by leveling up) to unlock nodes on the tree. More powerful abilities are typically located further down a branch, requiring investment in prerequisite, lower-tier skills to reach them.
+  short_description: "A visual, branching path for unlocking new abilities."
+  solved_problems:
+    - title: "Unclear progression paths"
+      description: |
+        A long, unstructured list of unlockable abilities can be overwhelming and doesn't communicate long-term goals. A skill tree solves this by visualizing the entire progression path. It allows players to plan their build in advance and make informed decisions about their character's development, providing a clear roadmap for their progression.
   examples:
-  - 'Diablo III: Extensive skill trees for build variety.'
-  - Other RPGs implement similar systems.
+    - title: "Diablo II"
+      description: |
+        Its skill tree system became the genre-defining standard. Each class had three distinct trees, and players had to make permanent, meaningful choices about which tree to specialize in, creating strong character identity.
+    - title: "Borderlands (series)"
+      description: |
+        Each Vault Hunter has multiple skill trees that focus on different playstyles. The final skill in each tree is a powerful "capstone" ability that dramatically changes gameplay, heavily incentivizing specialization.
+  isHumanWritten: false

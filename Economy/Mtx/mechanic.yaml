@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Mtx
-  name: Microtransactions
-  category: Economy
-  long_description: Enables players to purchase in-game items with real money. Widely
-    used in Fortnite.
-  short_description: Real money purchases for in-game items.
-  solved_problems: Generates revenue through cosmetic and functional items.
+  symbol: "Mtx"
+  name: "Microtransactions"
+  category: "Economy"
+  long_description: |
+    Microtransactions are a system that allows players to purchase in-game content or currency using real-world money. These transactions are handled through a digital storefront integrated into the game client. The content sold can range from purely cosmetic items (like character skins), to quality-of-life improvements, to items that offer a direct gameplay advantage, the implementation of which is a key design and ethical consideration.
+  short_description: "Real-money purchases for in-game items."
+  solved_problems:
+    - title: "Post-launch revenue model"
+      description: |
+        It's a difficult business problem to fund continuous development for a live-service game after its initial launch. Microtransactions provide a model for ongoing revenue. This allows the designer to fund the game as a continuous service, providing regular updates and new content financed by a dedicated player base.
   examples:
-  - 'Fortnite: In-game store for skins and emotes.'
-  - Mobile games frequently use microtransactions.
+    - title: "Fortnite"
+      description: |
+        Its business model is built entirely on the sale of cosmetic items like skins, emotes, and battle passes. This approach is famously non-pay-to-win and has proven to be an incredibly successful and widely accepted implementation.
+    - title: "Genshin Impact"
+      description: |
+        Uses a 'gacha' system, a form of microtransaction where players purchase a chance to receive a random in-game item, typically powerful characters or weapons. This model is common in mobile games and creates a monetization loop based on random rewards.
+  isHumanWritten: false

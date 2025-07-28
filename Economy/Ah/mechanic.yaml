@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ah
-  name: Auction House
-  category: Economy
-  long_description: Provides a marketplace where players can bid on items. Featured
-    in World of Warcraft.
-  short_description: Marketplace for player auctions.
-  solved_problems: Facilitates player-driven economies.
+  symbol: "Ah"
+  name: "Auction House"
+  category: "Economy"
+  long_description: |
+    An Auction House is a centralized, asynchronous marketplace system in a multiplayer game. It allows players to list items for sale for a set duration, and other players can then place bids or purchase the item outright for a "buyout" price. This system automates player-to-player trade, removing the need for both parties to be online and meet in the same location to conduct an exchange.
+  short_description: "Centralized player-to-player marketplace."
+  solved_problems:
+    - title: "Inefficient player-to-player trade"
+      description: |
+        It's a design challenge to facilitate trade in a persistent online world, as requiring players to meet in-game is inefficient and depends on both parties being online simultaneously. An auction house solves this by creating a centralized, asynchronous marketplace, allowing for a fluid, 24/7 player economy without the logistical headache of direct bartering.
   examples:
-  - 'World of Warcraft: Auction House for rare items.'
-  - Other MMOs implement auction systems.
+    - title: "World of Warcraft"
+      description: |
+        The Auction House is the central hub of the game's player-driven economy. It facilitates the trade of everything from basic crafting materials to legendary gear, allowing players to specialize in professions and play the market to earn gold.
+    - title: "Diablo III"
+      description: |
+        Famously featured a real-money auction house at launch. While ultimately removed, it demonstrated how this system could be used to facilitate the trade of high-value items, though its economic and game-balance implications were controversial.
+  isHumanWritten: false

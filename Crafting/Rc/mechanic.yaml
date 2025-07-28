@@ -2,10 +2,18 @@ mechanic:
   symbol: Rc
   name: Resource Combination
   category: Crafting
-  long_description: Requires players to combine various resources to create new items,
-    as seen in Minecraft.
-  short_description: Combine resources to craft items.
-  solved_problems: Encourages exploration and resource management.
+  long_description: |
+    Resource Combination is a crafting system where players create new items by placing specific raw materials in a pre-defined pattern or recipe, often using a crafting grid or menu. The core gameplay loop involves exploring the world to gather diverse ingredients (wood, stone, ore, plants, etc.) and then using them to produce tools, equipment, or structures. It is the foundational mechanic of the survival-crafting genre.
+  short_description: Combine raw materials to craft new items.
+  solved_problems:
+  - title: Meaningless world collectibles
+    description: |
+      In many games, the world is full of junk items that serve no purpose. A resource combination system solves this by giving dozens or hundreds of different world items a tangible value. A simple flower is no longer just a prop; it's a key ingredient for a potion, which encourages exploration and resource gathering.
   examples:
-  - 'Minecraft: Combining blocks to craft tools.'
-  - Survival games use resource combination.
+  - title: Minecraft
+    description: |
+      The game's iconic 3x3 crafting grid is the definitive example. Players must learn or discover the specific patterns of raw materials needed to craft everything from a simple wooden pickaxe to a complex enchanted bow.
+  - title: The Forest
+    description: |
+      Features an immersive crafting system where the player physically places items on a crafting mat in the game world. Combining a stick with a rock and rope visually creates a makeshift axe, adding a tactile feel to the resource combination.
+  isHumanWritten: false

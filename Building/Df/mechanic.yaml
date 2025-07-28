@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Df
-  name: Defensive Fortification
-  category: Building
-  long_description: Allows players to strengthen structures for defense against attacks.
-    Used in tower defense games like They Are Billions.
-  short_description: Strengthen structures for defense.
-  solved_problems: Enhances survivability during assaults.
+  symbol: "Df"
+  name: "Defensive Fortification"
+  category: "Building"
+  long_description: |
+    Defensive Fortification is a subset of building mechanics focused entirely on creating structures that mitigate damage, control enemy movement, or act as automated weapon platforms. This includes building walls, placing turrets, laying traps, and creating chokepoints. Unlike general base building, these constructions are purely functional and are built in direct anticipation of a hostile threat.
+  short_description: "Strengthen structures for defense."
+  solved_problems:
+    - title: "Static combat encounters"
+      description: |
+        A traditional combat encounter is often just about character stats and reflexes. Defensive fortifications introduce a new strategic layer: preparation. It creates a gameplay phase where the player analyzes the environment and anticipated threats to build a defense, enabling a 'tower defense' style of gameplay within other genres.
   examples:
-  - 'They Are Billions: Build fortifications to withstand hordes.'
-  - Other strategy games incorporate fortification mechanics.
+    - title: "Fortnite: Save the World"
+      description: |
+        The core gameplay loop involves building elaborate forts and trap tunnels around an objective to defend it from waves of husks. The building phase is as important as the combat phase.
+    - title: "They Are Billions"
+      description: |
+        This game is entirely about building fortifications on a massive scale. Players must construct layers of walls, towers, and traps to protect their colony from colossal hordes of zombies numbering in the thousands.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Dw
-  name: Dialogue Wheel
-  category: Narrative
-  long_description: Presents a radial menu for selecting dialogue options, simplifying
-    complex interactions. Popularized by The Walking Dead.
-  short_description: Radial menu for dialogue selection.
-  solved_problems: Streamlines conversation choices.
+  symbol: "Dw"
+  name: "Dialogue Wheel"
+  category: "Narrative"
+  long_description: |
+    A Dialogue Wheel is a specific user interface for presenting branching dialogue choices in a radial menu. Options are often displayed as paraphrased intentions (e.g., "Question," "Threaten," "Sarcastic") rather than the full line of dialogue. This UI is designed for quick, intuitive selection with a controller's analog stick, making it ideal for cinematic conversations where pacing is important.
+  short_description: "A radial menu for selecting dialogue choices."
+  solved_problems:
+    - title: "Clunky dialogue navigation"
+      description: |
+        It's a challenge to make dialogue selection feel fluid with a controller, as traditional top-to-bottom list menus can be slow to navigate. A dialogue wheel solves this by mapping choices to the analog stick's natural, radial movement. This allows for faster, more intuitive selection, which is crucial for maintaining pacing in timed or cinematic conversations.
   examples:
-  - 'The Walking Dead: Dialogue wheel for quick responses.'
-  - Other narrative games implement similar systems.
+    - title: "Mass Effect (series)"
+      description: |
+        The franchise popularized the dialogue wheel. Choices are consistently mapped (e.g., top-right for Paragon, bottom-right for Renegade), allowing players to make rapid, instinctual decisions that align with their character's established personality.
+    - title: "Fallout 4"
+      description: |
+        Implemented a dialogue wheel where players chose a tone rather than a specific line. While controversial for its perceived lack of clarity, it demonstrated how the wheel could be used to streamline conversations into a more cinematic, action-oriented format.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Coop
-  name: Co-op Play
-  category: Multiplayer
-  long_description: Enables cooperative gameplay, allowing multiple players to work
-    together. Seen in Left 4 Dead.
-  short_description: Play cooperatively with others.
-  solved_problems: Fosters teamwork and shared experiences.
+  symbol: "Coop"
+  name: "Co-op Play"
+  category: "Multiplayer"
+  long_description: |
+    Cooperative (Co-op) Play is a mode that allows two or more players to experience a game's campaign or specific scenarios together, working towards a common goal against AI-controlled opponents (PvE). This contrasts with Player versus Player (PvP) modes, where players compete against each other.
+  short_description: "Work together with other players against AI."
+  solved_problems:
+    - title: "Solo puzzle and combat limitations"
+      description: |
+        It's difficult to design complex cooperative puzzles or large-scale combat encounters for a single player without overwhelming them or relying on clunky companion AI. Co-op play solves this by distributing the cognitive load across multiple humans. This enables designers to create far more complex challenges that require genuine teamwork, communication, and role specialization.
   examples:
-  - 'Left 4 Dead: Cooperative survival gameplay.'
-  - Other co-op games emphasize teamwork.
+    - title: "Left 4 Dead (series)"
+      description: |
+        A classic example of a purely co-op experience. The game is designed around a team of four survivors working together to fend off hordes of infected, with mechanics that actively encourage teamwork, like saving teammates from special infected.
+    - title: "Portal 2"
+      description: |
+        Features a dedicated co-op campaign with puzzles that are impossible to solve alone. Both players are given a portal gun, and the solutions require them to coordinate their actions and use both sets of portals in tandem.
+  isHumanWritten: false

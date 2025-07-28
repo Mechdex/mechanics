@@ -1,11 +1,19 @@
 mechanic:
-  symbol: PvP
-  name: PvP
-  category: Multiplayer
-  long_description: 'Facilitates competitive gameplay between players. Central to
-    Fortnite and Call of Duty: Warzone.'
-  short_description: Player versus player combat.
-  solved_problems: Encourages competitive strategies.
+  symbol: "PvP"
+  name: "PvP"
+  category: "Multiplayer"
+  long_description: |
+    Player versus Player (PvP) is a mode of gameplay where two or more players compete directly against each other, as opposed to against AI-controlled opponents in Player versus Environment (PvE) content. This is the foundation of all competitive multiplayer games, from fighting games to battle royales.
+  short_description: "Competitive gameplay between two or more players."
+  solved_problems:
+    - title: "Predictable enemy behavior"
+      description: |
+        No matter how complex, AI opponents eventually become predictable, and players can master their patterns. PvP solves this by using the most unpredictable opponent possible: another human. This creates a dynamic, endlessly evolving challenge with a near-infinite skill ceiling that AI cannot replicate.
   examples:
-  - 'Fortnite: Intense PvP battles.'
-  - 'Warzone: Fast-paced player combat.'
+    - title: "Fortnite"
+      description: |
+        Its Battle Royale mode is a massive PvP experience where 100 players compete to be the last one standing. The combination of shooting, building, and resource gathering creates a unique and highly competitive PvP environment.
+    - title: "Street Fighter (series)"
+      description: |
+        The quintessential one-on-one PvP experience. The entire game is built around two players using their character's unique moveset to out-think and out-play their opponent in a test of skill, strategy, and execution.
+  isHumanWritten: false

@@ -2,10 +2,18 @@ mechanic:
   symbol: Fp
   name: First-Person View
   category: Camera
-  long_description: Offers an immersive perspective by placing the camera at the character's
-    viewpoint. Standard in Call of Duty.
+  long_description: |
+    First-Person View is a camera perspective where the viewpoint is placed within the character's head, showing the game world from their eyes. The player character's body is typically not rendered, with the exception of their hands, arms, and any held items like weapons or tools. This perspective offers a direct, unfiltered view of the game world, prioritizing immersion and direct aiming.
   short_description: Immersive first-person perspective.
-  solved_problems: Increases player immersion and situational awareness.
+  solved_problems:
+  - title: Player-character disconnect
+    description: |
+      A third-person view can create a sense of controlling a puppet or avatar rather than being the character. A first-person view solves this by directly placing the player within the character's body. This creates a powerful sense of immersion and presence, as the player sees the world directly through the character's eyes.
   examples:
-  - 'Call of Duty: First-person shooting experience.'
-  - Many shooters use first-person view.
+  - title: Call of Duty (series)
+    description: |
+      The franchise is a quintessential example of the first-person shooter. The entire experience is built around the speed, precision aiming, and visceral, up-close feeling that the first-person perspective provides.
+  - title: Cyberpunk 2077
+    description: |
+      The game uses its mandatory first-person view to enhance immersion in its detailed world. Conversations, combat, and environmental interactions are all experienced directly from the protagonist's viewpoint to ground the player in the role.
+  isHumanWritten: false

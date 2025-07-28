@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Spc
-  name: Spectator Mode
-  category: Multiplayer
-  long_description: Allows players to observe matches without participating, enhancing
-    community engagement. Found in CS:GO.
-  short_description: Watch games as a spectator.
-  solved_problems: Provides insights and entertainment for viewers.
+  symbol: "Spc"
+  name: "Spectator Mode"
+  category: "Multiplayer"
+  long_description: |
+    A Spectator Mode is a feature that allows a user to join a live game session as an invisible, non-participating observer. The spectator is typically given a suite of camera tools to follow specific players, view the action from any angle, or see a strategic overview of the entire map. This mode is essential for esports and community content creation.
+  short_description: "Observe live matches without participating."
+  solved_problems:
+    - title: "Limited game accessibility for non-players"
+      description: |
+        A game can typically only be experienced by playing it. This limits its audience and community potential. A spectator mode solves this by turning the game into a viewable sport. It's the foundational tool that enables esports, shoutcasting, and tournament broadcasting, dramatically expanding the game's reach.
   examples:
-  - 'CS:GO: Spectator mode for tournament viewing.'
-  - Other competitive games offer spectator options.
+    - title: "Counter-Strike: Global Offensive"
+      description: |
+        Features a powerful spectator client called GOTV. It allows millions of viewers to watch professional matches with special observer tools that show player positions, economy, and other strategic information, which is essential for its esports scene.
+    - title: "Dota 2"
+      description: |
+        Spectators can watch live games with a slight delay, and are given access to a wealth of information that the players themselves don't have, such as both teams' vision and cooldowns. This makes it an ideal platform for learning and entertainment.
+  isHumanWritten: false

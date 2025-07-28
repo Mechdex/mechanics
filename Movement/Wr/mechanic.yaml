@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Wr
-  name: Wall Run
-  category: Movement
-  long_description: Enables players to run along vertical surfaces. Famously used
-    in Mirror's Edge.
-  short_description: Run along walls for dynamic traversal.
-  solved_problems: Facilitates agile navigation in urban environments.
+  symbol: "Wr"
+  name: "Wall Run"
+  category: "Movement"
+  long_description: |
+    A Wall Run is a parkour-style movement mechanic that allows the player character to run horizontally or vertically along flat surfaces for a limited time or distance. It is an advanced traversal technique that uses the environment itself as part of the player's path, often requiring a running start and allowing for chained movements with jumps or other abilities.
+  short_description: "Traverse by running along vertical surfaces."
+  solved_problems:
+    - title: "Limited traversal paths"
+      description: |
+        In a typical platformer, the only valid paths are on horizontal surfaces. A wall run solves this limitation by turning vertical surfaces into temporary platforms. This dramatically opens up the design possibilities for level traversal, allowing for fluid, acrobatic sequences that would be impossible in a standard platformer.
   examples:
-  - 'Mirror''s Edge: Wall running for acrobatic movement.'
-  - Action games incorporate wall run mechanics.
+    - title: "Mirror's Edge"
+      description: |
+        Wall running is a foundational part of the game's 'Faith' movement system. It's essential for maintaining momentum and creating fluid parkour lines across the game's urban rooftops.
+    - title: "Titanfall 2"
+      description: |
+        Wall running is a core combat and traversal tool. It can be combined with double jumps and sliding to achieve incredible speed and mobility, allowing players to flank opponents and approach objectives from unexpected angles.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Sd
-  name: Supply and Demand
-  category: Economy
-  long_description: Simulates economic fluctuations based on player actions and market
-    conditions. Present in SimCity.
-  short_description: Dynamic economic fluctuations.
-  solved_problems: Reflects realistic market behavior.
+  symbol: "Sd"
+  name: "Supply and Demand"
+  category: "Economy"
+  long_description: |
+    Supply and Demand is a simulation model where the prices of goods and services within a game economy are not fixed, but fluctuate dynamically. Prices are determined by their availability (supply) and the players' or NPCs' need for them (demand). High supply and low demand drive prices down, while low supply and high demand drive them up, creating a self-regulating market.
+  short_description: "Prices fluctuate based on market conditions."
+  solved_problems:
+    - title: "Static and exploitable economies"
+      description: |
+        If item prices are fixed, players will inevitably find the single most profitable activity and grind it exclusively, breaking the economy. A supply and demand system solves this. It creates a dynamic, self-regulating economy where over-saturating the market with one item makes it less profitable, encouraging players to diversify their activities.
   examples:
-  - 'SimCity: Market dynamics based on supply and demand.'
-  - Economic sims rely on similar mechanics.
+    - title: "EVE Online"
+      description: |
+        Features a completely player-driven economy where nearly every item is crafted and sold by players. Prices for minerals, ships, and ammunition fluctuate wildly based on supply chain disruptions, player-run wars, and market speculation.
+    - title: "X4: Foundations"
+      description: |
+        The entire universe runs on a supply and demand simulation. NPC factions will pay high prices for resources they are lacking, allowing players to build a trading empire by identifying and filling these economic gaps.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: As
-  name: Adaptive Soundtrack
-  category: Audio
-  long_description: Modifies the soundtrack dynamically to match gameplay intensity.
-    Seen in Left 4 Dead.
-  short_description: Soundtrack adapts to game intensity.
-  solved_problems: Keeps the audio experience aligned with gameplay.
+  symbol: "As"
+  name: "Adaptive Soundtrack"
+  category: "Audio"
+  long_description: |
+    An Adaptive Soundtrack is a musical score that dynamically changes its intensity, instrumentation, or melody in real-time based on gameplay events. Using a system of musical layers or stems, the game can seamlessly transition between different states, such as 'exploration,' 'tension,' and 'combat.' The audio engine cues these changes based on triggers like an enemy spotting the player or a new area being discovered, ensuring the music always matches the on-screen action.
+  short_description: "Soundtrack adapts to game intensity."
+  solved_problems:
+    - title: "Emotional dissonance in audio"
+      description: |
+        Having a single, looping music track creates emotional dissonance when the gameplay state changes, such as when calm exploration music continues to play during a surprise firefight. An Adaptive Soundtrack solves this by ensuring the musical score always reflects the player's current situation, heightening immersion and reinforcing the intended emotional tone of a moment.
   examples:
-  - 'Left 4 Dead: Changes music based on player tension.'
-  - Other survival games use adaptive soundtracks.
+    - title: "DOOM (2016)"
+      description: |
+        The soundtrack is famously adaptive, with heavy metal tracks dynamically adding layers of intensity and complexity based on the number of enemies and the pace of combat. The music becomes an integral part of the "rip and tear" combat loop.
+    - title: "Red Dead Redemption 2"
+      description: |
+        The score subtly introduces and removes musical elements based on location, time of day, and whether the player is in a town or the wilderness. During combat, it swells to a full orchestral piece, then fades back into subtle ambient themes.
+  isHumanWritten: false

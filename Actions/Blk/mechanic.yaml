@@ -3,25 +3,19 @@ mechanic:
   name: "Block"
   category: "Actions"
   long_description: |
-    Block is a defensive action that allows a character to mitigate or nullify incoming damage. Its implementation is defined by its resource costâ€”almost always Stamina or a hidden 'poise' value. Sustaining hits on a block consumes this resource, and depleting it results in a 'Guard Break,' a vulnerable state that punishes passive, defensive play. This creates a risk-reward system where blocking is a temporary safeguard, not a permanent solution.
+    Block is a defensive action that mitigates or nullifies incoming damage, typically from a frontal arc. Its implementation is defined by its resource cost—almost always Stamina or a hidden 'poise' value. Sustaining hits on a block consumes this resource, and depleting it results in a 'Guard Break,' a state of vulnerability that punishes passive over-reliance on the mechanic.
 
-    The effectiveness of a block is determined by the equipment used. Heavy shields offer high stability and damage reduction, while blocking with a smaller weapon is a less effective, higher-risk option. Advanced implementations include directional blocking and 'chip damage,' where certain attack types partially bypass the defense. Block is a core pillar of tactical combat, existing in a triangle with attacking and dodging.
+    The effectiveness of a block (damage reduction, stability) is determined by the equipment used, such as a heavy shield versus a weapon. Combat systems often include 'unblockable' attacks to ensure players must utilize other defensive options, adding a layer to the combat puzzle.
   short_description: "Defensive maneuver to mitigate damage."
   solved_problems:
-    - title: "One-dimensional Combat"
+    - title: "Confined space combat"
       description: |
-        Systems that only revolve around attacking and dodging become repetitive. A block action introduces a third core option, creating a 'rock-paper-scissors' dynamic between attacking, blocking, and guard-breaking moves. This forces players to read their opponent and make tactical decisions rather than just spamming one action.
-    - title: "Combat pacing and rhythm"
-      description: |
-        Designers need tools to control the flow of a fight. Blocking, especially when tied to a stamina cost, creates a natural rhythm of offense and defense. It forces lulls in the action as both player and AI manage their resources, creating deliberate windows of opportunity and preventing combat from becoming a non-stop, chaotic flurry.
+        It's a challenge to design combat in tight spaces like hallways, as the player's ability to dodge is severely limited by the environment. The Block action solves this by providing a defense that requires no lateral or backward movement. It enables players to manage threats head-on in confined spaces, making hallway ambushes a viable design.
   examples:
     - title: "Dark Souls"
       description: |
-        Blocking is a high-commitment action directly tied to the Stamina bar. Shields have a 'Stability' stat determining how much stamina is consumed per blocked hit. This design makes blocking a deliberate tactical choice, where players must weigh the stamina cost against the riskier, but more rewarding, dodge or parry.
+        Blocking is a high-commitment action directly tied to the Stamina bar. Shields possess a 'Stability' stat that determines the stamina cost of a blocked hit. This design makes blocking a deliberate resource management choice, forcing players to weigh safety against the stamina needed for counter-attacking.
     - title: "The Elder Scrolls V: Skyrim"
       description: |
-        This system features a timed block mechanic where a well-timed block or 'bash' staggers an opponent, creating an opening for a counter-attack. This rewards proactive, skillful defense over passive turtling and integrates the block action directly into the player's offensive rotation.
-    - title: "Sekiro: Shadows Die Twice"
-      description: |
-        This game evolves blocking into the 'Deflect' system, the central combat mechanic. Instead of health, combat revolves around breaking an opponent's 'Posture.' Perfectly timed blocks (deflections) deal posture damage, making blocking the primary offensive method for creating finishing blow opportunities.
+        This system features a timed 'bash' that can be performed while blocking. A successful bash staggers an opponent, creating an opening for a counter-attack. This design rewards proactive defense and integrates the block action directly into the player's offensive rotation.
   isHumanWritten: false

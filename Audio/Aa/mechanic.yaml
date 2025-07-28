@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Aa
-  name: Ambient Audio
-  category: Audio
-  long_description: Creates a background soundscape that enhances atmosphere.
-    Found in games like Limbo.
-  short_description: Immersive environmental soundscapes.
-  solved_problems: Adds depth to the game world through sound.
+  symbol: "Aa"
+  name: "Ambient Audio"
+  category: "Audio"
+  long_description: |
+    Ambient Audio is the background soundscape of a game world, designed to create a sense of place and atmosphere. It consists of layered, non-interactive sounds like wind, distant city noise, crickets chirping, or the subtle hum of machinery. These soundscapes are often location-based and can change dynamically based on the time of day or weather. Unlike specific sound effects, ambient audio provides a constant, underlying sonic texture to the environment.
+  short_description: "Immersive environmental soundscapes."
+  solved_problems:
+    - title: "Lifeless game worlds"
+      description: |
+        A visually detailed game world can feel sterile and empty if it's silent. Ambient Audio solves this by providing a constant soundscape. It adds a crucial layer of depth and atmosphere that makes an environment feel like a real, living place rather than a digital set piece.
   examples:
-  - 'Limbo: Uses ambient audio to build tension.'
-  - Other indie games focus on atmospheric sound.
+    - title: "S.T.A.L.K.E.R.: Shadow of Chernobyl"
+      description: |
+        The game uses its ambient audio to build a powerful sense of dread and loneliness. The wind howling across the plains, the distant cry of a mutant, and the crackle of anomalies are all part of a soundscape that is central to the game's oppressive atmosphere.
+    - title: "BioShock"
+      description: |
+        The ambient audio of Rapture is essential to its character. The constant groaning of the city's structure, distant drips of water, and ghostly advertisements from the past create a haunting soundscape that tells a story in itself.
+  isHumanWritten: false

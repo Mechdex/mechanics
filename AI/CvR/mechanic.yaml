@@ -1,11 +1,19 @@
 mechanic:
-  symbol: CvR
-  name: Cover System
-  category: AI
-  long_description: Allows AI to take cover during combat to enhance tactical gameplay.
-    Prominent in Gears of War.
-  short_description: AI takes cover during combat.
-  solved_problems: Improves immersion and allows players to evolve more complex strategies, just like any other "immersive" AI mechanic.
+  symbol: "CvR"
+  name: "Cover System"
+  category: "AI"
+  long_description: |
+    A Cover System allows both players and AI characters to use environmental objects for protection during combat. It's a foundational mechanic in third-person shooters. The system typically involves a context-sensitive input to "stick" to cover, with additional actions for peeking out, blind-firing, and moving between adjacent cover points. For AI, it involves logic for identifying, pathfinding to, and utilizing cover positions effectively.
+  short_description: "Use environmental objects for protection."
+  solved_problems:
+    - title: "Dynamic battlefield positioning"
+      description: |
+        In a shooter without cover, combat can devolve into static "run-and-gun" scenarios. A Cover System introduces tactical positioning as a core pillar of combat. It breaks up sightlines and creates a battlefield with distinct safe and dangerous zones, forcing both the player and AI to constantly evaluate their position and maneuver for an advantage.
   examples:
-  - 'Gears of War: AI uses cover to avoid damage.'
-  - Nearly every stealth shooter.
+    - title: "Gears of War"
+      description: |
+        This series popularized the modern third-person cover system. The 'roadie run' and fluid vaulting between chest-high walls defined its tactical, stop-and-pop combat rhythm and became the standard for the genre.
+    - title: "The Last of Us"
+      description: |
+        Features a 'soft' cover system where the player character naturally uses the environment for protection without a sticky button press. This creates a more fluid and desperate-feeling combat experience, fitting the game's survivalist tone.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Gr
-  name: Gesture Recognition
-  category: Input
-  long_description: Interprets physical gestures as game commands, enhancing interactive
-    gameplay. Seen in Just Dance.
-  short_description: Use gestures to control actions.
-  solved_problems: Creates an immersive, active gameplay experience.
+  symbol: "Gr"
+  name: "Gesture Recognition"
+  category: "Input"
+  long_description: |
+    Gesture Recognition is a control scheme that uses a camera or other sensor to track the player's body movements and translate them into in-game actions. The system is programmed to recognize pre-defined physical gestures, like swinging an arm, making a specific pose, or a full-body dance move, and uses them as direct inputs.
+  short_description: "Translate physical player gestures into commands."
+  solved_problems:
+    - title: "Abstracting physical actions"
+      description: |
+        It's a design challenge to make a game about a physical activity like dancing or boxing feel intuitive with just a controller. Gesture recognition solves this by creating a direct, one-to-one link between the player's physical actions and the on-screen character's movements, providing a more immersive and intuitive control scheme for physical games.
   examples:
-  - 'Just Dance: Recognizes player movements for scoring.'
-  - Various interactive titles use gesture recognition.
+    - title: "Just Dance (series)"
+      description: |
+        The core mechanic involves players mimicking the on-screen dancer's choreography. A camera or motion controller tracks the player's body and scores them based on how accurately they perform the gestures.
+    - title: "Kinect Sports"
+      description: |
+        Utilized the Kinect camera to translate a wide range of player gestures into sports actions, like throwing a bowling ball or spiking a volleyball, without the need for any physical controller.
+  isHumanWritten: false

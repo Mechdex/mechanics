@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ds
-  name: Dash
-  category: Movement
-  long_description: Provides a quick burst of speed to cover short distances. Common
-    in titles like Bayonetta.
-  short_description: Quick burst of speed.
-  solved_problems: Allows rapid repositioning during combat or exploration.
+  symbol: "Ds"
+  name: "Dash"
+  category: "Movement"
+  long_description: |
+    A Dash is a movement mechanic that propels the character forward a short, fixed distance at a high speed. It can often be performed on the ground and in the air, and may be chained multiple times or combined with other actions. Unlike a dodge, a dash is primarily used for offensive repositioning or traversal rather than purely for invincibility frames, though some implementations include both.
+  short_description: "A quick burst of forward momentum."
+  solved_problems:
+    - title: "Flat environmental traversal"
+      description: |
+        It's a design challenge to make crossing flat, open ground feel engaging. A dash mechanic solves this by breaking up the monotony of standard running. It introduces a rhythmic, high-speed movement option that makes simple traversal feel faster, more skillful, and more enjoyable.
   examples:
-  - 'Bayonetta: Dash for evasive maneuvers.'
-  - Other action games use dash mechanics.
+    - title: "Celeste"
+      description: |
+        The mid-air dash is the central mechanic upon which all platforming challenges are built. The player only has one dash that refreshes upon touching the ground, turning traversal into a complex and precise puzzle.
+    - title: "Mega Man X (series)"
+      description: |
+        The Dash is a fundamental upgrade that dramatically increases X's ground speed and allows him to perform a more powerful dash-jump, forming the basis of the series' fast-paced run-and-gun platforming.
+  isHumanWritten: false

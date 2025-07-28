@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ast
-  name: Asset Import
-  category: Modding
-  long_description: Permits players to import custom assets such as models and textures.
-    Popularized by Garry's Mod.
-  short_description: Import custom models and textures.
-  solved_problems: Expands visual variety and personalization.
+  symbol: "Ast"
+  name: "Asset Import"
+  category: "Modding"
+  long_description: |
+    Asset Import is the functionality within a game or its accompanying toolset that allows users to add their own custom-made assets—such as 3D models, sound effects, textures, and scripts—into the game engine. This allows modders to create content that goes far beyond simple stat changes, introducing entirely new visuals and sounds to the game. It is the foundation of most significant modding scenes.
+  short_description: "Allows users to add custom assets to the game."
+  solved_problems:
+    - title: "Finite game content"
+      description: |
+        A development team can only create a finite amount of content, meaning a game will eventually run out of new things to see and do. Asset import solves this by empowering the community to create their own content. This can extend the lifespan of a game for years or even decades beyond the developer's direct support, creating a near-infinite content loop.
   examples:
-  - 'Garry''s Mod: Importing assets for unique creations.'
-  - Community mods often rely on asset import capabilities.
+    - title: "Garry's Mod"
+      description: |
+        The entire game is a sandbox built around asset import. Players can pull in models, textures, and scripts from any Source engine game to create an endless variety of contraptions, game modes, and short films ('machinima').
+    - title: "The Elder Scrolls V: Skyrim"
+      description: |
+        The modding scene for Skyrim is legendary, largely due to its robust support for asset import. Modders have added thousands of new, high-quality weapons, armors, creatures, and even entire new lands to the game.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Rlc
-  name: Realistic Collision
-  category: Physics
-  long_description: Ensures physical interactions follow real-world collision dynamics.
-    Demonstrated in BeamNG.drive.
-  short_description: Accurate physical collision simulation.
-  solved_problems: Provides believable interactions between objects.
+  symbol: "Rlc"
+  name: "Realistic Collision"
+  category: "Physics"
+  long_description: |
+    Realistic Collision is a physics system that accurately simulates the transfer of forces and the resulting deformation and damage when two or more objects collide. This goes beyond simple "bounding box" collisions, where objects just bounce off each other. Instead, it models how materials bend, shatter, and break apart in a physically plausible manner, often using a "soft-body" physics engine.
+  short_description: "Accurate simulation of physical impact and deformation."
+  solved_problems:
+    - title: "Superficial impact feedback"
+      description: |
+        It's a design challenge to make high-impact events, like a car crash, feel visceral and consequential. Simple collision systems often result in objects just bouncing off each other. A realistic collision model solves this by providing detailed, dynamic feedback, making every impact feel unique and unscripted.
   examples:
-  - 'BeamNG.drive: Realistic collision responses.'
-  - Simulation games rely on accurate collision physics.
+    - title: "BeamNG.drive"
+      description: |
+        The entire game is built around its revolutionary soft-body physics engine. The primary appeal is the incredibly realistic and detailed way vehicles deform and fall apart during collisions.
+    - title: "Crysis (series)"
+      description: |
+        Known for its detailed physics, where individual palm trees can be shot down and flimsy shacks will realistically splinter and collapse when hit with explosive force.
+  isHumanWritten: false

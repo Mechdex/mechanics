@@ -2,10 +2,18 @@ mechanic:
   symbol: ChG
   name: Charge Attack
   category: Combat
-  long_description: Builds up attack power over time to deliver a powerful strike.
-    Prominent in games like Bayonetta.
-  short_description: Build and release powerful attacks with timing.
-  solved_problems: Offers a high-risk, high-reward combat option.
+  long_description: |
+    A Charge Attack is a combat action where the player holds down an input button to build up power, then releases it to unleash a more powerful version of an attack. The design is defined by the trade-off between the time spent charging (a window of vulnerability) and the increased damage, area of effect, or special properties (like breaking a guard) of the resulting attack.
+  short_description: Hold to build, release for a powerful strike.
+  solved_problems:
+  - title: One-note combat rhythm
+    description: |
+      If all attacks are instantaneous button presses, combat can devolve into a repetitive, button-mashing rhythm. Charge attacks solve this by introducing a new timing element. They create a risk-reward cadence of finding a safe moment to charge and timing the release, adding a layer of deliberate pacing to the fight.
   examples:
-  - 'Bayonetta: Charge attacks for massive damage.'
-  - Other action games implement charge attacks.
+  - title: Mega Man (series)
+    description: |
+      The Mega Buster's charge shot is a core mechanic. It allows players to deal significantly more damage than rapid-fire shots, rewarding them for finding openings in enemy patterns to safely charge their weapon.
+  - title: Monster Hunter (series)
+    description: |
+      Weapons like the Great Sword and Hammer are built around charge attacks. Their slow, deliberate nature forces players to learn a monster's attack patterns intimately to find the large windows of opportunity needed to land a fully charged blow.
+  isHumanWritten: false

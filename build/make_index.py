@@ -19,6 +19,9 @@ symbol_set = []
 
 try:
     for doc in docs:
+        with open("compiled.txt", "a") as f:
+            json.dump(doc, f, indent=4)
+            f.write("\n\n")
         cd = {}
         if doc["symbol"] in symbol_set:
             print(
@@ -43,39 +46,38 @@ print("Wrote concise docs.")
 
 
 def extract_solved_problems(doc):
-	texts = []
-	sp = doc.get("solved_problems", [])
-	if isinstance(sp, str):
-		texts.append(sp)
-	elif isinstance(sp, dict):
-		# handle legacy object (mapping) format
-		for k, v in sp.items():
-			texts.append(str(k))
-			texts.append(str(v))
-	elif isinstance(sp, list):
-		for item in sp:
-			if isinstance(item, str):
-				texts.append(item)
-			elif isinstance(item, dict):
-				texts.append(item.get("title", ""))
-				texts.append(item.get("description", ""))
-	return " ".join(texts)
+    texts = []
+    sp = doc.get("solved_problems", [])
+    if isinstance(sp, str):
+        texts.append(sp)
+    elif isinstance(sp, dict):
+        # handle legacy object (mapping) format
+        for k, v in sp.items():
+            texts.append(str(k))
+            texts.append(str(v))
+    elif isinstance(sp, list):
+        for item in sp:
+            if isinstance(item, str):
+                texts.append(item)
+            elif isinstance(item, dict):
+                texts.append(item.get("title", ""))
+                texts.append(item.get("description", ""))
+    return " ".join(texts)
 
 
 def extract_examples(doc):
-	texts = []
-	ex = doc.get("examples", [])
-	if isinstance(ex, str):
-		texts.append(ex)
-	elif isinstance(ex, list):
-		for item in ex:
-			if isinstance(item, str):
-				texts.append(item)
-			elif isinstance(item, dict):
-				texts.append(item.get("title", ""))
-				texts.append(item.get("description", ""))
-	return " ".join(texts)
-
+    texts = []
+    ex = doc.get("examples", [])
+    if isinstance(ex, str):
+        texts.append(ex)
+    elif isinstance(ex, list):
+        for item in ex:
+            if isinstance(item, str):
+                texts.append(item)
+            elif isinstance(item, dict):
+                texts.append(item.get("title", ""))
+                texts.append(item.get("description", ""))
+    return " ".join(texts)
 
 
 idx = lunr(

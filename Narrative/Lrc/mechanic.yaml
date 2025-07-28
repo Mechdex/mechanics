@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Lrc
-  name: Lore Collection
-  category: Narrative
-  long_description: "Encourages players to gather scattered lore items to piece together\
-    \ the game\u2019s history. Common in Dark Souls."
-  short_description: Collect lore to uncover history.
-  solved_problems: Deepens player engagement with the game world.
+  symbol: "Lrc"
+  name: "Lore Collection"
+  category: "Narrative"
+  long_description: |
+    Lore Collection is a system that scatters narrative information throughout the game world in the form of collectible items, such as books, audio logs, or item descriptions. The player is encouraged to find these fragments to piece together the history and context of the world. This content is often presented in a dedicated in-game codex or journal for later review.
+  short_description: "Piece together the story via found items."
+  solved_problems:
+    - title: "Unmotivated exploration"
+      description: |
+        A large world can feel empty if the only reason to explore is to find stat-based loot. Lore collection solves this by turning narrative into a reward. It gives players a powerful, intrinsic motivation to explore every corner of the map, rewarding their curiosity with a deeper understanding of the world's history.
   examples:
-  - 'Dark Souls: Lore scattered throughout the world.'
-  - Other games use collectibles for lore discovery.
+    - title: "Dark Souls (series)"
+      description: |
+        Famously tells most of its story through the cryptic descriptions on weapons, armor, and items. The community actively pieces together this fragmented lore to form a cohesive narrative, making discovery a collective effort.
+    - title: "Control"
+      description: |
+        The game world is filled with heavily-redacted official documents, research notes, and eerie training videos. Collecting these files is essential to understanding the game's complex and bizarre supernatural universe.
+  isHumanWritten: false

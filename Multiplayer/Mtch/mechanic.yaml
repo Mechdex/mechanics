@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Mtch
-  name: Matchmaking
-  category: Multiplayer
-  long_description: Automatically pairs players of similar skill levels for balanced
-    matches. Integral to Overwatch.
-  short_description: Automatic player pairing.
-  solved_problems: Ensures fair and balanced multiplayer games.
+  symbol: "Mtch"
+  name: "Matchmaking"
+  category: "Multiplayer"
+  long_description: |
+    Matchmaking is an automated system that groups players together for online matches. A skill-based matchmaking (SBMM) system uses a player's performance metrics (like a hidden rating or visible rank) to attempt to create balanced teams and fair matches. Simpler systems may just prioritize finding a game as quickly as possible.
+  short_description: "Automated system for grouping players online."
+  solved_problems:
+    - title: "Lopsided multiplayer matches"
+      description: |
+        Without a system for balancing teams, new players are often matched against veterans, leading to frustrating, one-sided stomps that cause them to quit. Matchmaking solves this. It attempts to place players of similar skill in the same matches, which increases the likelihood of a close, engaging game and improves long-term player retention.
   examples:
-  - 'Overwatch: Skill-based matchmaking.'
-  - Other competitive games use matchmaking systems.
+    - title: "Overwatch"
+      description: |
+        Uses a complex matchmaking system that considers not only a player's skill rating but also their preferred role (Tank, Damage, Support) to build balanced team compositions.
+    - title: "League of Legends"
+      description: |
+        Its matchmaking is based on a hidden MMR (Matchmaking Rating) for casual play and a visible rank (e.g., Bronze, Gold, Diamond) for its competitive mode, creating a clear ladder for players to climb.
+  isHumanWritten: false

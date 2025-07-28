@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Dj
-  name: Double Jump
-  category: Movement
-  long_description: Allows players to jump a second time while airborne. Iconic in
-    platformers like Super Mario Odyssey.
-  short_description: Perform a second jump mid-air.
-  solved_problems: Adds vertical mobility and dynamic movement.
+  symbol: "Dj"
+  name: "Double Jump"
+  category: "Movement"
+  long_description: |
+    A Double Jump is a core platforming mechanic that grants the player the ability to perform a second jump while in mid-air. This action defies real-world physics to provide the player with significantly enhanced vertical and horizontal control during aerial traversal. It serves as a foundational tool for creating more complex and demanding platforming challenges.
+  short_description: "Perform a second jump while airborne."
+  solved_problems:
+    - title: "One-dimensional level design"
+      description: |
+        With only a single jump, level design is often restricted to simple, linear paths on a single plane. The double jump solves this by opening up the vertical axis. It allows designers to create more complex, layered environments with platforms and secrets that require precise aerial control to reach, adding significant depth to exploration.
   examples:
-  - 'Super Mario Odyssey: Double jump enhances platforming.'
-  - Other platformers incorporate double jump mechanics.
+    - title: "Super Metroid"
+      description: |
+        The 'Space Jump' is a late-game upgrade that allows for infinite chained jumps, completely changing the player's ability to traverse the world and rewarding them with access to previously unreachable areas.
+    - title: "Titanfall 2"
+      description: |
+        The double jump is a core component of the game's famously fluid movement system. It can be combined with wall running and sliding, allowing players to maintain momentum and traverse the battlefield with incredible speed and agility.
+  isHumanWritten: false

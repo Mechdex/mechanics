@@ -2,10 +2,20 @@ mechanic:
   symbol: Cc
   name: Cinematic Camera
   category: Camera
-  long_description: Provides pre-set camera angles and movements to deliver cinematic
-    storytelling. Employed in the Uncharted series.
-  short_description: Cinematic camera angles and movements.
-  solved_problems: Enhances narrative and visual presentation.
+  long_description: |
+    A Cinematic Camera is a system that temporarily wrests camera control from the player to enforce a specific, pre-authored angle, pan, or tracking shot. It is a directorial tool used by developers during scripted sequences or key story moments. By dictating the camera's behavior, the system can guarantee a dramatic presentation, highlight important details, or guide the player's focus, much like a film director framing a shot.
+  short_description: Scripted camera for dramatic presentation.
+  solved_problems:
+  - title: Missing critical visual information
+    description: |
+      It's a design challenge that during a key story moment, the player might be looking in the wrong direction and miss the important event. A cinematic camera solves this by temporarily taking control to frame the action perfectly. It ensures every player sees the critical narrative beat exactly as the designer intended.
   examples:
-  - 'Uncharted: Cinematic sequences during story moments.'
-  - Other adventure games adopt similar techniques.
+  - title: Uncharted (series)
+    description: |
+      The series seamlessly blends gameplay with cinematic camera work. During large set-piece moments, like a collapsing building, the camera will pull back or shift to a dramatic angle to emphasize the scale and spectacle, even while the player retains character control.
+  - title: God of War (2018)
+    description: "Famous for its 'single-shot' camera that never cuts away. It uses\
+      \ masterful cinematic camera techniques\u2014smooth pans, dolly zooms, and deliberate\
+      \ framing\u2014during both gameplay and cutscenes to create one continuous,\
+      \ immersive experience.\n"
+  isHumanWritten: false

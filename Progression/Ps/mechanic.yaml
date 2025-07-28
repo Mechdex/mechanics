@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ps
-  name: Perk System
-  category: Progression
-  long_description: Grants unique bonuses or abilities that enhance gameplay. Prominent
-    in the Fallout series.
-  short_description: Unique bonuses for character builds.
-  solved_problems: Allows specialization and varied playstyles.
+  symbol: "Ps"
+  name: "Perk System"
+  category: "Progression"
+  long_description: |
+    A Perk System is a progression system where players can unlock specific, named abilities or passive bonuses ("perks") that provide unique gameplay advantages. Unlike simple stat increases from leveling up, perks often grant new capabilities (e.g., "pick any lock") or significantly alter existing ones (e.g., "pistols now fire in a burst"). They are the primary tool for creating distinct character builds.
+  short_description: "Unlock unique abilities and bonuses to specialize a build."
+  solved_problems:
+    - title: "Homogenous character builds"
+      description: |
+        If progression is just about increasing base stats, every high-level character ends up feeling the same. A perk system solves this by introducing meaningful, strategic choices. It allows players to specialize in a specific playstyle (e.g., stealth, heavy weapons, speech), creating significant build diversity and replayability.
   examples:
-  - 'Fallout: Perks improve combat and skills.'
-  - Other games use perks for customization.
+    - title: "Fallout (series)"
+      description: |
+        The series is famous for its perk system, which includes a mix of statistical bonuses and unique, often humorous abilities like "Bloody Mess" (enemies explode in a gory mess) or "Mysterious Stranger" (a character who randomly appears to help in combat).
+    - title: "Dead by Daylight"
+      description: |
+        Perks are the core of the game's loadout system for both survivors and killers. A player's choice of four perks completely defines their strategy and abilities in a match, creating a deep meta-game of perk combinations and counters.
+  isHumanWritten: false

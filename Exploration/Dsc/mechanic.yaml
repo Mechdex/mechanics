@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Dsc
-  name: Discovery
-  category: Exploration
-  long_description: Encourages exploration by rewarding players with hidden locations
-    and secrets. Common in No Man's Sky.
-  short_description: Uncover hidden locations and secrets.
-  solved_problems: Incentivizes thorough exploration of the game world.
+  symbol: "Dsc"
+  name: "Discovery"
+  category: "Exploration"
+  long_description: |
+    Discovery is the overarching system of rewarding players for the act of exploring the game world. This is not just about finding new locations, but often involves mechanics like scanning flora and fauna, charting star systems, or finding lore items that fill out a codex or journal. The system provides tangible rewards and progression for player curiosity.
+  short_description: "Rewarding players for finding new things."
+  solved_problems:
+    - title: "Unmotivated exploration"
+      description: |
+        A large, open world is just empty space if there's no reason to visit it. A discovery system solves this by explicitly rewarding the act of exploration. By tying progression, resources, or narrative to finding new things, it gives players a clear motivation to travel off the beaten path and engage with the world's content.
   examples:
-  - 'No Man''s Sky: Discover new planets and anomalies.'
-  - Exploration games reward player curiosity.
+    - title: "No Man's Sky"
+      description: |
+        Discovery is the core gameplay loop. Players are rewarded with in-game currency for discovering and uploading new planets, animals, and plants, with their name permanently attached to the discovery for all other players to see.
+    - title: "Outer Wilds"
+      description: |
+        The entire game is about discovery. The only progression is the player's knowledge, gained by exploring and finding snippets of text from an ancient civilization. This knowledge is tracked in the ship's log, forming the game's central mechanic.
+  isHumanWritten: false

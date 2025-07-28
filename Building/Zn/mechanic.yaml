@@ -2,10 +2,18 @@ mechanic:
   symbol: Zn
   name: Zoning
   category: Building
-  long_description: 'Involves designating areas for specific functions, common in
-    city-building games like SimCity and Cities: Skylines.'
+  long_description: |
+    Zoning is a macro-level management tool used in city-building and simulation games. Instead of placing individual buildings, the player designates large areas of land (zones) for a specific purpose, such as residential, commercial, or industrial development. The game's simulation engine then automatically populates these zones with appropriate buildings over time, provided certain conditions like power and road access are met.
   short_description: Designate areas for different functions.
-  solved_problems: Helps manage urban planning and resource allocation.
+  solved_problems:
+  - title: Micromanagement at a macro scale
+    description: |
+      It's impossible for a player to individually place thousands of houses and shops needed to build a large city. Zoning solves this scalability problem. It allows the player to make broad, strategic decisions about their city's layout, while the simulation handles the granular detail of populating those areas, making large-scale management feasible.
   examples:
-  - 'SimCity: Zoning for residential and commercial areas.'
-  - 'Cities: Skylines: Detailed zoning mechanics.'
+  - title: 'Cities: Skylines'
+    description: |
+      Features a detailed zoning system as its core mechanic. Players paint residential, commercial, and industrial zones, and must balance their placement with services, traffic, and pollution to create a functional city.
+  - title: SimCity (series)
+    description: |
+      The franchise pioneered the RCI (Residential, Commercial, Industrial) zoning indicator, which became the foundational mechanic for the entire city-building genre.
+  isHumanWritten: false

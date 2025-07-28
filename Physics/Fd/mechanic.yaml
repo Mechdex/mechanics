@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Fd
-  name: Fluid Dynamics
-  category: Physics
-  long_description: Simulates the movement and interaction of liquids for enhanced
-    realism. Used in the Battlefield series.
-  short_description: Realistic simulation of liquids.
-  solved_problems: Adds realism to environmental interactions.
+  symbol: "Fd"
+  name: "Fluid Dynamics"
+  category: "Physics"
+  long_description: |
+    Fluid Dynamics is a complex physics simulation that models the properties of liquids, such as viscosity, flow, and buoyancy. This allows water and other fluids in the game to react realistically to forces like explosions, moving objects, and player interaction. This goes beyond simple, static water planes and simulates a fluid's volume and movement.
+  short_description: "Realistic simulation of liquid movement and interaction."
+  solved_problems:
+    - title: "Unrealistic environmental interactions"
+      description: |
+        It's a design challenge to make game worlds feel truly interactive and reactive. A fluid dynamics simulation solves a piece of this by making water a dynamic element rather than a static prop. This creates a more believable and immersive world where liquids react to the player's actions in a physically plausible way.
   examples:
-  - 'Battlefield: Fluid dynamics in explosion effects.'
-  - Other games incorporate fluid simulations.
+    - title: "BioShock"
+      description: |
+        Water is a constant environmental presence in the underwater city of Rapture. When glass breaks, water realistically floods the corridors, pushing objects and affecting the player's movement.
+    - title: "The Legend of Zelda: Tears of the Kingdom"
+      description: |
+        Features a detailed fluid dynamics model that is core to many of its puzzles. Water flows downhill, can be redirected, and interacts with player-built contraptions, making it a key puzzle-solving tool.
+  isHumanWritten: false

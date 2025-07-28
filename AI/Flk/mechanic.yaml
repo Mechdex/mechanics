@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Flk
-  name: Flocking
-  category: AI
-  long_description: Simulates group behavior by having multiple entities move in a
-    coordinated manner. Seen in games like Battlefield and various simulators.
-  short_description: AI entities coordinate in flocks.
-  solved_problems: Creates realistic crowd or swarm behaviors.
+  symbol: "Flk"
+  name: "Flocking"
+  category: "AI"
+  long_description: |
+    Flocking is an AI algorithm that simulates the coordinated, emergent behavior of a group of entities (a "flock" or "swarm"). It's based on a set of simple rules that each individual agent follows, such as separation (avoid crowding neighbors), alignment (steer towards the average heading of neighbors), and cohesion (steer towards the average position of neighbors). The result is complex, natural-looking group movement without scripting each agent's path individually.
+  short_description: "Simulating coordinated group movement."
+  solved_problems:
+    - title: "Computationally expensive group movement"
+      description: |
+        Pathfinding for dozens or hundreds of individual units in real-time is computationally expensive and can lead to performance issues or unnatural behavior. Flocking solves this by using simple, local rules for each agent. This creates believable, complex group movement (like schools of fish or swarms of bats) in a highly efficient manner.
   examples:
-  - 'Battlefield: Units sometimes move in coordinated groups.'
-  - Simulation titles use flocking for group AI.
+    - title: "Half-Life 2"
+      description: |
+        The behavior of the antlions, particularly how they swarm and surround the player, utilizes flocking principles to create an overwhelming and coordinated threat.
+    - title: "Batman: Arkham Knight"
+      description: |
+        The swarms of bats that appear during certain sequences exhibit classic flocking behavior, creating a visually impressive and organic effect that would be impossible to hand-animate.
+  isHumanWritten: false

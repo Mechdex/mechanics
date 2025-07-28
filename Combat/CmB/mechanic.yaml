@@ -2,10 +2,18 @@ mechanic:
   symbol: CmB
   name: Combo System
   category: Combat
-  long_description: Enables chaining attacks into fluid combos, providing depth to
-    melee combat. Signature in Devil May Cry.
-  short_description: Chain attacks into stronger combos.
-  solved_problems: Rewards skillful play with dynamic attack sequences.
+  long_description: |
+    A Combo System is a combat mechanic that allows and rewards players for chaining different attacks together in a fluid sequence. Rather than individual, disconnected button presses, the system recognizes specific sequences (e.g., Light-Light-Heavy) and executes a unique, powerful "combo" move as a result. These systems often feature a combo counter or style meter to track and reward performance.
+  short_description: Chain attacks into fluid, powerful sequences.
+  solved_problems:
+  - title: Low skill ceilings
+    description: |
+      In a simple combat system where every button press has the same outcome, there is little to distinguish a new player from a veteran. A combo system solves this by creating a high skill ceiling. It provides a deep set of moves and sequences for dedicated players to learn and master, rewarding them with increased damage and stylish efficiency.
   examples:
-  - 'Devil May Cry: Stylish combo attacks.'
-  - Action games use combo systems for dynamic combat.
+  - title: Devil May Cry (series)
+    description: |
+      The franchise is famous for its deep and expressive combo system, which encourages "stylish" combat. Players are graded on their ability to vary their attacks, juggle enemies, and avoid damage, making the combo system a form of performance art.
+  - title: Bayonetta (series)
+    description: |
+      Integrates dodging directly into its combo system via 'Witch Time'. A perfectly timed dodge slows down time, allowing the player to execute long, uninterrupted, and devastating combos on otherwise fast-moving enemies.
+  isHumanWritten: false

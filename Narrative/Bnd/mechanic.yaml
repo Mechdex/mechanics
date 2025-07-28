@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Bnd
-  name: Branching Dialogue
-  category: Narrative
-  long_description: Provides players with dialogue choices that influence story outcomes.
-    Central to the Mass Effect series.
-  short_description: Dialogue choices that affect the story.
-  solved_problems: Enhances replayability through multiple outcomes.
+  symbol: "Bnd"
+  name: "Branching Dialogue"
+  category: "Narrative"
+  long_description: |
+    Branching Dialogue is an interactive conversation system where the player is presented with multiple response options when talking to an NPC. The player's choice can lead to different conversational paths, reveal unique information, alter their relationship with the NPC, and in some cases, cause major diversions in the main story. It is often visualized as a "dialogue tree."
+  short_description: "Player choices in conversation affect outcomes."
+  solved_problems:
+    - title: "Passive, non-interactive storytelling"
+      description: |
+        Traditional game dialogue is a one-way street where the player just listens to an NPC's exposition, which can be passive and boring. Branching dialogue solves this by turning conversations into an interactive system. It gives the player agency to express their character and influence the narrative, making dialogue a core part of the gameplay rather than a break from it.
   examples:
-  - 'Mass Effect: Branching dialogue impacting narrative paths.'
-  - Other RPGs use dialogue trees.
+    - title: "Mass Effect (series)"
+      description: |
+        The dialogue wheel is an iconic implementation. Choices are often categorized by tone (e.g., Paragon, Renegade), allowing players to consistently role-play a specific personality and see the long-term consequences of their conversational style across the entire trilogy.
+    - title: "The Witcher 3: Wild Hunt"
+      description: |
+        Features incredibly complex and nuanced branching dialogue. Seemingly minor choices in a side quest conversation can have major, unforeseen consequences many hours later in the main story, creating a highly reactive and impactful narrative.
+  isHumanWritten: false

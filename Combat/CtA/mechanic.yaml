@@ -2,10 +2,18 @@ mechanic:
   symbol: CtA
   name: Counter Attack
   category: Combat
-  long_description: 'Allows players to counter enemy attacks with precise timing,
-    turning defense into offense. Seen in Sekiro: Shadows Die Twice.'
-  short_description: Counter enemy attacks effectively.
-  solved_problems: Rewards timing and precision in combat.
+  long_description: |
+    A Counter Attack is a special move that can only be performed immediately after a successful defensive action, such as a block, dodge, or parry. It is a reactive mechanic that turns a defensive success directly into an offensive opportunity. The counter attack itself often has special properties, such as dealing extra damage, staggering the enemy, or having invincibility frames.
+  short_description: Turn a successful defense into an immediate attack.
+  solved_problems:
+  - title: Defensive stalemates
+    description: |
+      When both the player and an enemy have strong defensive options, combat can devolve into a stalemate where each party waits for the other to drop their guard. A Counter Attack breaks this deadlock. It directly rewards a successful defensive action with guaranteed damage, incentivizing players to actively engage with enemy attacks rather than simply waiting.
   examples:
-  - 'Sekiro: Well-timed counters against enemies.'
-  - Other action titles employ counter mechanics.
+  - title: 'Batman: Arkham (series)'
+    description: |
+      The 'Freeflow' combat system is built around counter attacks. A visual cue indicates an incoming attack, and a correctly timed counter not only prevents damage but seamlessly continues Batman's combo chain, making defense a fluid part of the offensive rhythm.
+  - title: 'Sekiro: Shadows Die Twice'
+    description: |
+      The Mikiri Counter is a specific counter attack performed by dodging *into* an enemy's thrust attack. It deals massive 'Posture' damage and is a critical skill required to defeat many of the game's toughest enemies.
+  isHumanWritten: false

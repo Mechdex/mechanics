@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ft
-  name: Fast Travel
-  category: Exploration
-  long_description: Allows players to quickly move between discovered locations. Widely
-    used in Skyrim.
-  short_description: Instant travel between known points.
-  solved_problems: Reduces travel time across large maps.
+  symbol: "Ft"
+  name: "Fast Travel"
+  category: "Exploration"
+  long_description: |
+    Fast Travel is a quality-of-life mechanic that allows players to instantly teleport between previously discovered, pre-determined points on the game map. This system bypasses the normal traversal gameplay, allowing players to move across large distances without spending time running or driving. It is a key feature for reducing friction in large open-world games.
+  short_description: "Instantaneous travel between known points."
+  solved_problems:
+    - title: "Excessive backtracking"
+      description: |
+        It's a design challenge in large worlds: sending a player back and forth across a map they've already explored is tedious and pads game time. Fast travel solves this. It respects the player's time by eliminating the tedium of repeat journeys, allowing them to focus on new content and objectives.
   examples:
-  - 'Skyrim: Fast travel between waypoints.'
-  - Many RPGs include fast travel systems.
+    - title: "The Elder Scrolls V: Skyrim"
+      description: |
+        Players can instantly travel to any previously discovered location marker directly from the world map. This design choice prioritizes convenience and is a defining feature of Bethesda's open-world game design.
+    - title: "Red Dead Redemption 2"
+      description: |
+        Fast travel is implemented as a more immersive, diagetic system. The player must use stagecoaches, trains, or unlock a map at their camp, creating a trade-off between convenience and engaging with the world.
+  isHumanWritten: false

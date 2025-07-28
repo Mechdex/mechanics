@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ul
-  name: Unlockables
-  category: Progression
-  long_description: Provides additional content or abilities that are unlocked through
-    progression. Seen in Call of Duty.
-  short_description: Additional content unlocked over time.
-  solved_problems: Encourages continued play to reveal rewards.
+  symbol: "Ul"
+  name: "Unlockables"
+  category: "Progression"
+  long_description: |
+    Unlockables are a system of rewards (such as characters, weapons, cosmetic skins, or game modes) that are initially unavailable to the player. They must be made accessible by completing specific in-game challenges, reaching progression milestones, or spending a specific in-game currency.
+  short_description: "Rewards made available by completing in-game goals."
+  solved_problems:
+    - title: "Lack of player motivation"
+      description: |
+        It's a design challenge to keep players engaged after they've mastered the core gameplay. Unlockables solve this by providing a clear set of extrinsic goals. The desire to unlock a new character or a cool weapon skin provides a powerful motivation for players to continue playing and engage with different aspects of the game.
   examples:
-  - 'Call of Duty: Unlockables such as weapons and skins.'
-  - Other titles reward players with unlockable content.
+    - title: "Super Smash Bros. (series)"
+      description: |
+        A large portion of the roster is locked at the start of the game. Players must complete various challenges or play a certain number of matches to unlock these iconic characters, which is a primary driver of single-player engagement.
+    - title: "Call of Duty (series)"
+      description: |
+        The multiplayer progression is built almost entirely around unlockables. Players earn new weapons, attachments, perks, and cosmetic camos by leveling up and completing specific in-game challenges.
+  isHumanWritten: false

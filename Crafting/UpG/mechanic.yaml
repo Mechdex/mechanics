@@ -2,10 +2,18 @@ mechanic:
   symbol: UpG
   name: Upgrading
   category: Crafting
-  long_description: Enables progressive enhancement of items or abilities through
-    resource investment. Seen in Borderlands.
-  short_description: Enhance items with upgrades.
-  solved_problems: Rewards continued investment in equipment.
+  long_description: |
+    Upgrading is a system of progressive, linear enhancement for a single piece of equipment. Unlike modular crafting, where parts are swapped, upgrading typically involves spending resources or currency to increase an item's existing stats (e.g., from Level 1 to Level 2). This provides a straightforward and granular path for item progression, allowing players to continually invest in their favorite gear.
+  short_description: Progressively enhance item stats.
+  solved_problems:
+  - title: Disposable gear
+    description: |
+      In many loot-based games, players are constantly finding new gear that makes their old, favorite items obsolete. An upgrade system solves this. It allows a player to keep their preferred weapon or armor relevant throughout the game by continually investing resources into it, fostering a stronger attachment to their equipment.
   examples:
-  - 'Borderlands: Upgrading weapons and gear.'
-  - Many action RPGs incorporate upgrade systems.
+  - title: World of Warcraft
+    description: |
+      Players use various currencies and materials gathered from high-level content to upgrade their end-game gear through multiple ranks. This system provides a long-term progression path even after a player has acquired their "best-in-slot" items.
+  - title: Assassin's Creed Odyssey
+    description: |
+      Any piece of gear can be upgraded to match the player's current level by spending resources. This allows players to maintain a consistent visual appearance and set of legendary bonuses for their entire playthrough if they are willing to make the investment.
+  isHumanWritten: false

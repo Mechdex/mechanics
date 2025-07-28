@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Tp
-  name: Teleport
-  category: Movement
-  long_description: Instantly transports the player from one location to another.
-    Utilized in Dishonored's Blink ability.
-  short_description: Instantaneous relocation.
-  solved_problems: Reduces travel time and adds strategic depth.
+  symbol: "Tp"
+  name: "Teleport"
+  category: "Movement"
+  long_description: |
+    A Teleport is a movement ability that instantly transports the character from one point to another within a limited range, often bypassing physical obstacles and enemies. It is a form of traversal that breaks the normal rules of space and time within the game world, allowing for instantaneous repositioning that is distinct from a high-speed dash.
+  short_description: "Instantaneous point-to-point relocation."
+  solved_problems:
+    - title: "Restrictive environmental puzzles"
+      description: |
+        Traditional puzzles are often limited by physical barriers like locked doors or high walls. A teleport mechanic fundamentally changes the design space for puzzles. It allows designers to create challenges based on line-of-sight and verticality, where the solution is not about finding a key, but about finding a new angle to teleport from.
   examples:
-  - 'Dishonored: Teleportation for rapid repositioning.'
-  - Other games incorporate teleport mechanics.
+    - title: "Dishonored"
+      description: |
+        The 'Blink' ability is a short-range teleport that is central to the game's traversal and stealth. It allows the player to cross gaps, bypass guards, and reach vantage points instantly and silently.
+    - title: "Overwatch"
+      description: |
+        Characters like Reaper and Sombra have teleport abilities that are used for strategic repositioning. They allow these characters to bypass defensive chokepoints and appear behind enemy lines to create flanks and distractions.
+  isHumanWritten: false

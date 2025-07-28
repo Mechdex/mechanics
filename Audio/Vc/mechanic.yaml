@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Vc
-  name: Voice Commands
-  category: Audio
-  long_description: Allows players to issue commands via voice, enhancing interactivity.
-    Utilized in Tom Clancy's EndWar.
-  short_description: Use voice to control in-game actions.
-  solved_problems: Introduces an alternative interaction method.
+  symbol: "Vc"
+  name: "Voice Commands"
+  category: "Audio"
+  long_description: |
+    Voice Commands are an input method that allows players to control in-game actions by speaking into a microphone. This system uses speech recognition technology to parse player speech and map it to specific commands within the game's control scheme. It is often used as an alternative or supplement to traditional controller or keyboard inputs, allowing for hands-free control of certain actions, like commanding squad mates or navigating menus.
+  short_description: "Use voice to control in-game actions."
+  solved_problems:
+    - title: "Menu-heavy command inputs"
+      description: |
+        In complex games like strategy titles or simulators, issuing commands to units often requires navigating through multiple nested menus, which is slow and cumbersome. Voice Commands can solve this by providing direct shortcuts. A player can simply say "Unit 3, move to Sector Alpha" instead of clicking through several UI elements, streamlining complex actions.
   examples:
-  - 'EndWar: Commands issued through voice inputs.'
-  - Some strategy games integrate voice controls.
+    - title: "Tom Clancy's EndWar"
+      description: |
+        The entire game was designed around voice commands as the primary method of controlling units on the battlefield. This created a unique, immersive experience of being a strategic commander issuing verbal orders.
+    - title: "Phasmophobia"
+      description: |
+        Voice commands are used for both gameplay and immersion. Players must speak to the ghosts using specific phrases to elicit a response, making the player's own voice a core part of the paranormal investigation loop.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Gm
-  name: Gravity Manipulation
-  category: Physics
-  long_description: Alters the gravitational force to affect gameplay, adding unique
-    puzzle and combat elements. Notable in Half-Life 2.
-  short_description: Alter gameplay through gravity changes.
-  solved_problems: Introduces innovative combat and puzzle challenges.
+  symbol: "Gm"
+  name: "Gravity Manipulation"
+  category: "Physics"
+  long_description: |
+    Gravity Manipulation is a mechanic that gives the player a tool to directly alter the gravitational properties of objects or the environment. This can include making objects weightless, increasing their mass to create a powerful impact, reversing the direction of gravity in a room, or creating localized gravity wells.
+  short_description: "Alter gravitational forces to affect gameplay."
+  solved_problems:
+    - title: "One-dimensional puzzle solving"
+      description: |
+        Many puzzles are limited to finding keys or pushing blocks. Gravity manipulation solves this by introducing physics as the core puzzle component. It allows designers to create complex challenges based on mass, trajectory, and momentum, opening up an entirely new dimension of puzzle design.
   examples:
-  - 'Half-Life 2: Gravity gun mechanics.'
-  - Other games experiment with gravity manipulation.
+    - title: "Half-Life 2"
+      description: |
+        The Gravity Gun allows players to pick up, move, and launch objects. This turns the environment into both a physics-based puzzle sandbox and a weapon, as players can grab saw blades and launch them at enemies.
+    - title: "Portal 2"
+      description: |
+        The 'Excursion Funnels' are beams of energy that defy gravity, allowing the player and objects to float in a specific direction. Puzzles are often based on redirecting these funnels with portals to manipulate the trajectory of objects.
+  isHumanWritten: false

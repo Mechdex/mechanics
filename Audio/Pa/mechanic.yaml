@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Pa
-  name: Positional Audio
-  category: Audio
-  long_description: 'Provides spatial sound cues that help locate sources of sound
-    in the game world. Integral in Hellblade: Senua''s Sacrifice.'
-  short_description: Spatial sound for in-game elements.
-  solved_problems: Improves situational awareness through sound localization.
+  symbol: "Pa"
+  name: "Positional Audio"
+  category: "Audio"
+  long_description: |
+    Positional Audio, often referred to as 3D audio or spatial sound, is an audio-processing technique that simulates how sound travels in a three-dimensional space. By manipulating volume, delay, and equalization based on a sound's source relative to the player (the "listener"), the system allows players to accurately pinpoint the location and distance of in-game events based on sound alone. This requires headphones or a multi-speaker setup for the full effect.
+  short_description: "Spatial sound cues for locating in-game elements."
+  solved_problems:
+    - title: "Unfair off-screen threats"
+      description: |
+        It's a design challenge to make threats that are outside the player's field of view feel fair. An enemy attacking from behind can feel like a cheap shot if there's no warning. Positional Audio solves this by providing clear, directional sound cues. Players can hear an enemy's footsteps behind them or a gunshot to their left, giving them the crucial information needed to react to unseen threats.
   examples:
-  - 'Hellblade: Senua''s Sacrifice: Uses positional audio for environmental cues.'
-  - Many first-person shooters benefit from this mechanic.
+    - title: "Hellblade: Senua's Sacrifice"
+      description: |
+        This game uses binaural audio to place the hallucinatory voices inside the player's head. The voices whisper from specific directions, providing both narrative immersion and gameplay hints, making positional audio central to the entire experience.
+    - title: "Call of Duty: Warzone"
+      description: |
+        In this competitive shooter, positional audio is a critical skill. The ability to accurately determine the direction and distance of enemy footsteps, gunfire, and vehicle movements based on sound alone is often the deciding factor in a firefight.
+  isHumanWritten: false
