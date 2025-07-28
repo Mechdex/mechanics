@@ -1,21 +1,9 @@
 [
     {
-        "symbol": "Bt",
-        "name": "Bullet Time",
-        "category": "Abilities",
-        "short_description": "Slow time for precision and evasion."
-    },
-    {
-        "symbol": "InV",
-        "name": "Invisibility",
-        "category": "Abilities",
-        "short_description": "Become unseen to stealth past enemies."
-    },
-    {
-        "symbol": "Rg",
-        "name": "Regeneration",
-        "category": "Abilities",
-        "short_description": "Health regenerates over time."
+        "symbol": "Fp",
+        "name": "First-Person View",
+        "category": "Camera",
+        "short_description": "Immersive first-person perspective."
     },
     {
         "symbol": "Lo",
@@ -174,7 +162,7 @@
         "short_description": "Control gameplay with voice commands."
     },
     {
-        "symbol": "Mtc",
+        "symbol": "MtC",
         "name": "Motion Controls",
         "category": "Input",
         "short_description": "Control gameplay with physical motion."
@@ -294,22 +282,16 @@
         "short_description": "On-screen action prompts."
     },
     {
-        "symbol": "Mmi",
+        "symbol": "Mm",
         "name": "Minimap",
         "category": "UI",
         "short_description": "Miniature map for navigation."
     },
     {
-        "symbol": "Os",
-        "name": "Over-the-Shoulder",
-        "category": "Camera",
-        "short_description": "Camera positioned over the shoulder."
-    },
-    {
-        "symbol": "ChG",
-        "name": "Charge Attack",
-        "category": "Combat",
-        "short_description": "Build and release powerful attacks with timing."
+        "symbol": "Rmn",
+        "name": "Radial Menus",
+        "category": "UI",
+        "short_description": "Circular menu for option selection."
     },
     {
         "symbol": "Hud",
@@ -402,28 +384,10 @@
         "short_description": "Uncover hidden locations and secrets."
     },
     {
-        "symbol": "MtC",
-        "name": "Motion Controls",
-        "category": "Input",
-        "short_description": "Control gameplay with physical motion."
-    },
-    {
-        "symbol": "Ti",
-        "name": "Touch Input",
-        "category": "Input",
-        "short_description": "Interact via touchscreen."
-    },
-    {
-        "symbol": "Vi",
-        "name": "Voice Input",
-        "category": "Input",
-        "short_description": "Control gameplay with voice commands."
-    },
-    {
-        "symbol": "Ast",
-        "name": "Asset Import",
-        "category": "Modding",
-        "short_description": "Import custom models and textures."
+        "symbol": "Ft",
+        "name": "Fast Travel",
+        "category": "Exploration",
+        "short_description": "Instant travel between known points."
     },
     {
         "symbol": "Cst",
@@ -570,22 +534,10 @@
         "short_description": "Play cooperatively with others."
     },
     {
-        "symbol": "Hud",
-        "name": "HUD",
-        "category": "UI",
-        "short_description": "On-screen game information display."
-    },
-    {
-        "symbol": "Mm",
-        "name": "Minimap",
-        "category": "UI",
-        "short_description": "Miniature map for navigation."
-    },
-    {
-        "symbol": "Rmn",
-        "name": "Radial Menus",
-        "category": "UI",
-        "short_description": "Circular menu for option selection."
+        "symbol": "Vch",
+        "name": "Voice Chat",
+        "category": "Multiplayer",
+        "short_description": "Real-time voice communication."
     },
     {
         "symbol": "DEc",
@@ -702,7 +654,7 @@
         "short_description": "Temporary damage absorption."
     },
     {
-        "symbol": "Inv",
+        "symbol": "InV",
         "name": "Invisibility",
         "category": "Abilities",
         "short_description": "Become unseen to stealth past enemies."
