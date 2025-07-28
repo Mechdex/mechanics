@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Dr
-  name: Dice Roll
-  category: Randomness
-  long_description: Uses random chance similar to rolling dice to determine outcomes.
-    Found in Mario Party.
-  short_description: Random outcome determination.
-  solved_problems: Adds elements of chance to gameplay.
+  symbol: "Dr"
+  name: "Dice Roll"
+  category: "Randomness"
+  long_description: |
+    A Dice Roll is a mechanic that uses a random number generator (RNG) to simulate the outcome of rolling one or more dice. The result is typically an integer within a defined range (e.g., 1-6 or 1-20) that directly influences a gameplay outcome. This can include movement distance on a board, the success or failure of an action, or the amount of damage dealt in a tabletop-style RPG.
+  short_description: "Determines outcomes based on random chance."
+  solved_problems:
+    - title: "Predictable turn-based outcomes"
+      description: |
+        It's a design challenge in turn-based games that if every action has a fixed result, the game can become a solved mathematical puzzle. A dice roll solves this by introducing a core element of chance. It ensures that no two turns are exactly alike and that even a losing player has a chance to turn the tables with a lucky roll.
   examples:
-  - 'Mario Party: Dice rolls decide movement and rewards.'
-  - Party games often use chance mechanics.
+    - title: "Mario Party (series)"
+      description: |
+        The dice block is the central mechanic. A player's roll determines their movement on the game board, creating an unpredictable and chaotic party game experience where luck is as important as skill.
+    - title: "Baldur's Gate 3"
+      description: |
+        The game is a faithful adaptation of Dungeons & Dragons, and nearly every action—from attacking to persuading to disarming traps—is resolved by a virtual roll of a 20-sided die, with the result shown to the player.
+  isHumanWritten: false

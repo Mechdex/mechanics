@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Hud
-  name: HUD
-  category: UI
-  long_description: Displays vital game information on-screen, such as health and
-    ammo. A staple in Call of Duty.
-  short_description: On-screen game information display.
-  solved_problems: Keeps players informed of critical stats.
+  symbol: "Hud"
+  name: "HUD"
+  category: "UI"
+  long_description: |
+    The Heads-Up Display (HUD) is the collection of persistent, on-screen user interface elements that display critical real-time game information to the player. This commonly includes a health bar, ammo count, a minimap, and current objectives. It is a non-diegetic overlay designed to give the player constant access to vital information without needing to pause the game or open a menu.
+  short_description: "The persistent on-screen display of vital game info."
+  solved_problems:
+    - title: "Hidden critical information"
+      description: |
+        It's a design paradox: players need constant access to critical information like their health, but pausing the game to check a menu during intense action is impossible. The HUD solves this by presenting this vital data as a persistent, non-interactive overlay. This allows the player to stay informed at a glance without ever disengaging from the core gameplay.
   examples:
-  - 'Call of Duty: Comprehensive HUD during combat.'
-  - Many shooters utilize detailed HUDs.
+    - title: "Dead Space"
+      description: |
+        A famous example of a 'diegetic' HUD. The player's health and stasis energy are displayed as illuminated meters on the back of the character's suit itself, rather than as an overlay. This integrates the UI directly into the game world to enhance immersion.
+    - title: "Metroid Prime"
+      description: |
+        The HUD is cleverly framed as the inside of the character's helmet. The player can see reflections of their own face during bright flashes, and raindrops realistically trickle down the visor, making the HUD a core part of the game's immersive experience.
+  isHumanWritten: false

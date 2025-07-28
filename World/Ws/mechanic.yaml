@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ws
-  name: Weather Systems
-  category: World
-  long_description: Introduces dynamic weather that affects gameplay and atmosphere.
-    Prominent in Red Dead Redemption 2.
-  short_description: Dynamic weather effects.
-  solved_problems: Impacts visibility and environmental interactions.
+  symbol: "Ws"
+  name: "Weather Systems"
+  category: "World"
+  long_description: |
+    A Weather System is a feature that dynamically simulates changing atmospheric conditions, such as rain, snow, fog, thunderstorms, and wind. These systems can be purely for atmospheric effect, or they can have a direct and systemic impact on gameplay by affecting visibility, NPC behavior, traversal mechanics (e.g., slippery surfaces), or the effectiveness of certain elements like fire.
+  short_description: "Dynamic and simulated atmospheric conditions."
+  solved_problems:
+    - title: "Static environmental conditions"
+      description: |
+        A world with permanently clear skies feels artificial and lacks dynamism. A weather system solves this by introducing atmospheric variety. This not only enhances immersion and visual interest but can also be used by designers to directly influence gameplay, such as fog reducing visibility in a stealth section or rain making surfaces slippery.
   examples:
-  - 'Red Dead Redemption 2: Changing weather impacting gameplay.'
-  - Other titles use weather to enhance realism.
+    - title: "Red Dead Redemption 2"
+      description: |
+        Features a complex weather system where storm fronts can be seen rolling in from a distance. A heavy rain will turn roads to mud, while a blizzard in the mountains can cause the player's health to drain if they are not wearing warm enough clothing.
+    - title: "The Legend of Zelda: Breath of the Wild"
+      description: |
+        Weather is a core gameplay mechanic. Rain makes cliffs slippery and impossible to climb, while thunderstorms can cause the player's metal equipment to attract deadly lightning strikes, forcing them to adapt their gear and plans.
+  isHumanWritten: false

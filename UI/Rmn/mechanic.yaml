@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Rmn
-  name: Radial Menus
-  category: UI
-  long_description: Uses a circular menu for quick selection of options. Popularized
-    by Borderlands 2.
-  short_description: Circular menu for option selection.
-  solved_problems: Simplifies navigation of multiple options.
+  symbol: "Rmn"
+  name: "Radial Menus"
+  category: "UI"
+  long_description: |
+    A Radial Menu is a user interface element where options are arranged in a circle around a central point, designed for quick selection with a controller's analog stick. When the player holds a button, the menu appears, and they select an option by flicking the stick in the corresponding direction and releasing the button. It is commonly used for weapon, item, or emote selection.
+  short_description: "A circular menu designed for fast analog stick selection."
+  solved_problems:
+    - title: "Slow inventory access during combat"
+      description: |
+        It's a design problem that accessing items from a traditional, list-based menu during real-time combat is slow and clunky. A radial menu solves this. It maps a large number of items or weapons to quick, directional muscle-memory gestures on an analog stick, allowing the player to select what they need in a fraction of a second.
   examples:
-  - 'Borderlands 2: Radial menus for weapon and item selection.'
-  - Other games employ radial interfaces.
+    - title: "The Legend of Zelda: Ocarina of Time"
+      description: |
+        One of the earliest examples, used for assigning items to the C buttons. It allowed players to quickly swap between a large inventory of items, which was crucial for its puzzle-solving and combat.
+    - title: "Horizon Zero Dawn"
+      description: |
+        Uses a radial menu to allow the player to quickly craft different types of ammunition in the heat of battle. This integrates crafting directly into the combat loop without requiring the player to pause and enter a menu.
+  isHumanWritten: false

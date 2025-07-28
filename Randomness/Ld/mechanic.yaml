@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ld
-  name: Loot Drops
-  category: Randomness
-  long_description: Randomly provides items upon defeating enemies or completing challenges.
-    Signature in Borderlands.
-  short_description: Random item rewards.
-  solved_problems: Adds excitement and replayability through randomness.
+  symbol: "Ld"
+  name: "Loot Drops"
+  category: "Randomness"
+  long_description: |
+    A Loot Drop is a system where defeating an enemy or opening a container triggers a random chance to generate one or more items ("loot"). The system is governed by "loot tables," which are data structures that define the possible items that can be generated and their respective probabilities. Item rarity is a key factor, with powerful, "legendary" items having a very low drop chance.
+  short_description: "Randomized item rewards from enemies or chests."
+  solved_problems:
+    - title: "Repetitive combat loops"
+      description: |
+        It's a design challenge to make fighting the same type of enemy for the hundredth time feel exciting. Randomized loot drops solve this by turning every kill into a potential jackpot. The constant chance of finding a rare and powerful item creates a powerful psychological 'pull' that keeps players engaged in otherwise repetitive combat.
   examples:
-  - 'Borderlands: Randomized loot drops with varying rarity.'
-  - Other action RPGs feature loot systems.
+    - title: "Borderlands (series)"
+      description: |
+        The series is famous for its "bazillions of guns," all of which are procedurally generated and dropped as loot. The core gameplay loop is built around defeating enemies and bosses in the hope of finding a uniquely powerful weapon.
+    - title: "Diablo (series)"
+      description: |
+        This franchise codified the action-RPG loot drop system. The color-coded rarity of items (e.g., blue for Magic, gold for Unique) and the satisfying explosion of loot from a defeated boss are iconic parts of the experience.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Dt
-  name: Dynamic Tooltips
-  category: UI
-  long_description: Shows detailed, real-time information about items or abilities.
-    Featured in World of Warcraft.
-  short_description: Real-time detailed information popups.
-  solved_problems: Helps players understand game mechanics and stats.
+  symbol: "Dt"
+  name: "Dynamic Tooltips"
+  category: "UI"
+  long_description: |
+    A Dynamic Tooltip is an information-rich popup that appears when the player hovers their cursor over a UI element, such as an item in their inventory or an ability on their hotbar. These tooltips are "dynamic" because they update in real-time to reflect how an item's stats would change based on the player's current attributes, buffs, or even a comparison with their currently equipped gear.
+  short_description: "Popups that show real-time statistical information."
+  solved_problems:
+    - title: "Complex statistical calculations"
+      description: |
+        It's difficult for a player in a complex RPG to know if a new piece of gear is an upgrade without manually calculating many different stats. Dynamic tooltips solve this by performing the comparison automatically. They instantly show the player the exact statistical gains or losses, allowing for quick, informed decisions without breaking game flow.
   examples:
-  - 'World of Warcraft: Dynamic tooltips for gear stats.'
-  - Other RPGs use tooltips for clarity.
+    - title: "World of Warcraft"
+      description: |
+        The game's tooltips are foundational to its complex gearing system. By default, hovering over a new item brings up a tooltip comparing it side-by-side with the currently equipped item, showing precise stat changes in green or red.
+    - title: "Path of Exile"
+      description: |
+        Features an extremely detailed tooltip system. Holding a key like 'Alt' can reveal additional layers of information, such as the possible range of random stat rolls on an item, providing expert players with all the data they need.
+  isHumanWritten: false

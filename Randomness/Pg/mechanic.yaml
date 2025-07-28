@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Pg
-  name: Procedural Generation
-  category: Randomness
-  long_description: Creates game content algorithmically to ensure varied experiences.
-    Central to No Man's Sky.
-  short_description: Algorithmic generation of content.
-  solved_problems: Offers endless variety without manual design.
+  symbol: "Pg"
+  name: "Procedural Generation"
+  category: "Randomness"
+  long_description: |
+    Procedural Generation is a set of algorithms used to create game content on the fly, rather than manually designing it. This can apply to level layouts, item statistics, character appearances, or entire worlds. By using a combination of rules and randomness (often derived from a "seed" value), it can generate vast amounts of unique-feeling content from a limited set of pre-made assets.
+  short_description: "Algorithmic, on-the-fly creation of game content."
+  solved_problems:
+    - title: "Finite handcrafted content"
+      description: |
+        Manually designing every level and encounter is incredibly time-consuming and results in a finite amount of content that players will eventually exhaust. Procedural generation solves this content-scaling problem. It allows a small team to generate a near-infinite amount of varied gameplay experiences, which is the foundational technology for the roguelike genre.
   examples:
-  - 'No Man''s Sky: Entire universes generated procedurally.'
-  - Roguelikes often use procedural generation.
+    - title: "Minecraft"
+      description: |
+        Every new world is a unique, procedurally generated landscape stretching for millions of blocks. The algorithm uses a 'seed' to generate terrain, biomes, and cave systems, ensuring that no two worlds are identical.
+    - title: "Hades"
+      description: |
+        The layout of the chambers of the underworld is procedurally generated for each escape attempt. While the individual rooms are handcrafted, their sequence and the enemies within them are randomized, ensuring high replayability.
+  isHumanWritten: false

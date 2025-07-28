@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Dnc
-  name: Day-Night Cycle
-  category: World
-  long_description: 'Simulates the passage of time with changing day and night. Central
-    to The Legend of Zelda: Breath of the Wild.'
-  short_description: Cycle between day and night.
-  solved_problems: Creates a dynamic and immersive world environment.
+  symbol: "Dnc"
+  name: "Day-Night Cycle"
+  category: "World"
+  long_description: |
+    A Day-Night Cycle is a system that simulates the passage of time in the game world, typically with a continuously moving sun and moon, changing skyboxes, and dynamic global lighting. This cycle is often tied directly to gameplay systems, with different NPCs, enemies, quests, or resource availability being tied to a specific time of day.
+  short_description: "Simulates the 24-hour passage of time."
+  solved_problems:
+    - title: "Static environmental conditions"
+      description: |
+        A world permanently locked at a single time of day feels static and artificial. A day-night cycle solves this by introducing the constant, natural rhythm of time. This not only adds visual variety but allows designers to create time-dependent gameplay, such as tougher enemies at night or shops that only open in the morning, making the world feel more dynamic.
   examples:
-  - 'Breath of the Wild: Realistic day-night transitions.'
-  - Other open-world games simulate time cycles.
+    - title: "Minecraft"
+      description: |
+        The day-night cycle is a fundamental part of its survival loop. Daytime is relatively safe for building and gathering, while nighttime is dangerous as hostile monsters spawn in the darkness, forcing the player to seek or build shelter.
+    - title: "The Legend of Zelda: Ocarina of Time"
+      description: |
+        A pioneering example in 3D games. The transition between day and night in Hyrule Field affected which enemies appeared and which events could be triggered, making time a key factor in the player's journey.
+  isHumanWritten: false

@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Rgh
-  name: Resource Gathering
-  category: Resources
-  long_description: Allows players to collect raw materials for crafting and upgrades.
-    Essential in Minecraft.
-  short_description: Collect raw materials.
-  solved_problems: Facilitates crafting and progression through material collection.
+  symbol: "Rgh"
+  name: "Resource Gathering"
+  category: "Resources"
+  long_description: |
+    Resource Gathering is the set of actions players perform to acquire raw materials directly from the game world. This is the primary input, or "faucet," for most crafting and building systems. The mechanic can range from a simple, instantaneous action on a resource "node" (e.g., mining an ore vein) to a complex minigame (e.g., fishing).
+  short_description: "The act of collecting raw materials from the world."
+  solved_problems:
+    - title: "Disconnected crafting and exploration"
+      description: |
+        A crafting system can feel abstract if materials are just bought from a shop. Resource gathering solves this by directly linking crafting to world exploration. It creates a core gameplay loop where players must actively explore the environment to acquire the materials they need to progress, making the world itself a valuable resource.
   examples:
-  - 'Minecraft: Gathering wood, stone, and ore.'
-  - Survival games emphasize resource collection.
+    - title: "Minecraft"
+      description: |
+        The foundational gameplay loop. The player starts by punching trees to gather wood, then uses that wood to craft a pickaxe to gather stone, and so on. Resource gathering is the direct driver of the entire progression.
+    - title: "Stardew Valley"
+      description: |
+        Features a wide variety of gathering activities tied to different skills. Players can mine for ore, chop wood, fish in rivers, and forage for wild plants, with each activity providing key resources for the farm.
+  isHumanWritten: false

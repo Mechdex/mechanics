@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Gc
-  name: In-Game Chat
-  category: Social
-  long_description: Allows real-time text communication between players. Essential
-    in multiplayer titles like CS:GO.
-  short_description: Real-time text communication.
-  solved_problems: Enables coordination and social interaction.
+  symbol: "Gc"
+  name: "In-Game Chat"
+  category: "Social"
+  long_description: |
+    An In-Game Chat is a user interface that allows for real-time text-based communication between players in the same game session or channel. It typically includes different channels for various groups, such as local area ('say'), team, party or group, and private messages ('whispers'). It is a foundational feature of most multiplayer PC games.
+  short_description: "Real-time text communication between players."
+  solved_problems:
+    - title: "Lack of basic communication tools"
+      description: |
+        Without a way to communicate, multiplayer games are just a collection of individuals acting alone. In-game chat is the foundational tool that enables all forms of social interaction and strategic coordination. It allows players to ask for help, give instructions, or simply socialize, turning a solo experience into a multiplayer one.
   examples:
-  - 'CS:GO: In-game chat for team strategy.'
-  - Other multiplayer games integrate chat systems.
+    - title: "EVE Online"
+      description: |
+        Text chat is the lifeblood of the game. The complex politics, massive fleet battles, and economic subterfuge are all coordinated through a robust system of public, private, and corporation-level chat channels.
+    - title: "Counter-Strike: Global Offensive"
+      description: |
+        Features separate chat channels for 'All' and 'Team'. This is a crucial design choice, as it allows players to coordinate strategy privately with their teammates without the enemy team seeing their plans.
+  isHumanWritten: false

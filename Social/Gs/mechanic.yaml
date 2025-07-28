@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Gs
-  name: Guild Systems
-  category: Social
-  long_description: Organizes players into groups or guilds for collaborative gameplay.
-    Prominent in Final Fantasy XIV.
-  short_description: Form and manage guilds.
-  solved_problems: Enhances team-based play and community building.
+  symbol: "Gs"
+  name: "Guild Systems"
+  category: "Social"
+  long_description: |
+    A Guild System is a formal, in-game organizational structure that allows a large number of players to form a persistent group, known as a "guild," "clan," or "free company." These systems typically include a shared chat channel, a member roster, a customizable rank structure, and often a shared bank or headquarters.
+  short_description: "A formal, persistent social structure for large groups."
+  solved_problems:
+    - title: "Lack of long-term social structure"
+      description: |
+        It's a design challenge to keep large groups of players organized and engaged toward a common, long-term goal. Guild systems solve this by providing a formal structure for community. They are the primary tool for organizing large-scale, end-game activities like raids and foster long-term social bonds that keep players invested in the game.
   examples:
-  - 'Final Fantasy XIV: Robust guild and raid systems.'
-  - MMORPGs often feature guild mechanics.
+    - title: "Final Fantasy XIV"
+      description: |
+        'Free Companies' are the game's guild system. They allow players to buy a shared house, run cooperative crafting projects, and activate company-wide buffs, making them a central part of the social and progression experience.
+    - title: "Clash of Clans"
+      description: |
+        'Clans' are essential for competitive play. The core end-game loop involves participating in 'Clan Wars,' where one clan is pitted against another in a large-scale cooperative battle.
+  isHumanWritten: false

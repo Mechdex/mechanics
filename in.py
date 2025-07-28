@@ -8,303 +8,203 @@ import os
 
 yaml_data_string = """
 mechanic:
-  symbol: "Dw"
-  name: "Dialogue Wheel"
-  category: "Narrative"
+  symbol: "Cpr"
+  name: "Contextual Prompts"
+  category: "UI"
   long_description: |
-    A Dialogue Wheel is a specific user interface for presenting branching dialogue choices in a radial menu. Options are often displayed as paraphrased intentions (e.g., "Question," "Threaten," "Sarcastic") rather than the full line of dialogue. This UI is designed for quick, intuitive selection with a controller's analog stick, making it ideal for cinematic conversations where pacing is important.
-  short_description: "A radial menu for selecting dialogue choices."
+    A Contextual Prompt is a UI element that dynamically displays a button prompt on-screen when the player is near an interactable object or in a specific state. The prompt typically shows both the available action (e.g., 'Open,' 'Talk,' 'Take') and the key or button required to perform it. It serves as the direct visual feedback for the Interact mechanic, communicating available actions to the player.
+  short_description: "Dynamic on-screen prompts for available actions."
   solved_problems:
-    - title: "Clunky dialogue navigation"
+    - title: "Invisible interaction points"
       description: |
-        It's a challenge to make dialogue selection feel fluid with a controller, as traditional top-to-bottom list menus can be slow to navigate. A dialogue wheel solves this by mapping choices to the analog stick's natural, radial movement. This allows for faster, more intuitive selection, which is crucial for maintaining pacing in timed or cinematic conversations.
+        It's a design challenge to clearly communicate which of the thousands of objects in a game world are interactable without cluttering the screen with constant icons. Contextual prompts solve this by only appearing when the player is in range of an object. This keeps the world clean while providing clear, just-in-time affordances for interaction.
   examples:
-    - title: "Mass Effect (series)"
+    - title: "The Legend of Zelda: Breath of the Wild"
       description: |
-        The franchise popularized the dialogue wheel. Choices are consistently mapped (e.g., top-right for Paragon, bottom-right for Renegade), allowing players to make rapid, instinctual decisions that align with their character's established personality.
-    - title: "Fallout 4"
+        The game uses simple, clean text prompts that appear over objects and NPCs. This minimalist system ensures the player always knows what they can interact with without ever distracting from the game's painterly art style.
+    - title: "Red Dead Redemption 2"
       description: |
-        Implemented a dialogue wheel where players chose a tone rather than a specific line. While controversial for its perceived lack of clarity, it demonstrated how the wheel could be used to streamline conversations into a more cinematic, action-oriented format.
+        Features a complex system of contextual prompts in the bottom-right corner of the screen. The available actions and the resulting dialogue change dynamically based on who the player is targeting and their current situation, allowing for nuanced interactions.
   isHumanWritten: false
 ---
 mechanic:
-  symbol: "Env"
-  name: "Environmental Storytelling"
-  category: "Narrative"
+  symbol: "Dt"
+  name: "Dynamic Tooltips"
+  category: "UI"
   long_description: |
-    Environmental Storytelling is a narrative technique where the history, lore, and events of the game world are communicated to the player through the level design and art direction, rather than through explicit text or dialogue. It involves telling a story through the careful placement of objects, the architecture, and the overall state of the environment (e.g., a skeleton clutching a note next to a locked door).
-  short_description: "Telling a story through the world itself."
+    A Dynamic Tooltip is an information-rich popup that appears when the player hovers their cursor over a UI element, such as an item in their inventory or an ability on their hotbar. These tooltips are "dynamic" because they update in real-time to reflect how an item's stats would change based on the player's current attributes, buffs, or even a comparison with their currently equipped gear.
+  short_description: "Popups that show real-time statistical information."
   solved_problems:
-    - title: "Forced narrative exposition"
+    - title: "Complex statistical calculations"
       description: |
-        It's a design challenge to deliver lore and backstory without halting gameplay for a long cutscene or text dump. Environmental storytelling solves this by embedding the narrative directly into the explorable space. It respects player agency by allowing them to discover (or ignore) the story at their own pace, making lore discovery an active, immersive process.
-  examples:
-    - title: "BioShock"
-      description: |
-        The city of Rapture's story is primarily told through its environment. Propaganda posters, abandoned living quarters, and ghostly apparitions all work together to tell the story of the city's fall without relying on lengthy exposition.
-    - title: "Portal"
-      description: |
-        Hidden behind the clean, corporate test chambers are desperate scrawlings and makeshift dens from a previous test subject. This environmental storytelling creates a haunting secondary narrative that is discovered entirely through player curiosity.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Lrc"
-  name: "Lore Collection"
-  category: "Narrative"
-  long_description: |
-    Lore Collection is a system that scatters narrative information throughout the game world in the form of collectible items, such as books, audio logs, or item descriptions. The player is encouraged to find these fragments to piece together the history and context of the world. This content is often presented in a dedicated in-game codex or journal for later review.
-  short_description: "Piece together the story via found items."
-  solved_problems:
-    - title: "Unmotivated exploration"
-      description: |
-        A large world can feel empty if the only reason to explore is to find stat-based loot. Lore collection solves this by turning narrative into a reward. It gives players a powerful, intrinsic motivation to explore every corner of the map, rewarding their curiosity with a deeper understanding of the world's history.
-  examples:
-    - title: "Dark Souls (series)"
-      description: |
-        Famously tells most of its story through the cryptic descriptions on weapons, armor, and items. The community actively pieces together this fragmented lore to form a cohesive narrative, making discovery a collective effort.
-    - title: "Control"
-      description: |
-        The game world is filled with heavily-redacted official documents, research notes, and eerie training videos. Collecting these files is essential to understanding the game's complex and bizarre supernatural universe.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Nls"
-  name: "Non-linear Story"
-  category: "Narrative"
-  long_description: |
-    A Non-linear Story is a narrative structure where major plot points, quests, and story arcs can be completed in an order chosen by the player. Unlike a linear story that follows a fixed A->B->C sequence, a non-linear narrative presents multiple paths that can be pursued in parallel. These paths can converge or influence each other, and player choices can lead to significantly different outcomes.
-  short_description: "A story that can be experienced in a flexible order."
-  solved_problems:
-    - title: "Low replay value"
-      description: |
-        A strictly linear game offers the exact same experience on every playthrough, which limits its replayability. A non-linear story solves this by creating a branching structure. It encourages multiple playthroughs as players want to see how different choices and quest orders will affect the overall narrative and world state.
-  examples:
-    - title: "The Witcher 3: Wild Hunt"
-      description: |
-        While there is a main quest line, the player is free to pursue massive, multi-part side stories in any order they wish. The outcomes of these quests can then have significant and often surprising impacts on the main narrative and its ending.
-    - title: "Fallout: New Vegas"
-      description: |
-        A classic example where the player is presented with multiple competing factions. The player's choice of which faction to support (or betray) creates radically different narrative paths and endings, offering high replayability.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "De"
-  name: "Destructible Environments"
-  category: "Physics"
-  long_description: |
-    Destructible Environments are a physics-based system that allows game world geometry, such as walls, cover, and entire buildings, to be dynamically damaged and destroyed by player or AI actions. This creates a battlefield that is not static, but is constantly changing and reacting to the forces of combat. Implementations can range from simple, pre-scripted destruction to fully dynamic, physics-based demolition.
-  short_description: "Game world geometry can be damaged and destroyed."
-  solved_problems:
-    - title: "Static, predictable battlefields"
-      description: |
-        In most games, the level geometry is static and indestructible, leading to predictable combat encounters where cover is permanent. Destructible environments solve this by making the battlefield dynamic. Cover can be blown away, new sightlines can be created, and entire strategies are invalidated when a building collapses, forcing players to constantly adapt.
-  examples:
-    - title: "Red Faction: Guerrilla"
-      description: |
-        The game's 'Geo-Mod' engine made every single structure fully destructible. This was not just a visual effect but the core mechanic, as players would strategically demolish buildings to complete objectives or eliminate enemies.
-    - title: "Battlefield (series)"
-      description: |
-        Known for its 'Levolution' system, which features large-scale environmental destruction. Players can do everything from blowing holes in walls to toppling entire skyscrapers, fundamentally altering the map's layout mid-match.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Fd"
-  name: "Fluid Dynamics"
-  category: "Physics"
-  long_description: |
-    Fluid Dynamics is a complex physics simulation that models the properties of liquids, such as viscosity, flow, and buoyancy. This allows water and other fluids in the game to react realistically to forces like explosions, moving objects, and player interaction. This goes beyond simple, static water planes and simulates a fluid's volume and movement.
-  short_description: "Realistic simulation of liquid movement and interaction."
-  solved_problems:
-    - title: "Unrealistic environmental interactions"
-      description: |
-        It's a design challenge to make game worlds feel truly interactive and reactive. A fluid dynamics simulation solves a piece of this by making water a dynamic element rather than a static prop. This creates a more believable and immersive world where liquids react to the player's actions in a physically plausible way.
-  examples:
-    - title: "BioShock"
-      description: |
-        Water is a constant environmental presence in the underwater city of Rapture. When glass breaks, water realistically floods the corridors, pushing objects and affecting the player's movement.
-    - title: "The Legend of Zelda: Tears of the Kingdom"
-      description: |
-        Features a detailed fluid dynamics model that is core to many of its puzzles. Water flows downhill, can be redirected, and interacts with player-built contraptions, making it a key puzzle-solving tool.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Gm"
-  name: "Gravity Manipulation"
-  category: "Physics"
-  long_description: |
-    Gravity Manipulation is a mechanic that gives the player a tool to directly alter the gravitational properties of objects or the environment. This can include making objects weightless, increasing their mass to create a powerful impact, reversing the direction of gravity in a room, or creating localized gravity wells.
-  short_description: "Alter gravitational forces to affect gameplay."
-  solved_problems:
-    - title: "One-dimensional puzzle solving"
-      description: |
-        Many puzzles are limited to finding keys or pushing blocks. Gravity manipulation solves this by introducing physics as the core puzzle component. It allows designers to create complex challenges based on mass, trajectory, and momentum, opening up an entirely new dimension of puzzle design.
-  examples:
-    - title: "Half-Life 2"
-      description: |
-        The Gravity Gun allows players to pick up, move, and launch objects. This turns the environment into both a physics-based puzzle sandbox and a weapon, as players can grab saw blades and launch them at enemies.
-    - title: "Portal 2"
-      description: |
-        The 'Excursion Funnels' are beams of energy that defy gravity, allowing the player and objects to float in a specific direction. Puzzles are often based on redirecting these funnels with portals to manipulate the trajectory of objects.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Rlc"
-  name: "Realistic Collision"
-  category: "Physics"
-  long_description: |
-    Realistic Collision is a physics system that accurately simulates the transfer of forces and the resulting deformation and damage when two or more objects collide. This goes beyond simple "bounding box" collisions, where objects just bounce off each other. Instead, it models how materials bend, shatter, and break apart in a physically plausible manner, often using a "soft-body" physics engine.
-  short_description: "Accurate simulation of physical impact and deformation."
-  solved_problems:
-    - title: "Superficial impact feedback"
-      description: |
-        It's a design challenge to make high-impact events, like a car crash, feel visceral and consequential. Simple collision systems often result in objects just bouncing off each other. A realistic collision model solves this by providing detailed, dynamic feedback, making every impact feel unique and unscripted.
-  examples:
-    - title: "BeamNG.drive"
-      description: |
-        The entire game is built around its revolutionary soft-body physics engine. The primary appeal is the incredibly realistic and detailed way vehicles deform and fall apart during collisions.
-    - title: "Crysis (series)"
-      description: |
-        Known for its detailed physics, where individual palm trees can be shot down and flimsy shacks will realistically splinter and collapse when hit with explosive force.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Rp"
-  name: "Ragdoll Physics"
-  category: "Physics"
-  long_description: |
-    Ragdoll Physics is a procedural animation system that takes over a character's model upon death, incapacitation, or major impact. Instead of playing a pre-canned, static animation, the character's body becomes a collection of rigid bodies connected by joints. This "ragdoll" then reacts realistically to the forces applied to it, causing it to tumble down stairs, slump over ledges, or be thrown by an explosion in a unique, unscripted way every time.
-  short_description: "Physics-based procedural animation for bodies."
-  solved_problems:
-    - title: "Repetitive death animations"
-      description: |
-        Watching the same few pre-scripted death animations over and over is immersion-breaking and repetitive. Ragdoll physics solves this. It creates unique, dynamic, and often comedic death sequences every single time, making these moments feel more visceral and less predictable.
-  examples:
-    - title: "Grand Theft Auto IV"
-      description: |
-        Famous for its implementation of the Euphoria physics engine, which created advanced, dynamic ragdoll effects. Characters would realistically stumble, brace for impact, and react to being hit in ways that felt far more believable than in previous titles.
-    - title: "Goat Simulator"
-      description: |
-        This game takes ragdoll physics to its comedic extreme. The entire humor of the game is based on the wacky, unpredictable, and often glitchy behavior of the goat's ragdoll as it crashes into the game world.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Lu"
-  name: "Leveling Up"
-  category: "Progression"
-  long_description: |
-    Leveling Up is a core RPG progression system where a player character earns Experience Points (XP) for completing tasks. Upon reaching a certain XP threshold, the character's "Level" increases. This typically grants an automatic increase in base statistics (like health and damage) and often awards points to spend in other systems, like Skill Trees or perks.
-  short_description: "Gain levels by earning experience points to grow stronger."
-  solved_problems:
-    - title: "Lack of measurable progress"
-      description: |
-        It can be difficult for players to feel a tangible sense of growth over a long game. A leveling system solves this by providing a clear, quantifiable measure of progress. The constant feedback of gaining XP and leveling up creates a powerful and addictive psychological loop that keeps players invested.
+        It's difficult for a player in a complex RPG to know if a new piece of gear is an upgrade without manually calculating many different stats. Dynamic tooltips solve this by performing the comparison automatically. They instantly show the player the exact statistical gains or losses, allowing for quick, informed decisions without breaking game flow.
   examples:
     - title: "World of Warcraft"
       description: |
-        The quintessential example of a level-based MMO. The entire game structure, from quests to zones to gear, is built around the player's journey from level 1 to the level cap.
-    - title: "Pokémon (series)"
+        The game's tooltips are foundational to its complex gearing system. By default, hovering over a new item brings up a tooltip comparing it side-by-side with the currently equipped item, showing precise stat changes in green or red.
+    - title: "Path of Exile"
       description: |
-        Each Pokémon levels up individually by participating in battles. Leveling up not only increases their stats but is also the primary way they learn new moves and evolve into more powerful forms.
+        Features an extremely detailed tooltip system. Holding a key like 'Alt' can reveal additional layers of information, such as the possible range of random stat rolls on an item, providing expert players with all the data they need.
   isHumanWritten: false
 ---
 mechanic:
-  symbol: "Ps"
-  name: "Perk System"
-  category: "Progression"
+  symbol: "Hud"
+  name: "HUD"
+  category: "UI"
   long_description: |
-    A Perk System is a progression system where players can unlock specific, named abilities or passive bonuses ("perks") that provide unique gameplay advantages. Unlike simple stat increases from leveling up, perks often grant new capabilities (e.g., "pick any lock") or significantly alter existing ones (e.g., "pistols now fire in a burst"). They are the primary tool for creating distinct character builds.
-  short_description: "Unlock unique abilities and bonuses to specialize a build."
+    The Heads-Up Display (HUD) is the collection of persistent, on-screen user interface elements that display critical real-time game information to the player. This commonly includes a health bar, ammo count, a minimap, and current objectives. It is a non-diegetic overlay designed to give the player constant access to vital information without needing to pause the game or open a menu.
+  short_description: "The persistent on-screen display of vital game info."
   solved_problems:
-    - title: "Homogenous character builds"
+    - title: "Hidden critical information"
       description: |
-        If progression is just about increasing base stats, every high-level character ends up feeling the same. A perk system solves this by introducing meaningful, strategic choices. It allows players to specialize in a specific playstyle (e.g., stealth, heavy weapons, speech), creating significant build diversity and replayability.
+        It's a design paradox: players need constant access to critical information like their health, but pausing the game to check a menu during intense action is impossible. The HUD solves this by presenting this vital data as a persistent, non-interactive overlay. This allows the player to stay informed at a glance without ever disengaging from the core gameplay.
   examples:
-    - title: "Fallout (series)"
+    - title: "Dead Space"
       description: |
-        The series is famous for its perk system, which includes a mix of statistical bonuses and unique, often humorous abilities like "Bloody Mess" (enemies explode in a gory mess) or "Mysterious Stranger" (a character who randomly appears to help in combat).
-    - title: "Dead by Daylight"
+        A famous example of a 'diegetic' HUD. The player's health and stasis energy are displayed as illuminated meters on the back of the character's suit itself, rather than as an overlay. This integrates the UI directly into the game world to enhance immersion.
+    - title: "Metroid Prime"
       description: |
-        Perks are the core of the game's loadout system for both survivors and killers. A player's choice of four perks completely defines their strategy and abilities in a match, creating a deep meta-game of perk combinations and counters.
+        The HUD is cleverly framed as the inside of the character's helmet. The player can see reflections of their own face during bright flashes, and raindrops realistically trickle down the visor, making the HUD a core part of the game's immersive experience.
   isHumanWritten: false
 ---
 mechanic:
-  symbol: "St"
-  name: "Skill Trees"
-  category: "Progression"
+  symbol: "Mm"
+  name: "Minimap"
+  category: "UI"
   long_description: |
-    A Skill Tree is a visual representation of a character's progression path, where skills and abilities are laid out in a branching, tree-like structure. Players spend points (often earned by leveling up) to unlock nodes on the tree. More powerful abilities are typically located further down a branch, requiring investment in prerequisite, lower-tier skills to reach them.
-  short_description: "A visual, branching path for unlocking new abilities."
+    A Minimap is a small, real-time map of the player's immediate surroundings, displayed as a persistent element of the HUD, typically in a corner of the screen. It shows the player's position and orientation, nearby points of interest, quest objectives, and sometimes the position of enemies. It provides crucial navigational and situational awareness at a glance.
+  short_description: "A small, corner-of-the-screen map for navigation."
   solved_problems:
-    - title: "Unclear progression paths"
+    - title: "Constant navigation interruption"
       description: |
-        A long, unstructured list of unlockable abilities can be overwhelming and doesn't communicate long-term goals. A skill tree solves this by visualizing the entire progression path. It allows players to plan their build in advance and make informed decisions about their character's development, providing a clear roadmap for their progression.
+        Forcing a player to constantly open a full-screen map to navigate a complex area breaks the flow of gameplay. The minimap solves this. It provides essential, at-a-glance navigational information directly on the gameplay screen, allowing players to orient themselves and find objectives without interrupting their movement and exploration.
   examples:
-    - title: "Diablo II"
+    - title: "Grand Theft Auto (series)"
       description: |
-        Its skill tree system became the genre-defining standard. Each class had three distinct trees, and players had to make permanent, meaningful choices about which tree to specialize in, creating strong character identity.
-    - title: "Borderlands (series)"
-      description: |
-        Each Vault Hunter has multiple skill trees that focus on different playstyles. The final skill in each tree is a powerful "capstone" ability that dramatically changes gameplay, heavily incentivizing specialization.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Ul"
-  name: "Unlockables"
-  category: "Progression"
-  long_description: |
-    Unlockables are a system of rewards (such as characters, weapons, cosmetic skins, or game modes) that are initially unavailable to the player. They must be made accessible by completing specific in-game challenges, reaching progression milestones, or spending a specific in-game currency.
-  short_description: "Rewards made available by completing in-game goals."
-  solved_problems:
-    - title: "Lack of player motivation"
-      description: |
-        It's a design challenge to keep players engaged after they've mastered the core gameplay. Unlockables solve this by providing a clear set of extrinsic goals. The desire to unlock a new character or a cool weapon skin provides a powerful motivation for players to continue playing and engage with different aspects of the game.
-  examples:
-    - title: "Super Smash Bros. (series)"
-      description: |
-        A large portion of the roster is locked at the start of the game. Players must complete various challenges or play a certain number of matches to unlock these iconic characters, which is a primary driver of single-player engagement.
-    - title: "Call of Duty (series)"
-      description: |
-        The multiplayer progression is built almost entirely around unlockables. Players earn new weapons, attachments, perks, and cosmetic camos by leveling up and completing specific in-game challenges.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Xp"
-  name: "Experience Points"
-  category: "Progression"
-  long_description: |
-    Experience Points (XP or EXP) are a numerical value awarded to players for completing in-game actions, such as winning battles, finishing quests, or discovering new locations. XP is the fundamental "currency" for the Leveling Up system; accumulating a specific amount of XP is what causes a character to gain a level and become more powerful.
-  short_description: "Points earned for in-game actions that fuel leveling."
-  solved_problems:
-    - title: "Unrewarded player actions"
-      description: |
-        Players can feel like their time is being wasted if minor actions, like defeating a weak enemy, have no tangible reward. An experience point system solves this. By assigning an XP value to nearly every positive action, it ensures that the player is always making measurable progress towards their next level, no matter how small the task.
-  examples:
-    - title: "Final Fantasy (series)"
-      description: |
-        The classic implementation where each defeated enemy grants a set amount of XP, which is divided among the party members. Grinding battles to accumulate XP is a core gameplay loop of the series.
+        Its circular minimap is iconic. It not only shows the road layout but also displays objective markers, police locations, and a GPS route, making it an essential tool for navigating its dense city environments.
     - title: "The Elder Scrolls V: Skyrim"
       description: |
-        Features a skill-based experience system. Instead of getting XP for quests, the player gains XP in a specific skill (e.g., 'One-Handed' or 'Smithing') by using it. Gaining skill levels is what contributes to the overall character level.
+        Instead of a map, Skyrim uses a horizontal "compass" at the top of the screen. This serves a similar purpose, pointing out nearby discovered locations and quest markers without showing the detailed topography, encouraging more organic exploration.
   isHumanWritten: false
 ---
 mechanic:
-  symbol: "Ch"
-  name: "Critical Hits"
-  category: "Randomness"
+  symbol: "Rmn"
+  name: "Radial Menus"
+  category: "UI"
   long_description: |
-    A Critical Hit, or "crit," is a combat mechanic where, based on a random chance (a "crit rate" percentage), an attack will deal a significantly increased amount of damage. The damage multiplier (e.g., 200%) and the chance to trigger a crit are often key stats that can be improved by a character's attributes or gear.
-  short_description: "A chance-based attack that deals bonus damage."
+    A Radial Menu is a user interface element where options are arranged in a circle around a central point, designed for quick selection with a controller's analog stick. When the player holds a button, the menu appears, and they select an option by flicking the stick in the corresponding direction and releasing the button. It is commonly used for weapon, item, or emote selection.
+  short_description: "A circular menu designed for fast analog stick selection."
   solved_problems:
-    - title: "Predictable combat outcomes"
+    - title: "Slow inventory access during combat"
       description: |
-        If every attack deals a fixed amount of damage, combat can become a purely mathematical and predictable exercise. Critical hits solve this by introducing an element of random chance. The possibility of a sudden burst of damage adds a layer of excitement and unpredictability to every encounter, creating memorable high-roll moments.
+        It's a design problem that accessing items from a traditional, list-based menu during real-time combat is slow and clunky. A radial menu solves this. It maps a large number of items or weapons to quick, directional muscle-memory gestures on an analog stick, allowing the player to select what they need in a fraction of a second.
   examples:
-    - title: "Diablo (series)"
+    - title: "The Legend of Zelda: Ocarina of Time"
       description: |
-        Critical Hit Chance and Critical Hit Damage are two of the most important stats for increasing a character's damage output. The entire end-game gearing process revolves around maximizing these stats to create massive, screen-clearing bursts of damage.
-    - title: "XCOM: Enemy Unknown"
+        One of the earliest examples, used for assigning items to the C buttons. It allowed players to quickly swap between a large inventory of items, which was crucial for its puzzle-solving and combat.
+    - title: "Horizon Zero Dawn"
       description: |
-        Critical hits are a core part of the game's brutal probability-based combat. A well-timed critical hit can save a mission, while an enemy landing a lucky crit on a key soldier can be devastating, creating high-stakes tension.
+        Uses a radial menu to allow the player to quickly craft different types of ammunition in the heat of battle. This integrates crafting directly into the combat loop without requiring the player to pause and enter a menu.
+  isHumanWritten: false
+---
+mechanic:
+  symbol: "DEc"
+  name: "Dynamic Ecosystem"
+  category: "World"
+  long_description: |
+    A Dynamic Ecosystem is a complex simulation where different forms of AI life (predators, prey, herbivores) and sometimes even flora interact with each other and the environment based on a set of systemic rules. These systems are designed to create unscripted, emergent behaviors, such as predators hunting prey, animals traveling in herds to specific water sources, or scavengers appearing at a fresh kill.
+  short_description: "A simulation of interacting flora and fauna."
+  solved_problems:
+    - title: "Lifeless, scripted game worlds"
+      description: |
+        It's a design challenge to make a game's wildlife feel authentic when every animal is just a mindless, wandering prop on a pre-set path. A dynamic ecosystem solves this by creating a web of interacting AI systems. This results in emergent, unscripted events that make the world feel like a living, breathing place that exists independently of the player's actions.
+  examples:
+    - title: "Red Dead Redemption 2"
+      description: |
+        Features an incredibly detailed ecosystem. Animals have daily routines, predators hunt prey, carcasses attract scavengers, and the player's actions (like over-hunting) can have a noticeable impact on the local animal population.
+    - title: "Far Cry (series)"
+      description: |
+        The ecosystem is a source of chaotic, emergent gameplay. It's common for the player's carefully planned stealth infiltration of an outpost to be ruined (or aided) by a wild tiger suddenly attacking the guards.
+  isHumanWritten: false
+---
+mechanic:
+  symbol: "Dnc"
+  name: "Day-Night Cycle"
+  category: "World"
+  long_description: |
+    A Day-Night Cycle is a system that simulates the passage of time in the game world, typically with a continuously moving sun and moon, changing skyboxes, and dynamic global lighting. This cycle is often tied directly to gameplay systems, with different NPCs, enemies, quests, or resource availability being tied to a specific time of day.
+  short_description: "Simulates the 24-hour passage of time."
+  solved_problems:
+    - title: "Static environmental conditions"
+      description: |
+        A world permanently locked at a single time of day feels static and artificial. A day-night cycle solves this by introducing the constant, natural rhythm of time. This not only adds visual variety but allows designers to create time-dependent gameplay, such as tougher enemies at night or shops that only open in the morning, making the world feel more dynamic.
+  examples:
+    - title: "Minecraft"
+      description: |
+        The day-night cycle is a fundamental part of its survival loop. Daytime is relatively safe for building and gathering, while nighttime is dangerous as hostile monsters spawn in the darkness, forcing the player to seek or build shelter.
+    - title: "The Legend of Zelda: Ocarina of Time"
+      description: |
+        A pioneering example in 3D games. The transition between day and night in Hyrule Field affected which enemies appeared and which events could be triggered, making time a key factor in the player's journey.
+  isHumanWritten: false
+---
+mechanic:
+  symbol: "Eh"
+  name: "Environmental Hazards"
+  category: "World"
+  long_description: |
+    Environmental Hazards are elements of the game world that can inflict damage or a negative status effect on the player through proximity or contact. This can include natural hazards like pools of lava, deep water, or toxic gas vents, as well as man-made dangers like electrified floors, fields of radiation, or spinning blades.
+  short_description: "Elements of the world that can harm the player."
+  solved_problems:
+    - title: "Uniformly safe traversal"
+      description: |
+        If the entire game world is safe to walk on, traversal becomes a simple act of holding forward with no engagement. Environmental hazards solve this. They turn the environment itself into an antagonist, forcing the player to be mindful of their surroundings and creating traversal puzzles where the path itself is a source of challenge.
+  examples:
+    - title: "Half-Life (series)"
+      description: |
+        The series is famous for its environmental hazards. Players must navigate rooms filled with radioactive waste, avoid electrified water, and use physics puzzles to bypass barnacle-infested ceilings.
+    - title: "Super Mario Bros. (series)"
+      description: |
+        Bottomless pits and lava pools are the most iconic environmental hazards in gaming. They are a fundamental part of the platforming challenge, requiring precise jumps to avoid instant death.
+  isHumanWritten: false
+---
+mechanic:
+  symbol: "Owm"
+  name: "Open World Map"
+  category: "World"
+  long_description: |
+    An Open World Map is the user interface screen that displays the player's position within a large, non-linear game world. It serves as the primary tool for navigation, allowing players to set custom waypoints, view discovered points of interest, and often track the locations of quests and other activities spread across the expansive game space.
+  short_description: "The primary navigational UI for a large game world."
+  solved_problems:
+    - title: "Player disorientation in large worlds"
+      description: |
+        It's a design challenge to allow players to freely explore a massive world without them getting hopelessly lost. The open world map is the fundamental solution. It provides the essential cartographic tool that gives players the confidence to explore, allowing them to orient themselves, plan long journeys, and track their progress.
+  examples:
+    - title: "The Elder Scrolls V: Skyrim"
+      description: |
+        Features a fully 3D world map that can be zoomed and panned. It provides a detailed topographical view of the world and is populated with hundreds of markers for discovered locations, making it an essential tool for exploration.
+    - title: "Grand Theft Auto V"
+      description: |
+        Its map starts obscured by a 'fog of war' and is revealed as the player explores. It functions like a satellite GPS, showing a detailed road network and allowing the player to set waypoints for navigation.
+  isHumanWritten: false
+---
+mechanic:
+  symbol: "Ws"
+  name: "Weather Systems"
+  category: "World"
+  long_description: |
+    A Weather System is a feature that dynamically simulates changing atmospheric conditions, such as rain, snow, fog, thunderstorms, and wind. These systems can be purely for atmospheric effect, or they can have a direct and systemic impact on gameplay by affecting visibility, NPC behavior, traversal mechanics (e.g., slippery surfaces), or the effectiveness of certain elements like fire.
+  short_description: "Dynamic and simulated atmospheric conditions."
+  solved_problems:
+    - title: "Static environmental conditions"
+      description: |
+        A world with permanently clear skies feels artificial and lacks dynamism. A weather system solves this by introducing atmospheric variety. This not only enhances immersion and visual interest but can also be used by designers to directly influence gameplay, such as fog reducing visibility in a stealth section or rain making surfaces slippery.
+  examples:
+    - title: "Red Dead Redemption 2"
+      description: |
+        Features a complex weather system where storm fronts can be seen rolling in from a distance. A heavy rain will turn roads to mud, while a blizzard in the mountains can cause the player's health to drain if they are not wearing warm enough clothing.
+    - title: "The Legend of Zelda: Breath of the Wild"
+      description: |
+        Weather is a core gameplay mechanic. Rain makes cliffs slippery and impossible to climb, while thunderstorms can cause the player's metal equipment to attract deadly lightning strikes, forcing them to adapt their gear and plans.
   isHumanWritten: false"""
 
 def process_mechanics_direct_write(data_string):

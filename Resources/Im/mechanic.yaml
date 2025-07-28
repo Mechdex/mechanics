@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Im
-  name: Inventory Management
-  category: Resources
-  long_description: Enables players to organize and manage collected items. Prominent
-    in Resident Evil.
-  short_description: Organize collected items.
-  solved_problems: Helps manage limited carrying capacity.
+  symbol: "Im"
+  name: "Inventory Management"
+  category: "Resources"
+  long_description: |
+    Inventory Management is the system of rules and user interface that governs a player's ability to collect, store, and organize items. Key design pillars include inventory capacity (e.g., by weight, number of slots, or a grid system), sorting functionality, and the interface for equipping, using, or discarding items. It often functions as a puzzle or strategic layer in itself.
+  short_description: "The system for organizing and storing collected items."
+  solved_problems:
+    - title: "Consequence-free hoarding"
+      description: |
+        If a player can carry an infinite number of items, there are no meaningful choices about what to keep. A limited inventory solves this. It forces the player to make strategic decisions about what to carry and what to leave behind, turning resource management into a core gameplay challenge, especially in survival games.
   examples:
-  - 'Resident Evil: Inventory puzzles and item management.'
-  - Many survival games focus on inventory management.
+    - title: "Resident Evil 4"
+      description: |
+        Features a grid-based inventory system (the "attache case") where items have different shapes and sizes. Fitting everything becomes a Tetris-like spatial puzzle, forcing the player to be highly organized and make hard choices about which weapons to carry.
+    - title: "Diablo II"
+      description: |
+        Similar to Resident Evil, it uses a grid-based inventory. The limited space and the varying shapes of items (a large axe takes up more space than a small charm) make inventory management a constant and iconic challenge.
+  isHumanWritten: false

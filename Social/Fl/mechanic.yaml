@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Fl
-  name: Friend Lists
-  category: Social
-  long_description: Maintains a list of in-game friends for social interactions. Common
-    in MMOs like World of Warcraft.
-  short_description: Manage your in-game friends.
-  solved_problems: Facilitates social connectivity.
+  symbol: "Fl"
+  name: "Friend Lists"
+  category: "Social"
+  long_description: |
+    A Friend List is a social feature that allows players to save other players' accounts to a persistent, cross-session list for easy access. This interface typically shows the online status of friends and provides shortcuts for inviting them to a party, sending private messages, or joining their game session directly.
+  short_description: "A persistent, in-game list of social contacts."
+  solved_problems:
+    - title: "Difficulty in reconnecting with players"
+      description: |
+        In online games, it's a challenge for players to find and reconnect with people they enjoyed playing with in a sea of random usernames. A friend list solves this. It provides a simple, persistent tool for players to build their own social networks, making it easy to form groups and fostering a sense of community.
   examples:
-  - 'World of Warcraft: In-game friend lists for grouping.'
-  - Many online games include friend systems.
+    - title: "Steam"
+      description: |
+        While a platform feature, the Steam Friends List is the most ubiquitous example. It integrates with thousands of games, providing a universal overlay for chatting and joining friends' games regardless of what is being played.
+    - title: "World of Warcraft"
+      description: |
+        Features both a server-specific friend list and a cross-server, account-wide list (Battle.net). This allows players to keep in touch with friends and easily form groups for dungeons and raids.
+  isHumanWritten: false

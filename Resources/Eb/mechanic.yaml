@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Eb
-  name: Economy Balancing
-  category: Resources
-  long_description: Manages the availability and cost of resources within the game.
-    Seen in SimCity.
-  short_description: Balance resource availability and cost.
-  solved_problems: Ensures a fair and challenging resource economy.
+  symbol: "Eb"
+  name: "Economy Balancing"
+  category: "Resources"
+  long_description: |
+    Economy Balancing is not a single mechanic, but the high-level design process of managing the flow of all resources and currency within a game. This involves tuning "faucets" (how resources are generated), "drains" or "sinks" (how resources are removed), and costs to ensure a stable, engaging, and unexploitable economic system for the player over the lifetime of the game.
+  short_description: "The design process of managing a game's resource flow."
+  solved_problems:
+    - title: "Runaway inflation or deflation"
+      description: |
+        It's a major design challenge in persistent games that if too much currency enters the system, it becomes worthless (inflation), or if it's too scarce, trade grinds to a halt. Careful economy balancing solves this. By managing the rates at which currency is earned and spent, designers can maintain a stable economy where progression feels rewarding and items retain their value.
   examples:
-  - 'SimCity: Balancing resources for city growth.'
-  - Economic sims rely on resource management.
+    - title: "EVE Online"
+      description: |
+        Has a team of real-life economists on staff to manage its complex, player-driven economy. They analyze player data and implement changes to resource faucets and sinks to prevent economic collapse.
+    - title: "World of Warcraft"
+      description: |
+        The designers regularly add new 'gold sinks,' such as expensive cosmetic mounts or repair costs, to remove currency from the economy and combat the massive inflation that occurs over the game's long lifespan.
+  isHumanWritten: false

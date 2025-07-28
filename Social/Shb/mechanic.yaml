@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Shb
-  name: Social Hubs
-  category: Social
-  long_description: Designated areas where players can meet and interact. Notable
-    in Destiny 2.
-  short_description: Central locations for player interaction.
-  solved_problems: Creates communal spaces within the game world.
+  symbol: "Shb"
+  name: "Social Hubs"
+  category: "Social"
+  long_description: |
+    A Social Hub is a specific, often non-combat area within a game world designated as a central meeting place for players. These hubs are intentionally designed to encourage social interaction and typically contain key vendors, quest givers, banks, and other essential services, ensuring a high volume of player traffic.
+  short_description: "A centralized, non-combat area for players to gather."
+  solved_problems:
+    - title: "Fragmented player base"
+      description: |
+        In a large game world, the player base can be spread so thin that the world feels empty, even with thousands of players online. A social hub solves this. By concentrating players in one central location, it creates a bustling, lively area that makes the game feel populated and provides a natural space for players to meet and form groups.
   examples:
-  - 'Destiny 2: The Tower as a social hub.'
-  - Many MMOs provide social gathering areas.
+    - title: "Destiny 2"
+      description: |
+        The Tower is the primary social hub where players congregate between missions. It's where players manage their inventory, pick up bounties, and show off their cosmetic gear to other players.
+    - title: "Monster Hunter: World"
+      description: |
+        The 'Gathering Hub' is a 16-player instance where players can eat meals together, arm wrestle, and form hunting parties before departing on a quest. It's designed to be the social lobby for the game's multiplayer activities.
+  isHumanWritten: false

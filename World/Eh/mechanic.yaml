@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Eh
-  name: Environmental Hazards
-  category: World
-  long_description: Introduces natural dangers such as lava, quicksand, or toxic zones.
-    Seen in Minecraft.
-  short_description: Natural hazards in the game world.
-  solved_problems: Adds challenge and realism to exploration.
+  symbol: "Eh"
+  name: "Environmental Hazards"
+  category: "World"
+  long_description: |
+    Environmental Hazards are elements of the game world that can inflict damage or a negative status effect on the player through proximity or contact. This can include natural hazards like pools of lava, deep water, or toxic gas vents, as well as man-made dangers like electrified floors, fields of radiation, or spinning blades.
+  short_description: "Elements of the world that can harm the player."
+  solved_problems:
+    - title: "Uniformly safe traversal"
+      description: |
+        If the entire game world is safe to walk on, traversal becomes a simple act of holding forward with no engagement. Environmental hazards solve this. They turn the environment itself into an antagonist, forcing the player to be mindful of their surroundings and creating traversal puzzles where the path itself is a source of challenge.
   examples:
-  - 'Minecraft: Environmental hazards like lava and water.'
-  - Survival games incorporate hazardous terrain.
+    - title: "Half-Life (series)"
+      description: |
+        The series is famous for its environmental hazards. Players must navigate rooms filled with radioactive waste, avoid electrified water, and use physics puzzles to bypass barnacle-infested ceilings.
+    - title: "Super Mario Bros. (series)"
+      description: |
+        Bottomless pits and lava pools are the most iconic environmental hazards in gaming. They are a fundamental part of the platforming challenge, requiring precise jumps to avoid instant death.
+  isHumanWritten: false

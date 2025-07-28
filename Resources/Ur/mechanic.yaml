@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Ur
-  name: Upgrade Resources
-  category: Resources
-  long_description: Provides special resources dedicated to upgrading equipment or
-    abilities. Found in Borderlands.
-  short_description: Special resources for upgrades.
-  solved_problems: Encourages strategic resource use for enhancement.
+  symbol: "Ur"
+  name: "Upgrade Resources"
+  category: "Resources"
+  long_description: |
+    Upgrade Resources are a specific category of non-crafting materials whose sole purpose is to be spent to enhance existing items or abilities. These materials are often rare, non-interchangeable, and tied to specific end-game activities, acting as a primary driver for long-term player progression and investment in their gear.
+  short_description: "Special materials used only for enhancing items."
+  solved_problems:
+    - title: "Disposable gear"
+      description: |
+        In many loot-based games, players are constantly finding new gear that makes their old, favorite items obsolete. A system of dedicated upgrade resources solves this. It allows a player to keep their preferred weapon or armor relevant by continually investing rare materials into it, fostering a stronger attachment to their equipment.
   examples:
-  - 'Borderlands: Upgrade components for weapons.'
-  - Other games incorporate upgrade resources.
+    - title: "Destiny 2"
+      description: |
+        Materials like Enhancement Cores and Ascendant Shards are rare, end-game currencies used exclusively to 'Masterwork' weapons and armor, increasing their stats and unlocking their full potential.
+    - title: "Monster Hunter: World"
+      description: |
+        Players must hunt specific monsters repeatedly to gather their unique parts (claws, scales, etc.). These parts are not used to craft new weapons from scratch, but to upgrade existing weapons down a long and complex upgrade tree.
+  isHumanWritten: false

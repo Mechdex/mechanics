@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Cm
-  name: Crafting Materials
-  category: Resources
-  long_description: Specific resources used in crafting recipes. Common in Fallout
-    4.
-  short_description: Materials for crafting items.
-  solved_problems: Defines the resource economy for crafting.
+  symbol: "Cm"
+  name: "Crafting Materials"
+  category: "Resources"
+  long_description: |
+    Crafting Materials are a category of items whose sole purpose is to be consumed in a crafting recipe to produce another item. These materials, such as ore, wood, leather, or herbs, are gathered from the game world and form the fundamental building blocks of the in-game economy and player-driven production. They typically have no use on their own and exist only to be transformed.
+  short_description: "Items used exclusively as ingredients for crafting."
+  solved_problems:
+    - title: "Meaningless world collectibles"
+      description: |
+        In many games, the world is full of junk items that serve no purpose. A system of crafting materials solves this by giving dozens or hundreds of different world items a tangible value. A simple flower is no longer just a prop; it's a key ingredient for a potion, which encourages exploration and resource gathering.
   examples:
-  - 'Fallout 4: Collecting materials for weapon upgrades.'
-  - Various RPGs use crafting materials.
+    - title: "The Witcher 3: Wild Hunt"
+      description: |
+        The world is filled with hundreds of different plants, monster parts, and minerals. These materials are used in the alchemy system to create potions, oils, and bombs, forming a core part of the player's preparation for combat.
+    - title: "Subnautica"
+      description: |
+        Nearly every object in the world, from metal salvage to alien coral, can be broken down into its base crafting materials. The entire progression loop is driven by finding new, rarer materials to craft better equipment and deeper-diving vehicles.
+  isHumanWritten: false

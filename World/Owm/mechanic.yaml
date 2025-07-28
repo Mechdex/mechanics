@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Owm
-  name: Open World Map
-  category: World
-  long_description: Provides a detailed map of a vast, open game world. Featured in
-    Skyrim.
-  short_description: Detailed map of a large world.
-  solved_problems: Helps players navigate expansive environments.
+  symbol: "Owm"
+  name: "Open World Map"
+  category: "World"
+  long_description: |
+    An Open World Map is the user interface screen that displays the player's position within a large, non-linear game world. It serves as the primary tool for navigation, allowing players to set custom waypoints, view discovered points of interest, and often track the locations of quests and other activities spread across the expansive game space.
+  short_description: "The primary navigational UI for a large game world."
+  solved_problems:
+    - title: "Player disorientation in large worlds"
+      description: |
+        It's a design challenge to allow players to freely explore a massive world without them getting hopelessly lost. The open world map is the fundamental solution. It provides the essential cartographic tool that gives players the confidence to explore, allowing them to orient themselves, plan long journeys, and track their progress.
   examples:
-  - 'Skyrim: Open world map for exploration.'
-  - Other RPGs provide detailed world maps.
+    - title: "The Elder Scrolls V: Skyrim"
+      description: |
+        Features a fully 3D world map that can be zoomed and panned. It provides a detailed topographical view of the world and is populated with hundreds of markers for discovered locations, making it an essential tool for exploration.
+    - title: "Grand Theft Auto V"
+      description: |
+        Its map starts obscured by a 'fog of war' and is revealed as the player explores. It functions like a satellite GPS, showing a detailed road network and allowing the player to set waypoints for navigation.
+  isHumanWritten: false

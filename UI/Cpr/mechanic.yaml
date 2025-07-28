@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Cpr
-  name: Contextual Prompts
-  category: UI
-  long_description: 'Displays on-screen prompts based on the player''s context or
-    environment. Common in The Legend of Zelda: Breath of the Wild.'
-  short_description: On-screen action prompts.
-  solved_problems: Guides player actions without clutter.
+  symbol: "Cpr"
+  name: "Contextual Prompts"
+  category: "UI"
+  long_description: |
+    A Contextual Prompt is a UI element that dynamically displays a button prompt on-screen when the player is near an interactable object or in a specific state. The prompt typically shows both the available action (e.g., 'Open,' 'Talk,' 'Take') and the key or button required to perform it. It serves as the direct visual feedback for the Interact mechanic, communicating available actions to the player.
+  short_description: "Dynamic on-screen prompts for available actions."
+  solved_problems:
+    - title: "Invisible interaction points"
+      description: |
+        It's a design challenge to clearly communicate which of the thousands of objects in a game world are interactable without cluttering the screen with constant icons. Contextual prompts solve this by only appearing when the player is in range of an object. This keeps the world clean while providing clear, just-in-time affordances for interaction.
   examples:
-  - 'Breath of the Wild: Contextual prompts for interactions.'
-  - Many adventure games feature similar UI cues.
+    - title: "The Legend of Zelda: Breath of the Wild"
+      description: |
+        The game uses simple, clean text prompts that appear over objects and NPCs. This minimalist system ensures the player always knows what they can interact with without ever distracting from the game's painterly art style.
+    - title: "Red Dead Redemption 2"
+      description: |
+        Features a complex system of contextual prompts in the bottom-right corner of the screen. The available actions and the resulting dialogue change dynamically based on who the player is targeting and their current situation, allowing for nuanced interactions.
+  isHumanWritten: false

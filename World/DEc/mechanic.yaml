@@ -1,11 +1,19 @@
 mechanic:
-  symbol: DEc
-  name: Dynamic Ecosystem
-  category: World
-  long_description: Simulates a living world where flora and fauna interact dynamically.
-    Prominent in Far Cry.
-  short_description: Living, responsive ecosystems.
-  solved_problems: Creates a believable, evolving game environment.
+  symbol: "DEc"
+  name: "Dynamic Ecosystem"
+  category: "World"
+  long_description: |
+    A Dynamic Ecosystem is a complex simulation where different forms of AI life (predators, prey, herbivores) and sometimes even flora interact with each other and the environment based on a set of systemic rules. These systems are designed to create unscripted, emergent behaviors, such as predators hunting prey, animals traveling in herds to specific water sources, or scavengers appearing at a fresh kill.
+  short_description: "A simulation of interacting flora and fauna."
+  solved_problems:
+    - title: "Lifeless, scripted game worlds"
+      description: |
+        It's a design challenge to make a game's wildlife feel authentic when every animal is just a mindless, wandering prop on a pre-set path. A dynamic ecosystem solves this by creating a web of interacting AI systems. This results in emergent, unscripted events that make the world feel like a living, breathing place that exists independently of the player's actions.
   examples:
-  - 'Far Cry: Wildlife and environment interact dynamically.'
-  - Other open-world games feature dynamic ecosystems.
+    - title: "Red Dead Redemption 2"
+      description: |
+        Features an incredibly detailed ecosystem. Animals have daily routines, predators hunt prey, carcasses attract scavengers, and the player's actions (like over-hunting) can have a noticeable impact on the local animal population.
+    - title: "Far Cry (series)"
+      description: |
+        The ecosystem is a source of chaotic, emergent gameplay. It's common for the player's carefully planned stealth infiltration of an outpost to be ruined (or aided) by a wild tiger suddenly attacking the guards.
+  isHumanWritten: false

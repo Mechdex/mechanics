@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Mm
-  name: Minimap
-  category: UI
-  long_description: Provides a small map overlay to help with navigation. Widely used
-    in Grand Theft Auto V.
-  short_description: Miniature map for navigation.
-  solved_problems: Assists in orientation and strategic planning.
+  symbol: "Mm"
+  name: "Minimap"
+  category: "UI"
+  long_description: |
+    A Minimap is a small, real-time map of the player's immediate surroundings, displayed as a persistent element of the HUD, typically in a corner of the screen. It shows the player's position and orientation, nearby points of interest, quest objectives, and sometimes the position of enemies. It provides crucial navigational and situational awareness at a glance.
+  short_description: "A small, corner-of-the-screen map for navigation."
+  solved_problems:
+    - title: "Constant navigation interruption"
+      description: |
+        Forcing a player to constantly open a full-screen map to navigate a complex area breaks the flow of gameplay. The minimap solves this. It provides essential, at-a-glance navigational information directly on the gameplay screen, allowing players to orient themselves and find objectives without interrupting their movement and exploration.
   examples:
-  - 'GTA V: Minimap for tracking objectives.'
-  - Other open-world games use minimaps.
+    - title: "Grand Theft Auto (series)"
+      description: |
+        Its circular minimap is iconic. It not only shows the road layout but also displays objective markers, police locations, and a GPS route, making it an essential tool for navigating its dense city environments.
+    - title: "The Elder Scrolls V: Skyrim"
+      description: |
+        Instead of a map, Skyrim uses a horizontal "compass" at the top of the screen. This serves a similar purpose, pointing out nearby discovered locations and quest markers without showing the detailed topography, encouraging more organic exploration.
+  isHumanWritten: false

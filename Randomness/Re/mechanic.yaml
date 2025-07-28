@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Re
-  name: Random Events
-  category: Randomness
-  long_description: Triggers unexpected occurrences that alter gameplay dynamics.
-    Seen in Dwarf Fortress.
-  short_description: Unexpected in-game events.
-  solved_problems: Keeps gameplay unpredictable and engaging.
+  symbol: "Re"
+  name: "Random Events"
+  category: "Randomness"
+  long_description: |
+    A Random Event is a system that triggers unexpected, scripted or semi-scripted occurrences within the game world based on a set of probabilities, hidden timers, or specific player actions. These events are designed to disrupt the normal flow of gameplay and can range from a sudden pirate attack in a strategy game to a unique NPC encounter in an open world.
+  short_description: "Unexpected occurrences that alter gameplay."
+  solved_problems:
+    - title: "Static and predictable game progression"
+      description: |
+        If a game's progression is identical every time, it lacks surprise and replayability. Random events solve this by introducing unpredictable narrative and gameplay shifts. These ensure that no two playthroughs are the same and create emergent stories as players are forced to react to unexpected situations.
   examples:
-  - 'Dwarf Fortress: Random events impact settlements.'
-  - Simulation games use random events to surprise players.
+    - title: "FTL: Faster Than Light"
+      description: |
+        The entire game is a series of random events. Each jump to a new beacon presents the player with a unique text-based scenario that can result in a new crew member, a ship upgrade, a dangerous fight, or nothing at all.
+    - title: "RimWorld"
+      description: |
+        The "AI Storyteller" is a sophisticated random event generator. It triggers events like raids, animal attacks, plagues, and trader arrivals based on a chosen personality (e.g., "Randy Random" is completely unpredictable), creating a unique, emergent narrative for each colony.
+  isHumanWritten: false

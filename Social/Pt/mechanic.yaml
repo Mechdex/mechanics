@@ -1,11 +1,19 @@
 mechanic:
-  symbol: Pt
-  name: Player Trading
-  category: Social
-  long_description: Enables players to exchange items directly. Seen in games like
-    EVE Online.
-  short_description: Trade items with other players.
-  solved_problems: Facilitates a player-driven economy.
+  symbol: "Pt"
+  name: "Player Trading"
+  category: "Social"
+  long_description: |
+    Player Trading is the set of rules and user interface that facilitates the direct, synchronous exchange of items or currency between two players. This typically involves a secure trading window where both parties must place their offered items and then confirm the exchange before it is finalized. This secure process is designed to prevent scams and ensure a fair transaction.
+  short_description: "Direct, secure exchange of items between players."
+  solved_problems:
+    - title: "Limited player interaction"
+      description: |
+        In many multiplayer games, player interactions are limited to either cooperation in combat or competition. Player trading solves this by creating a non-combat, mutually beneficial social interaction. It fosters a different kind of community engagement, built around economics, negotiation, and generosity.
   examples:
-  - 'EVE Online: Trading system for spacecraft and modules.'
-  - MMORPGs often support player trading.
+    - title: "Old School RuneScape"
+      description: |
+        Trading is a cornerstone of the game's identity and economy. The Grand Exchange automates much of it, but direct player-to-player trading is still a major part of the social experience, complete with haggling and market stalls.
+    - title: "Warframe"
+      description: |
+        The in-game economy is heavily reliant on player trading. Most premium items and rare mods are tradable, allowing players to earn the premium currency ('Platinum') by 'farming' and selling valuable items to other players, rather than buying it with real money.
+  isHumanWritten: false
