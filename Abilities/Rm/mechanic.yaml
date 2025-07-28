@@ -3,13 +3,14 @@ mechanic:
   name: Rage Mode
   category: Abilities
   long_description: |
-    Rage Mode grants a temporary power boost, increasing damage, attack speed, or resilience. It is typically activated by filling a "rage meter" through combat actions such as dealing or receiving damage. Once activated, Rage Mode may also grant invincibility, special abilities, or a dramatic visual effect.
-    
-    Some games balance this by making the player lose control, forcing reckless behavior, or applying a debuff after the effect ends. Others require managing rage as a resource to avoid wasted activation. Variants of Rage Mode can include trade-offs, such as increased power at the cost of defensive capabilities, pushing players into high-risk, high-reward combat scenarios.
+    Rage Mode is a combat-focused state change that provides a significant, temporary surge in power. It functions as a comeback mechanic or a reward for aggressive play, typically fueled by a meter that fills as the player deals and/or receives damage. Activating it transforms the player character, often unlocking a new set of powerful attacks, granting invulnerability, or providing massive boosts to damage, speed, and health regeneration.
+
+    The feeling of overwhelming power is paramount, conveyed through dramatic audio-visual transformations. This can include changes to the character model (glowing eyes, altered physique), aggressive particle effects, a shift in the musical score, and visceral, impactful sound design for attacks. To prevent it from becoming a crutch, designers often balance it with trade-offs. Some variants might enforce a loss of fine control, pushing the player into a berserker-like frenzy, while others may apply a temporary debuff or "exhaustion" period after the effect wears off, creating a window of vulnerability.
   short_description: Temporary power surge in combat.
-  solved_problems: |
-    - Passive combat strategies: Some players avoid risk in combat, leading to slower gameplay. Rage Mode incentivizes aggressive playstyles by rewarding players for engaging in fights.
-    - Difficulty spikes in combat: Tough encounters can feel overwhelming. By giving players a way to temporarily increase their power, Rage Mode provides an emergency tool to turn the tide of battle for players who find intense sequences more challenging.
+  solved_problems:
+    Hyper-passive playstyles: "Some players naturally avoid risk, leading to slow, defensive 'turtling' strategies that are less engaging. Rage Mode solves this by creating a positive feedback loop where aggressive play directly fuels a powerful reward. This incentivizes proactive combat and discourages stagnant gameplay."
+    Unbalance difficulty spikes: "Sudden, sharp increases in enemy density or boss difficulty can halt player progress and cause frustration. Rage Mode acts as a player-controlled equalizer. It provides a tool to overcome these overwhelming moments, preventing player burnout and maintaining forward momentum through the toughest encounters."
   examples:
-  - 'God of War: Kratos enters Spartan Rage, increasing damage and health regeneration. This makes battles feel intense and cinematic, reinforcing Kratos’ power.'
-  - 'Doom Eternal: Berserk power-up grants one-hit melee kills for a short time. This encourages aggressive movement and combat flow, fitting the game’s fast-paced style.'
+    God of War: "Spartan Rage is a perfect fusion of mechanic and narrative. It is not just a stat boost but a complete transformation where Kratos uses his bare hands, becomes unstoppable, and regains health with each hit. This embodies his character's lore and provides a tool for both aggression and survival."
+    Doom Eternal: "The Berserk power-up is a contextual variant that reinforces the core 'push-forward combat' loop. As a temporary item pickup, it encourages hyper-aggression by allowing the Doom Slayer to perform one-hit 'Glory Kills' on any standard demon. This turns enemies into a resource for health and control, maintaining the game's aggressive flow."
+  isHumanWritten: false

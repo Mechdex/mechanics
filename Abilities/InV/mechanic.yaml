@@ -3,11 +3,13 @@ mechanic:
   name: Invisibility
   category: Abilities
   long_description: |
-    Invisibility makes a character undetectable by enemies, either through a temporary ability or a permanent effect. It is commonly used in stealth gameplay to avoid detection or in combat to reposition without being attacked. Some implementations allow only visual invisibility, meaning enemies can still detect sound or disturbances.
-    
-    The mechanic can be balanced using limitations such as duration, energy consumption, or revealing the player when interacting with objects or attacking. Certain games also feature counters to invisibility, such as enemy AI detecting footprints, motion, or heat signatures. Some implementations of invisibility create a "partial" effect, where enemies notice disturbances but do not immediately attack, adding tension and requiring careful movement.
+    Invisibility is a stealth-oriented mechanic that masks the player character from enemy sight, enabling strategic repositioning, bypassing encounters, or setting up ambushes. The implementation can range from complete visual concealment to a partial "predator-style" shimmer, often achieved with distortion or fresnel shaders that bend light around the character model. This visual cue is a key balancing factor, as it still allows highly attentive enemies (or other players) to spot movement.
+
+    Beyond the visual aspect, sophisticated invisibility systems are tightly integrated with the AI's sensory logic. Enemies might not see the player, but they may still react to secondary stimuli like sound from footsteps, interactions with the environment, or the "sound" of the cloak activating/deactivating. Balancing is critical and typically involves limitations like a finite duration, a depletable energy/mana pool, or the effect immediately breaking upon performing an aggressive action like attacking or, in some cases, even interacting with an objective.
   short_description: Become unseen to stealth past enemies.
-  solved_problems: null
+  solved_problems:
+    Narrow Skill Checks: "Designers usually have to design levels for players of many skill levels. Invisibility is a type of mechanic that when combined with some sort of one-time power-up/purchase, *reduces* the difficulty on-demand for players who can't get past a certain sequence. That way, narrow skill checks don't have to dynamically adjust their difficulty for different players."
   examples:
-  - 'Dishonored: Blink and Shadow Kill abilities allow players to remain unseen while eliminating targets. Invisibility is balanced with sound-based detection and limited energy, requiring careful planning.'
-  - 'Halo: Active camouflage grants temporary invisibility, balanced by energy depletion and a shimmer effect when moving. This forces players to use it tactically rather than relying on it constantly.'
+    - 'Dishonored: Invisibility, in the form of the "Bend Time" and "Shadow Walk" powers, is a cornerstone of the game''s "play your way" philosophy. It synergizes with other traversal abilities like "Blink" but is carefully balanced by its high mana cost, forcing players to use it thoughtfully as part of a larger stealth plan.'
+    - 'Halo: Active Camouflage is a classic multiplayer tool used for mind games and ambushes. Its balance is legendary: the visible shimmer during movement and the static interference it causes on the motion tracker make it a high-risk, high-reward ability that can be countered by observant opponents.'
+  isHumanWritten: false
