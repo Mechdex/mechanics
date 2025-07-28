@@ -150,6 +150,12 @@
         "short_description": "Alter gameplay through gravity changes."
     },
     {
+        "symbol": "MtC",
+        "name": "Motion Controls",
+        "category": "Input",
+        "short_description": "Control gameplay with physical motion."
+    },
+    {
         "symbol": "Ti",
         "name": "Touch Input",
         "category": "Input",
@@ -160,12 +166,6 @@
         "name": "Voice Input",
         "category": "Input",
         "short_description": "Control gameplay with voice commands."
-    },
-    {
-        "symbol": "MtC",
-        "name": "Motion Controls",
-        "category": "Input",
-        "short_description": "Control gameplay with physical motion."
     },
     {
         "symbol": "Gr",
