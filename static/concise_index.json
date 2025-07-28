@@ -645,7 +645,7 @@
         "symbol": "Rg",
         "name": "Regeneration",
         "category": "Abilities",
-        "short_description": "Health regenerates over time."
+        "short_description": "Automatically recover health over time."
     },
     {
         "symbol": "Sh",
