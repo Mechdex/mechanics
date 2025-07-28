@@ -8,12 +8,20 @@ docs = []
 
 for dirpath, dirnames, filenames in os.walk("../"):
     if len(filenames) > 0 and filenames[0] == "mechanic.yaml":
-        with open(os.path.join(dirpath, filenames[0]), encoding="utf-8") as f:
-            doc = yaml.safe_load(f)["mechanic"]
-            docs.append(doc)
-
+        file_path = os.path.join(dirpath, filenames[0])
+        try:
+            # First, try to open and read the file as UTF-8 (the standard)
+            with open(file_path, 'r', encoding='utf-8') as f:
+                doc = yaml.safe_load(f)["mechanic"]
+        except UnicodeDecodeError:
+            # If UTF-8 fails, it's likely a Windows-encoded file.
+            # Try again with the common 'cp1252' encoding as a fallback.
+            print(f"Warning: '{file_path}' is not UTF-8. Falling back to cp1252.")
+            with open(file_path, 'r', encoding='cp1252') as f:
+                doc = yaml.safe_load(f)["mechanic"]
+        
+        docs.append(doc)
         print(f"Completed {doc['symbol']}.")
-
 concise_docs = []
 symbol_set = []
 
