@@ -3,12 +3,15 @@ mechanic:
   name: Block
   category: Actions
   long_description: |
-    Blocking allows players to defend against incoming attacks using a shield, weapon, or other defensive tool. When a block is performed, it typically reduces or nullifies damage from an incoming strike, depending on the game’s mechanics. Some games allow perfect blocks, which negate all damage, while others may implement chip damage where a fraction of the attack still gets through. 
-    
-    The effectiveness of blocking varies by game design. In action-heavy games like the Batman: Arkham series, blocking is fluid and intuitive, allowing players to seamlessly counterattack. In more tactical combat systems, such as those found in fighting games, blocking may be tied to directional input or frame-perfect timing. Shields, weapons, or even parries can all be used to execute a block, making it a fundamental part of defensive play.
+    Block is a defensive action that allows a character to mitigate or nullify incoming damage. Its implementation is defined by its resource cost—almost always Stamina or a hidden 'poise' value. Sustaining hits on a block consumes this resource, and depleting it results in a 'Guard Break,' a vulnerable state that punishes passive, defensive play. This creates a risk-reward system where blocking is a temporary safeguard, not a permanent solution.
+
+    The effectiveness of a block is determined by the equipment used. Heavy shields offer high stability and damage reduction, while blocking with a smaller weapon is a less effective, higher-risk option. Advanced implementations include directional blocking, where the block must match the attack's direction, and 'chip damage,' where certain attack types (like elemental or poison) partially bypass the defense. Block is a core pillar of tactical combat, existing in a triangle with attacking and dodging.
   short_description: Defensive maneuver to mitigate damage.
-  solved_problems: |
-    - Stale combat: When combat in your game boils down to repeatedly attacking the enemy, it can get boring. A Block action adds a new dimension to combat, and usually becomes as important to gameplay as your Attack action.
+  solved_problems:
+    One-dimensional combat: "Systems that only revolve around attacking and dodging become repetitive. A block action introduces a third core option, creating a 'rock-paper-scissors' dynamic between attacking, blocking, and guard-breaking moves. This forces players to read their opponent and make tactical decisions rather than just spamming one action."
+    Combat pacing and rhythm: "Designers need tools to control the flow of a fight. Blocking, especially when tied to a stamina cost, creates a natural rhythm of offense and defense. It forces lulls in the action as both player and AI manage their resources, creating deliberate windows of opportunity and preventing combat from becoming a non-stop, chaotic flurry."
   examples:
-  - 'Batman: Arkham series: Blocking enemy strikes with gadgets and counters.'
-  - 'Street Fighter series: High and low blocks to counter various attacks.'
+    Dark Souls: "Blocking is a high-commitment action directly tied to the Stamina bar. Shields have a 'Stability' stat determining how much stamina is consumed per blocked hit. This design makes blocking a deliberate tactical choice, where players must weigh the stamina cost against the riskier, but more rewarding, dodge or parry."
+    The Elder Scrolls V - Skyrim: "This system features a timed block mechanic where a well-timed block or 'bash' staggers an opponent, creating an opening for a counter-attack. This rewards proactive, skillful defense over passive turtling and integrates the block action directly into the player's offensive rotation."
+    Sekiro - Shadows Die Twice: "This game evolves blocking into the 'Deflect' system, the central combat mechanic. Instead of health, combat revolves around breaking an opponent's 'Posture.' Perfectly timed blocks (deflections) deal posture damage, making blocking the primary offensive method for creating finishing blow opportunities."
+  isHumanWritten: false
