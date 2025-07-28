@@ -8,203 +8,51 @@ import os
 
 yaml_data_string = """
 mechanic:
-  symbol: "Cpr"
-  name: "Contextual Prompts"
-  category: "UI"
+  symbol: "QtE"
+  name: "Quick Time Event"
+  category: "Actions"
   long_description: |
-    A Contextual Prompt is a UI element that dynamically displays a button prompt on-screen when the player is near an interactable object or in a specific state. The prompt typically shows both the available action (e.g., 'Open,' 'Talk,' 'Take') and the key or button required to perform it. It serves as the direct visual feedback for the Interact mechanic, communicating available actions to the player.
-  short_description: "Dynamic on-screen prompts for available actions."
+    A Quick Time Event (QTE) is a scripted interaction where the player must press a prompted button, or sequence of buttons, within a short time limit. Its primary function is to maintain player engagement during a non-interactive or highly cinematic sequence, effectively bridging the gap between active gameplay and passive cutscenes.
+
+    The design of a QTE is defined by its consequences and presentation. Failure can result in instant death, a minor penalty, or a branching narrative path. Modern implementations often favor less intrusive UI and more meaningful outcomes to avoid breaking player immersion.
+  short_description: "Timed button prompts for cinematic actions."
   solved_problems:
-    - title: "Invisible interaction points"
+    - title: "Non-standard character actions"
       description: |
-        It's a design challenge to clearly communicate which of the thousands of objects in a game world are interactable without cluttering the screen with constant icons. Contextual prompts solve this by only appearing when the player is in range of an object. This keeps the world clean while providing clear, just-in-time affordances for interaction.
+        A game's core verbs (move, jump, attack) can't cover every unique action a cinematic story beat might demand. Your narrative may require a specific physical feat, like holding a door shut, or you may have a costly animation for a dramatic moment with no way to trigger it via the standard controls. QTEs are a simple way to connect one-off actions to the game without breaking immersion or building a massive action set.
+    - title: "Breaking immersion during cutscenes"
+      description: |
+        To keep players engaged during long cinematics, designers need a form of light interaction. QTEs provide this by using minimal, clearly telegraphed prompts for simple actions. This keeps the player focused as an active participant without cluttering the screen with a full UI. As a bonus, it also prevents the jarring 'fumble for the controller' when the scene suddenly demands input.
   examples:
-    - title: "The Legend of Zelda: Breath of the Wild"
+    - title: "God of War (Original Trilogy)"
       description: |
-        The game uses simple, clean text prompts that appear over objects and NPCs. This minimalist system ensures the player always knows what they can interact with without ever distracting from the game's painterly art style.
-    - title: "Red Dead Redemption 2"
+        QTEs are used as brutal, cinematic finishers for bosses and large enemies. Success results in a spectacular animation that acts as a reward for winning the fight. The system is purely about spectacle and reinforcing the power fantasy of the character.
+    - title: "Heavy Rain"
       description: |
-        Features a complex system of contextual prompts in the bottom-right corner of the screen. The available actions and the resulting dialogue change dynamically based on who the player is targeting and their current situation, allowing for nuanced interactions.
+        This game uses QTEs as its core gameplay mechanic to simulate physical and emotional strain. The prompts are often intentionally awkward or require holding multiple buttons to mirror the character's physical and emotional strain. Failure doesn't lead to a 'game over,' but instead causes permanent narrative branching.
   isHumanWritten: false
 ---
 mechanic:
-  symbol: "Dt"
-  name: "Dynamic Tooltips"
-  category: "UI"
+  symbol: "Mc"
+  name: "Modular Construction"
+  category: "Building"
   long_description: |
-    A Dynamic Tooltip is an information-rich popup that appears when the player hovers their cursor over a UI element, such as an item in their inventory or an ability on their hotbar. These tooltips are "dynamic" because they update in real-time to reflect how an item's stats would change based on the player's current attributes, buffs, or even a comparison with their currently equipped gear.
-  short_description: "Popups that show real-time statistical information."
+    Modular Construction is a "snap-together" building system that uses a limited set of pre-fabricated, interlocking pieces (like floors, walls, and ramps). These pieces are designed to connect to each other seamlessly, often on a grid system, allowing for rapid and intuitive building. This method contrasts with more granular, free-form systems like voxel-based construction.
+  short_description: "Flexible building with modular parts."
   solved_problems:
-    - title: "Complex statistical calculations"
+    - title: "High barrier to entry for building"
       description: |
-        It's difficult for a player in a complex RPG to know if a new piece of gear is an upgrade without manually calculating many different stats. Dynamic tooltips solve this by performing the comparison automatically. They instantly show the player the exact statistical gains or losses, allowing for quick, informed decisions without breaking game flow.
+        Free-form building systems can be overwhelming and often result in ugly, non-functional structures for unskilled players. A modular system solves this by using a limited set of easy-to-use, snap-together pieces. This guarantees that even novice builders can create structurally sound and aesthetically pleasing buildings quickly.
+    - title: "Slow-paced building in a fast-paced game"
+      description: |
+        It's a design conflict to have a deep building system in a fast-paced combat game, as traditional building is too slow to be used effectively under pressure. Modular construction solves this. By using a limited set of pieces that snap together instantly, it transforms building into a rapid, reflexive combat skill, allowing for dynamic creation of cover and structures mid-fight.
   examples:
-    - title: "World of Warcraft"
+    - title: "Fortnite: Battle Royale"
       description: |
-        The game's tooltips are foundational to its complex gearing system. By default, hovering over a new item brings up a tooltip comparing it side-by-side with the currently equipped item, showing precise stat changes in green or red.
-    - title: "Path of Exile"
+        The game's signature mechanic is its fast-paced modular construction, where players can instantly build walls, ramps, and floors in the middle of a firefight. This turns building into a core combat and traversal skill.
+    - title: "No Man's Sky"
       description: |
-        Features an extremely detailed tooltip system. Holding a key like 'Alt' can reveal additional layers of information, such as the possible range of random stat rolls on an item, providing expert players with all the data they need.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Hud"
-  name: "HUD"
-  category: "UI"
-  long_description: |
-    The Heads-Up Display (HUD) is the collection of persistent, on-screen user interface elements that display critical real-time game information to the player. This commonly includes a health bar, ammo count, a minimap, and current objectives. It is a non-diegetic overlay designed to give the player constant access to vital information without needing to pause the game or open a menu.
-  short_description: "The persistent on-screen display of vital game info."
-  solved_problems:
-    - title: "Hidden critical information"
-      description: |
-        It's a design paradox: players need constant access to critical information like their health, but pausing the game to check a menu during intense action is impossible. The HUD solves this by presenting this vital data as a persistent, non-interactive overlay. This allows the player to stay informed at a glance without ever disengaging from the core gameplay.
-  examples:
-    - title: "Dead Space"
-      description: |
-        A famous example of a 'diegetic' HUD. The player's health and stasis energy are displayed as illuminated meters on the back of the character's suit itself, rather than as an overlay. This integrates the UI directly into the game world to enhance immersion.
-    - title: "Metroid Prime"
-      description: |
-        The HUD is cleverly framed as the inside of the character's helmet. The player can see reflections of their own face during bright flashes, and raindrops realistically trickle down the visor, making the HUD a core part of the game's immersive experience.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Mm"
-  name: "Minimap"
-  category: "UI"
-  long_description: |
-    A Minimap is a small, real-time map of the player's immediate surroundings, displayed as a persistent element of the HUD, typically in a corner of the screen. It shows the player's position and orientation, nearby points of interest, quest objectives, and sometimes the position of enemies. It provides crucial navigational and situational awareness at a glance.
-  short_description: "A small, corner-of-the-screen map for navigation."
-  solved_problems:
-    - title: "Constant navigation interruption"
-      description: |
-        Forcing a player to constantly open a full-screen map to navigate a complex area breaks the flow of gameplay. The minimap solves this. It provides essential, at-a-glance navigational information directly on the gameplay screen, allowing players to orient themselves and find objectives without interrupting their movement and exploration.
-  examples:
-    - title: "Grand Theft Auto (series)"
-      description: |
-        Its circular minimap is iconic. It not only shows the road layout but also displays objective markers, police locations, and a GPS route, making it an essential tool for navigating its dense city environments.
-    - title: "The Elder Scrolls V: Skyrim"
-      description: |
-        Instead of a map, Skyrim uses a horizontal "compass" at the top of the screen. This serves a similar purpose, pointing out nearby discovered locations and quest markers without showing the detailed topography, encouraging more organic exploration.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Rmn"
-  name: "Radial Menus"
-  category: "UI"
-  long_description: |
-    A Radial Menu is a user interface element where options are arranged in a circle around a central point, designed for quick selection with a controller's analog stick. When the player holds a button, the menu appears, and they select an option by flicking the stick in the corresponding direction and releasing the button. It is commonly used for weapon, item, or emote selection.
-  short_description: "A circular menu designed for fast analog stick selection."
-  solved_problems:
-    - title: "Slow inventory access during combat"
-      description: |
-        It's a design problem that accessing items from a traditional, list-based menu during real-time combat is slow and clunky. A radial menu solves this. It maps a large number of items or weapons to quick, directional muscle-memory gestures on an analog stick, allowing the player to select what they need in a fraction of a second.
-  examples:
-    - title: "The Legend of Zelda: Ocarina of Time"
-      description: |
-        One of the earliest examples, used for assigning items to the C buttons. It allowed players to quickly swap between a large inventory of items, which was crucial for its puzzle-solving and combat.
-    - title: "Horizon Zero Dawn"
-      description: |
-        Uses a radial menu to allow the player to quickly craft different types of ammunition in the heat of battle. This integrates crafting directly into the combat loop without requiring the player to pause and enter a menu.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "DEc"
-  name: "Dynamic Ecosystem"
-  category: "World"
-  long_description: |
-    A Dynamic Ecosystem is a complex simulation where different forms of AI life (predators, prey, herbivores) and sometimes even flora interact with each other and the environment based on a set of systemic rules. These systems are designed to create unscripted, emergent behaviors, such as predators hunting prey, animals traveling in herds to specific water sources, or scavengers appearing at a fresh kill.
-  short_description: "A simulation of interacting flora and fauna."
-  solved_problems:
-    - title: "Lifeless, scripted game worlds"
-      description: |
-        It's a design challenge to make a game's wildlife feel authentic when every animal is just a mindless, wandering prop on a pre-set path. A dynamic ecosystem solves this by creating a web of interacting AI systems. This results in emergent, unscripted events that make the world feel like a living, breathing place that exists independently of the player's actions.
-  examples:
-    - title: "Red Dead Redemption 2"
-      description: |
-        Features an incredibly detailed ecosystem. Animals have daily routines, predators hunt prey, carcasses attract scavengers, and the player's actions (like over-hunting) can have a noticeable impact on the local animal population.
-    - title: "Far Cry (series)"
-      description: |
-        The ecosystem is a source of chaotic, emergent gameplay. It's common for the player's carefully planned stealth infiltration of an outpost to be ruined (or aided) by a wild tiger suddenly attacking the guards.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Dnc"
-  name: "Day-Night Cycle"
-  category: "World"
-  long_description: |
-    A Day-Night Cycle is a system that simulates the passage of time in the game world, typically with a continuously moving sun and moon, changing skyboxes, and dynamic global lighting. This cycle is often tied directly to gameplay systems, with different NPCs, enemies, quests, or resource availability being tied to a specific time of day.
-  short_description: "Simulates the 24-hour passage of time."
-  solved_problems:
-    - title: "Static environmental conditions"
-      description: |
-        A world permanently locked at a single time of day feels static and artificial. A day-night cycle solves this by introducing the constant, natural rhythm of time. This not only adds visual variety but allows designers to create time-dependent gameplay, such as tougher enemies at night or shops that only open in the morning, making the world feel more dynamic.
-  examples:
-    - title: "Minecraft"
-      description: |
-        The day-night cycle is a fundamental part of its survival loop. Daytime is relatively safe for building and gathering, while nighttime is dangerous as hostile monsters spawn in the darkness, forcing the player to seek or build shelter.
-    - title: "The Legend of Zelda: Ocarina of Time"
-      description: |
-        A pioneering example in 3D games. The transition between day and night in Hyrule Field affected which enemies appeared and which events could be triggered, making time a key factor in the player's journey.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Eh"
-  name: "Environmental Hazards"
-  category: "World"
-  long_description: |
-    Environmental Hazards are elements of the game world that can inflict damage or a negative status effect on the player through proximity or contact. This can include natural hazards like pools of lava, deep water, or toxic gas vents, as well as man-made dangers like electrified floors, fields of radiation, or spinning blades.
-  short_description: "Elements of the world that can harm the player."
-  solved_problems:
-    - title: "Uniformly safe traversal"
-      description: |
-        If the entire game world is safe to walk on, traversal becomes a simple act of holding forward with no engagement. Environmental hazards solve this. They turn the environment itself into an antagonist, forcing the player to be mindful of their surroundings and creating traversal puzzles where the path itself is a source of challenge.
-  examples:
-    - title: "Half-Life (series)"
-      description: |
-        The series is famous for its environmental hazards. Players must navigate rooms filled with radioactive waste, avoid electrified water, and use physics puzzles to bypass barnacle-infested ceilings.
-    - title: "Super Mario Bros. (series)"
-      description: |
-        Bottomless pits and lava pools are the most iconic environmental hazards in gaming. They are a fundamental part of the platforming challenge, requiring precise jumps to avoid instant death.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Owm"
-  name: "Open World Map"
-  category: "World"
-  long_description: |
-    An Open World Map is the user interface screen that displays the player's position within a large, non-linear game world. It serves as the primary tool for navigation, allowing players to set custom waypoints, view discovered points of interest, and often track the locations of quests and other activities spread across the expansive game space.
-  short_description: "The primary navigational UI for a large game world."
-  solved_problems:
-    - title: "Player disorientation in large worlds"
-      description: |
-        It's a design challenge to allow players to freely explore a massive world without them getting hopelessly lost. The open world map is the fundamental solution. It provides the essential cartographic tool that gives players the confidence to explore, allowing them to orient themselves, plan long journeys, and track their progress.
-  examples:
-    - title: "The Elder Scrolls V: Skyrim"
-      description: |
-        Features a fully 3D world map that can be zoomed and panned. It provides a detailed topographical view of the world and is populated with hundreds of markers for discovered locations, making it an essential tool for exploration.
-    - title: "Grand Theft Auto V"
-      description: |
-        Its map starts obscured by a 'fog of war' and is revealed as the player explores. It functions like a satellite GPS, showing a detailed road network and allowing the player to set waypoints for navigation.
-  isHumanWritten: false
----
-mechanic:
-  symbol: "Ws"
-  name: "Weather Systems"
-  category: "World"
-  long_description: |
-    A Weather System is a feature that dynamically simulates changing atmospheric conditions, such as rain, snow, fog, thunderstorms, and wind. These systems can be purely for atmospheric effect, or they can have a direct and systemic impact on gameplay by affecting visibility, NPC behavior, traversal mechanics (e.g., slippery surfaces), or the effectiveness of certain elements like fire.
-  short_description: "Dynamic and simulated atmospheric conditions."
-  solved_problems:
-    - title: "Static environmental conditions"
-      description: |
-        A world with permanently clear skies feels artificial and lacks dynamism. A weather system solves this by introducing atmospheric variety. This not only enhances immersion and visual interest but can also be used by designers to directly influence gameplay, such as fog reducing visibility in a stealth section or rain making surfaces slippery.
-  examples:
-    - title: "Red Dead Redemption 2"
-      description: |
-        Features a complex weather system where storm fronts can be seen rolling in from a distance. A heavy rain will turn roads to mud, while a blizzard in the mountains can cause the player's health to drain if they are not wearing warm enough clothing.
-    - title: "The Legend of Zelda: Breath of the Wild"
-      description: |
-        Weather is a core gameplay mechanic. Rain makes cliffs slippery and impossible to climb, while thunderstorms can cause the player's metal equipment to attract deadly lightning strikes, forcing them to adapt their gear and plans.
+        Base building relies on a large library of modular components that snap together, allowing players to easily construct sprawling and complex bases without needing to place every single wall panel individually.
   isHumanWritten: false"""
 
 def process_mechanics_direct_write(data_string):

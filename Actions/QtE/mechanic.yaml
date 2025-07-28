@@ -10,8 +10,15 @@ mechanic:
   solved_problems:
     - title: "Non-standard character actions"
       description: |
-        A game's core verbs (move, jump, attack) can't cover every unique action a cinematic story beat might demand. You may have a specific animation for a dramatic feat, like holding a door shut, with no way to trigger it via the standard controls. QTEs are a simple way to connect one-off actions to the game without breaking immersion or building a massive action set.
+        A game's core verbs (move, jump, attack) can't cover every unique action a cinematic story beat might demand. Your narrative may require a specific physical feat, like holding a door shut, or you may have a costly animation for a dramatic moment with no way to trigger it via the standard controls. QTEs are a simple way to connect one-off actions to the game without breaking immersion or building a massive action set.
     - title: "Breaking immersion during cutscenes"
       description: |
         To keep players engaged during long cinematics, designers need a form of light interaction. QTEs provide this by using minimal, clearly telegraphed prompts for simple actions. This keeps the player focused as an active participant without cluttering the screen with a full UI. As a bonus, it also prevents the jarring 'fumble for the controller' when the scene suddenly demands input.
+  examples:
+    - title: "God of War (Original Trilogy)"
+      description: |
+        QTEs are used as brutal, cinematic finishers for bosses and large enemies. Success results in a spectacular animation that acts as a reward for winning the fight. The system is purely about spectacle and reinforcing the power fantasy of the character.
+    - title: "Heavy Rain"
+      description: |
+        This game uses QTEs as its core gameplay mechanic to simulate physical and emotional strain. The prompts are often intentionally awkward or require holding multiple buttons to mirror the character's physical and emotional strain. Failure doesn't lead to a 'game over,' but instead causes permanent narrative branching.
   isHumanWritten: false

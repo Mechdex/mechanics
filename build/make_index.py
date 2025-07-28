@@ -8,7 +8,7 @@ docs = []
 
 for dirpath, dirnames, filenames in os.walk("../"):
     if len(filenames) > 0 and filenames[0] == "mechanic.yaml":
-        with open(os.path.join(dirpath, filenames[0])) as f:
+        with open(os.path.join(dirpath, filenames[0]), encoding="utf-8") as f:
             doc = yaml.safe_load(f)["mechanic"]
             docs.append(doc)
 
@@ -28,6 +28,8 @@ try:
                 f"Validation failed! {doc['symbol']} from {doc['name']} is used in multiple places."
             )
             exit(1)
+        if "examples" not in doc:
+            print("HM", doc['symbol'])
 
         symbol_set.append(doc["symbol"])
         for k in ["symbol", "name", "category", "short_description"]:

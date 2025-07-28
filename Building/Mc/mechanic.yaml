@@ -8,4 +8,15 @@ mechanic:
   solved_problems:
     - title: "High barrier to entry for building"
       description: |
-        Free-form building systems can be overwhelming and often result in ugly, non-functional structures for unskilled players. A modular system solves this by using a limited set of easy-to-use, snap-together pieces. This guarantees that even novice builders can create structurally sound and aesthetically
+        Free-form building systems can be overwhelming and often result in ugly, non-functional structures for unskilled players. A modular system solves this by using a limited set of easy-to-use, snap-together pieces. This guarantees that even novice builders can create structurally sound and aesthetically pleasing buildings quickly.
+    - title: "Slow-paced building in a fast-paced game"
+      description: |
+        It's a design conflict to have a deep building system in a fast-paced combat game, as traditional building is too slow to be used effectively under pressure. Modular construction solves this. By using a limited set of pieces that snap together instantly, it transforms building into a rapid, reflexive combat skill, allowing for dynamic creation of cover and structures mid-fight.
+  examples:
+    - title: "Fortnite: Battle Royale"
+      description: |
+        The game's signature mechanic is its fast-paced modular construction, where players can instantly build walls, ramps, and floors in the middle of a firefight. This turns building into a core combat and traversal skill.
+    - title: "No Man's Sky"
+      description: |
+        Base building relies on a large library of modular components that snap together, allowing players to easily construct sprawling and complex bases without needing to place every single wall panel individually.
+  isHumanWritten: false
