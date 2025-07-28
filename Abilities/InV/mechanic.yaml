@@ -8,7 +8,9 @@ mechanic:
     Beyond the visual aspect, sophisticated invisibility systems are tightly integrated with the AI's sensory logic. Enemies might not see the player, but they may still react to secondary stimuli like sound from footsteps, interactions with the environment, or the "sound" of the cloak activating/deactivating. Balancing is critical and typically involves limitations like a finite duration, a depletable energy/mana pool, or the effect immediately breaking upon performing an aggressive action.
   short_description: "Become unseen to stealth past enemies."
   solved_problems:
-    - "Narrow Skill Checks: A specific combat or traversal sequence might be too difficult for a portion of the player base, creating a frustrating roadblock. Invisibility can function as a player-controlled bypass for these moments. It allows a struggling player to get past a high-difficulty area without the designer needing to implement a complex dynamic difficulty system or lower the challenge for more skilled players."
+    - title: "Narrow skill checks"
+      description: |
+        A specific combat or traversal sequence might be too difficult for a portion of the player base, creating a frustrating roadblock. Invisibility can function as a player-controlled bypass for these moments. It allows a struggling player to get past a high-difficulty area without the designer needing to implement a complex dynamic difficulty system or lower the challenge for more skilled players.
   examples:
     - title: "Dishonored"
       description: |

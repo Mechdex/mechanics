@@ -1,20 +1,28 @@
 mechanic:
-  symbol: "Rm"
-  name: "Rage Mode"
+  symbol: "Rg"
+  name: "Regeneration"
   category: "Abilities"
   long_description: |
-    Rage Mode is a combat-focused state change that provides a significant, temporary surge in power. It functions as a comeback mechanic or a reward for aggressive play, typically fueled by a meter that fills as the player deals and/or receives damage. Activating it transforms the player character, often unlocking a new set of powerful attacks, granting invulnerability, or providing massive boosts to damage, speed, and health regeneration.
-
-    The feeling of overwhelming power is paramount, conveyed through dramatic audio-visual transformations. This can include changes to the character model (glowing eyes, altered physique), aggressive particle effects, a shift in the musical score, and visceral, impactful sound design for attacks. To prevent it from becoming a crutch, designers often balance it with trade-offs like a loss of fine control or a temporary debuff after the effect wears off.
-  short_description: "Temporary power surge in combat."
+    Regeneration is a passive character attribute that automatically restores Health Points (HP) over time. Its implementation is governed by several key design levers: the rate (HP restored per second), the delay (the time required out of combat before regeneration begins), and interruptibility (whether taking damage resets the delay). Unlike the burst-healing of consumable items, regeneration provides a slow, continuous resource flow that fundamentally changes the pacing between combat encounters. It ensures players can recover from minor damage without expending finite resources, making it a powerful tool for attrition-based gameplay.
+  short_description: "Automatically recover health over time."
   solved_problems:
-    - "Player Passivity: Some players naturally avoid risk, leading to slow, defensive 'turtling' strategies that are less engaging. Rage Mode solves this by creating a positive feedback loop where aggressive play directly fuels a powerful reward. This incentivizes proactive combat and discourages stagnant gameplay."
-    - "Difficulty Spikes: Sudden, sharp increases in enemy density or boss difficulty can halt player progress and cause frustration. Rage Mode acts as a player-controlled equalizer. It provides a tool to overcome these overwhelming moments, preventing player burnout and maintaining forward momentum through the toughest encounters."
+    - title: "Post-combat downtime"
+      description: |
+        After a fight, a low-health player must stop all forward momentum to find healing items, which could mess up the game's pacing. Regeneration solves this by automatically restoring health after a short delay once combat ends. This allows designers to string encounters together more closely and maintain a high-tempo pace.
+    - title: "Resource deadlock"
+      description: |
+        Designers who use finite healing items risk putting players in an unwinnable state; a player who uses too many health packs early cannot finish the level. Regeneration provides a baseline recovery method that acts as a safety net. This frees the designer from having to meticulously map out consumable placement and protects the player from being permanently punished for early mistakes.
+    - title: "Hyper-passive playstyles"
+      description: |
+        Some players prefer playing slowly, methodically, and out of danger. This might not be the intended experience of the game. By limiting health items and implementing regeneration, they're forced to actually engage in combat before being able to heal. 
   examples:
-    - title: "God of War"
+    - title: "Call of Duty series"
       description: |
-        Spartan Rage is a perfect fusion of mechanic and narrative. It is not just a stat boost but a complete transformation where Kratos uses his bare hands, becomes unstoppable, and regains health with each hit. This embodies his character's lore and provides a tool for both aggression and survival.
-    - title: "Doom Eternal"
+        Defines the modern military shooter's gameplay loop. After the player avoids damage for a few seconds, health regenerates rapidly. This encourages a tactical, cover-based rhythm of popping out to shoot and ducking back to recover, removing the need for health pack management entirely.
+    - title: "The Elder Scrolls V: Skyrim"
       description: |
-        The Berserk power-up is a contextual variant that reinforces the core 'push-forward combat' loop. As a temporary item pickup, it encourages hyper-aggression by allowing the Doom Slayer to perform one-hit 'Glory Kills' on any standard demon. This turns enemies into a resource for health and control, maintaining the game's aggressive flow.
+        Implemented as a stat on gear or as a racial bonus. The regeneration is a slow trickle, less effective in active combat but highly effective for recovering from minor damage between fights. This reduces the player's reliance on a finite pool of potions for out-of-combat healing.
+    - title: "X-Men Origins: Wolverine"
+      description: |
+        A thematic implementation where rapid, visually represented healing is central to the character fantasy. This enables a hyper-aggressive playstyle where taking damage is expected, as the regeneration is potent enough to allow for continuous engagement with minimal downtime.
   isHumanWritten: false

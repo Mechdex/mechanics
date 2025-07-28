@@ -8,8 +8,12 @@ mechanic:
     Effective shield design requires clear player feedback, including distinct audio cues for shield versus health damage, a visible UI element for shield integrity, and a prominent "shatter" effect when it breaks. Advanced systems include "shield gating," a critical mechanic where any amount of shield absorbs a full instance of damage to prevent one-shot kills from high-damage sources.
   short_description: "Temporary damage absorption."
   solved_problems:
-    - "Player Risk Aversion: When health is a scarce, non-regenerating resource, players play overly cautiously to conserve it, leading to slow gameplay. A regenerating shield solves this by providing a replenishing buffer for minor damage. This encourages players to engage in fights without fear of permanently depleting their core survivability resource."
-    - "One-Shot Frustration: High-damage enemies like snipers can kill a player instantly from full health, which feels cheap and unfair. A shield system, especially with 'shield gating,' prevents these one-shot deaths. This guarantees the player can survive at least one major mistake, giving them a chance to learn the threat and react."
+    - title: "Hyper-passive playstyles"
+      description: |
+        When health is a scarce, non-regenerating resource, players play overly cautiously to conserve it, leading to slow gameplay. A regenerating shield solves this by providing a replenishing buffer for minor damage. This encourages players to engage in fights without fear of permanently depleting their core survivability resource.
+    - title: "Frustration with difficult enemies"
+      description: |
+        High-damage enemies like snipers can kill a player instantly from full health, which feels cheap and unfair. A shield system, especially with 'shield gating,' prevents these one-shot deaths. This guarantees the player can survive at least one major mistake, giving them a chance to learn the threat and react.
   examples:
     - title: "Halo"
       description: |

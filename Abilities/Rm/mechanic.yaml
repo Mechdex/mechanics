@@ -8,8 +8,12 @@ mechanic:
     The feeling of overwhelming power is paramount, conveyed through dramatic audio-visual transformations. This can include changes to the character model (glowing eyes, altered physique), aggressive particle effects, a shift in the musical score, and visceral, impactful sound design for attacks. To prevent it from becoming a crutch, designers often balance it with trade-offs like a loss of fine control or a temporary debuff after the effect wears off.
   short_description: "Temporary power surge in combat."
   solved_problems:
-    - "Player Passivity: Some players naturally avoid risk, leading to slow, defensive 'turtling' strategies that are less engaging. Rage Mode solves this by creating a positive feedback loop where aggressive play directly fuels a powerful reward. This incentivizes proactive combat and discourages stagnant gameplay."
-    - "Difficulty Spikes: Sudden, sharp increases in enemy density or boss difficulty can halt player progress and cause frustration. Rage Mode acts as a player-controlled equalizer. It provides a tool to overcome these overwhelming moments, preventing player burnout and maintaining forward momentum through the toughest encounters."
+    - title: "Hyper-passive playstyles"
+      description: |
+        Some players naturally avoid risk, leading to slow, defensive 'turtling' strategies that are less engaging. Rage Mode solves this by creating a positive feedback loop where aggressive play directly fuels a powerful reward. This incentivizes proactive combat and discourages stagnant gameplay.
+    - title: "Difficulty spikes"
+      description: |
+        Some players might find certain parts or procedurally-generated aspects of the game too difficult, and there might not be a way to specifically change difficulty during these moments. Rage mode lets players boost power and health on-demand occasionally.
   examples:
     - title: "God of War"
       description: |
