@@ -1,15 +1,19 @@
 mechanic:
-  symbol: InV
-  name: Invisibility
-  category: Abilities
+  symbol: "InV"
+  name: "Invisibility"
+  category: "Abilities"
   long_description: |
     Invisibility is a stealth-oriented mechanic that masks the player character from enemy sight, enabling strategic repositioning, bypassing encounters, or setting up ambushes. The implementation can range from complete visual concealment to a partial "predator-style" shimmer, often achieved with distortion or fresnel shaders that bend light around the character model. This visual cue is a key balancing factor, as it still allows highly attentive enemies (or other players) to spot movement.
 
-    Beyond the visual aspect, sophisticated invisibility systems are tightly integrated with the AI's sensory logic. Enemies might not see the player, but they may still react to secondary stimuli like sound from footsteps, interactions with the environment, or the "sound" of the cloak activating/deactivating. Balancing is critical and typically involves limitations like a finite duration, a depletable energy/mana pool, or the effect immediately breaking upon performing an aggressive action like attacking or, in some cases, even interacting with an objective.
-  short_description: Become unseen to stealth past enemies.
+    Beyond the visual aspect, sophisticated invisibility systems are tightly integrated with the AI's sensory logic. Enemies might not see the player, but they may still react to secondary stimuli like sound from footsteps, interactions with the environment, or the "sound" of the cloak activating/deactivating. Balancing is critical and typically involves limitations like a finite duration, a depletable energy/mana pool, or the effect immediately breaking upon performing an aggressive action.
+  short_description: "Become unseen to stealth past enemies."
   solved_problems:
-    Narrow skill checks: "Designers usually have to design levels for players of many skill levels. Invisibility is a type of mechanic that when combined with some sort of one-time power-up/purchase, *reduces* the difficulty on-demand for players who can't get past a certain sequence. That way, narrow skill checks don't have to dynamically adjust their difficulty for different players."
+    - "Narrow Skill Checks: A specific combat or traversal sequence might be too difficult for a portion of the player base, creating a frustrating roadblock. Invisibility can function as a player-controlled bypass for these moments. It allows a struggling player to get past a high-difficulty area without the designer needing to implement a complex dynamic difficulty system or lower the challenge for more skilled players."
   examples:
-    - Dishonored: "Invisibility, in the form of the 'Bend Time' and 'Shadow Walk' powers, is a cornerstone of the game's 'play your way' philosophy. It synergizes with other traversal abilities like 'Blink' but is carefully balanced by its high mana cost, forcing players to use it thoughtfully as part of a larger stealth plan."
-    - Halo: "Active Camouflage is a classic multiplayer tool used for mind games and ambushes. Its balance is legendary: the visible shimmer during movement and the static interference it causes on the motion tracker make it a high-risk, high-reward ability that can be countered by observant opponents."
+    - title: "Dishonored"
+      description: |
+        Invisibility, in the form of the 'Bend Time' and 'Shadow Walk' powers, is a cornerstone of the game's 'play your way' philosophy. It synergizes with other traversal abilities like 'Blink' but is carefully balanced by its high mana cost, forcing players to use it thoughtfully as part of a larger stealth plan.
+    - title: "Halo"
+      description: |
+        Active Camouflage is a classic multiplayer tool used for mind games and ambushes. Its balance is legendary: the visible shimmer during movement and the static interference it causes on the motion tracker make it a high-risk, high-reward ability that can be countered by observant opponents.
   isHumanWritten: false
