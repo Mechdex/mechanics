@@ -1,5 +1,167 @@
 [
     {
+        "symbol": "Bt",
+        "name": "Bullet Time",
+        "category": "Abilities",
+        "short_description": "Slow time for precision and evasion."
+    },
+    {
+        "symbol": "InV",
+        "name": "Invisibility",
+        "category": "Abilities",
+        "short_description": "Become unseen to stealth past enemies."
+    },
+    {
+        "symbol": "Rg",
+        "name": "Regeneration",
+        "category": "Abilities",
+        "short_description": "Automatically recover health over time."
+    },
+    {
+        "symbol": "Rm",
+        "name": "Rage Mode",
+        "category": "Abilities",
+        "short_description": "Temporary power surge in combat."
+    },
+    {
+        "symbol": "Sh",
+        "name": "Shield",
+        "category": "Abilities",
+        "short_description": "Temporary damage absorption."
+    },
+    {
+        "symbol": "Blk",
+        "name": "Block",
+        "category": "Actions",
+        "short_description": "Defensive maneuver to mitigate damage."
+    },
+    {
+        "symbol": "Dg",
+        "name": "Dodge",
+        "category": "Actions",
+        "short_description": "Quick evasion to avoid attacks."
+    },
+    {
+        "symbol": "Int",
+        "name": "Interact",
+        "category": "Actions",
+        "short_description": "Contextual actions for interacting with the world."
+    },
+    {
+        "symbol": "PrY",
+        "name": "Parry",
+        "category": "Actions",
+        "short_description": "Timed counter to enemy attacks."
+    },
+    {
+        "symbol": "QtE",
+        "name": "Quick Time Event",
+        "category": "Actions",
+        "short_description": "Timed button prompts for cinematic actions."
+    },
+    {
+        "symbol": "AaI",
+        "name": "Adaptive AI",
+        "category": "AI",
+        "short_description": "Dynamic adjustment of AI behaviour & difficulty."
+    },
+    {
+        "symbol": "CvR",
+        "name": "Cover System",
+        "category": "AI",
+        "short_description": "AI takes cover during combat."
+    },
+    {
+        "symbol": "Flk",
+        "name": "Flocking",
+        "category": "AI",
+        "short_description": "AI entities coordinate in flocks."
+    },
+    {
+        "symbol": "Per",
+        "name": "Perception",
+        "category": "AI",
+        "short_description": "AI detection of player actions."
+    },
+    {
+        "symbol": "Pf",
+        "name": "Pathfinding",
+        "category": "AI",
+        "short_description": "NPC navigation between different points."
+    },
+    {
+        "symbol": "Aa",
+        "name": "Ambient Audio",
+        "category": "Audio",
+        "short_description": "Immersive environmental soundscapes."
+    },
+    {
+        "symbol": "As",
+        "name": "Adaptive Soundtrack",
+        "category": "Audio",
+        "short_description": "Soundtrack adapts to game intensity."
+    },
+    {
+        "symbol": "Dm",
+        "name": "Dynamic Music",
+        "category": "Audio",
+        "short_description": "Music adapts to gameplay."
+    },
+    {
+        "symbol": "Pa",
+        "name": "Positional Audio",
+        "category": "Audio",
+        "short_description": "Spatial sound for in-game elements."
+    },
+    {
+        "symbol": "Vc",
+        "name": "Voice Commands",
+        "category": "Audio",
+        "short_description": "Use voice to control in-game actions."
+    },
+    {
+        "symbol": "Bb",
+        "name": "Base Building",
+        "category": "Building",
+        "short_description": "Construct and customize bases."
+    },
+    {
+        "symbol": "Bp",
+        "name": "Blueprints",
+        "category": "Building",
+        "short_description": "Pre-designed construction plans."
+    },
+    {
+        "symbol": "Df",
+        "name": "Defensive Fortification",
+        "category": "Building",
+        "short_description": "Strengthen structures for defense."
+    },
+    {
+        "symbol": "Mc",
+        "name": "Modular Construction",
+        "category": "Building",
+        "short_description": "Flexible building with modular parts."
+    },
+    {
+        "symbol": "Zn",
+        "name": "Zoning",
+        "category": "Building",
+        "short_description": "Designate areas for different functions."
+    },
+    {
+        "symbol": "Cc",
+        "name": "Cinematic Camera",
+        "category": "Camera",
+        "short_description": "Cinematic camera angles and movements."
+    },
+    {
+        "symbol": "Fc",
+        "name": "Free Camera",
+        "category": "Camera",
+        "short_description": "Independent camera control."
+    },
+    {
         "symbol": "Fp",
         "name": "First-Person View",
         "category": "Camera",
@@ -12,64 +174,10 @@
         "short_description": "Camera focuses on combat targets."
     },
     {
-        "symbol": "Cc",
-        "name": "Cinematic Camera",
-        "category": "Camera",
-        "short_description": "Cinematic camera angles and movements."
-    },
-    {
         "symbol": "Os",
         "name": "Over-the-Shoulder",
         "category": "Camera",
         "short_description": "Camera positioned over the shoulder."
-    },
-    {
-        "symbol": "Fc",
-        "name": "Free Camera",
-        "category": "Camera",
-        "short_description": "Independent camera control."
-    },
-    {
-        "symbol": "Vc",
-        "name": "Voice Commands",
-        "category": "Audio",
-        "short_description": "Use voice to control in-game actions."
-    },
-    {
-        "symbol": "Dm",
-        "name": "Dynamic Music",
-        "category": "Audio",
-        "short_description": "Music adapts to gameplay."
-    },
-    {
-        "symbol": "As",
-        "name": "Adaptive Soundtrack",
-        "category": "Audio",
-        "short_description": "Soundtrack adapts to game intensity."
-    },
-    {
-        "symbol": "Aa",
-        "name": "Ambient Audio",
-        "category": "Audio",
-        "short_description": "Immersive environmental soundscapes."
-    },
-    {
-        "symbol": "Pa",
-        "name": "Positional Audio",
-        "category": "Audio",
-        "short_description": "Spatial sound for in-game elements."
-    },
-    {
-        "symbol": "QtC",
-        "name": "Quick Time Combat",
-        "category": "Combat",
-        "short_description": "QTE integrated combat sequences."
-    },
-    {
-        "symbol": "CsH",
-        "name": "Cover Shooting",
-        "category": "Combat",
-        "short_description": "Shoot while in cover."
     },
     {
         "symbol": "ChG",
@@ -84,70 +192,124 @@
         "short_description": "Chain attacks into stronger combos."
     },
     {
+        "symbol": "CsH",
+        "name": "Cover Shooting",
+        "category": "Combat",
+        "short_description": "Shoot while in cover."
+    },
+    {
         "symbol": "CtA",
         "name": "Counter Attack",
         "category": "Combat",
         "short_description": "Counter enemy attacks effectively."
     },
     {
-        "symbol": "Xp",
-        "name": "Experience Points",
-        "category": "Progression",
-        "short_description": "Earn points to grow stronger."
+        "symbol": "QtC",
+        "name": "Quick Time Combat",
+        "category": "Combat",
+        "short_description": "QTE integrated combat sequences."
     },
     {
-        "symbol": "Lu",
-        "name": "Leveling Up",
-        "category": "Progression",
-        "short_description": "Advance levels to enhance abilities."
+        "symbol": "Cus",
+        "name": "Customization",
+        "category": "Crafting",
+        "short_description": "Modify items to suit your style."
     },
     {
-        "symbol": "St",
-        "name": "Skill Trees",
-        "category": "Progression",
-        "short_description": "Branching upgrade paths for abilities."
+        "symbol": "McR",
+        "name": "Modular Crafting",
+        "category": "Crafting",
+        "short_description": "Customize items with interchangeable parts."
     },
     {
-        "symbol": "Ps",
-        "name": "Perk System",
-        "category": "Progression",
-        "short_description": "Unique bonuses for character builds."
+        "symbol": "Rc",
+        "name": "Resource Combination",
+        "category": "Crafting",
+        "short_description": "Combine resources to craft items."
     },
     {
-        "symbol": "Ul",
-        "name": "Unlockables",
-        "category": "Progression",
-        "short_description": "Additional content unlocked over time."
+        "symbol": "Rec",
+        "name": "Recipe System",
+        "category": "Crafting",
+        "short_description": "Craft items using predefined recipes."
     },
     {
-        "symbol": "De",
-        "name": "Destructible Environments",
-        "category": "Physics",
-        "short_description": "Environmental elements that can be destroyed."
+        "symbol": "UpG",
+        "name": "Upgrading",
+        "category": "Crafting",
+        "short_description": "Enhance items with upgrades."
     },
     {
-        "symbol": "Rp",
-        "name": "Ragdoll Physics",
-        "category": "Physics",
-        "short_description": "Realistic physics-based body movement."
+        "symbol": "Ah",
+        "name": "Auction House",
+        "category": "Economy",
+        "short_description": "Marketplace for player auctions."
     },
     {
-        "symbol": "Fd",
-        "name": "Fluid Dynamics",
-        "category": "Physics",
-        "short_description": "Realistic simulation of liquids."
+        "symbol": "IgC",
+        "name": "In-Game Currency",
+        "category": "Economy",
+        "short_description": "Currency for in-game transactions."
     },
     {
-        "symbol": "Rlc",
-        "name": "Realistic Collision",
-        "category": "Physics",
-        "short_description": "Accurate physical collision simulation."
+        "symbol": "Mtx",
+        "name": "Microtransactions",
+        "category": "Economy",
+        "short_description": "Real money purchases for in-game items."
     },
     {
-        "symbol": "Gm",
-        "name": "Gravity Manipulation",
-        "category": "Physics",
-        "short_description": "Alter gameplay through gravity changes."
+        "symbol": "Sd",
+        "name": "Supply and Demand",
+        "category": "Economy",
+        "short_description": "Dynamic economic fluctuations."
+    },
+    {
+        "symbol": "TrD",
+        "name": "Trade System",
+        "category": "Economy",
+        "short_description": "Exchange goods via trade."
+    },
+    {
+        "symbol": "Dsc",
+        "name": "Discovery",
+        "category": "Exploration",
+        "short_description": "Uncover hidden locations and secrets."
+    },
+    {
+        "symbol": "Ft",
+        "name": "Fast Travel",
+        "category": "Exploration",
+        "short_description": "Instant travel between known points."
+    },
+    {
+        "symbol": "Me",
+        "name": "Map Expansion",
+        "category": "Exploration",
+        "short_description": "Progressively reveal the game world."
+    },
+    {
+        "symbol": "Ow",
+        "name": "Open World",
+        "category": "Exploration",
+        "short_description": "Seamless, expansive environments."
+    },
+    {
+        "symbol": "Sa",
+        "name": "Secret Areas",
+        "category": "Exploration",
+        "short_description": "Hidden areas with rewards."
+    },
+    {
+        "symbol": "Ci",
+        "name": "Combo Input",
+        "category": "Input",
+        "short_description": "Execute special moves with button sequences."
+    },
+    {
+        "symbol": "Gr",
+        "name": "Gesture Recognition",
+        "category": "Input",
+        "short_description": "Use gestures to control actions."
     },
     {
         "symbol": "MtC",
@@ -168,232 +330,22 @@
         "short_description": "Control gameplay with voice commands."
     },
     {
-        "symbol": "Gr",
-        "name": "Gesture Recognition",
-        "category": "Input",
-        "short_description": "Use gestures to control actions."
-    },
-    {
-        "symbol": "Ci",
-        "name": "Combo Input",
-        "category": "Input",
-        "short_description": "Execute special moves with button sequences."
-    },
-    {
-        "symbol": "Rgh",
-        "name": "Resource Gathering",
-        "category": "Resources",
-        "short_description": "Collect raw materials."
-    },
-    {
-        "symbol": "Im",
-        "name": "Inventory Management",
-        "category": "Resources",
-        "short_description": "Organize collected items."
-    },
-    {
-        "symbol": "Eb",
-        "name": "Economy Balancing",
-        "category": "Resources",
-        "short_description": "Balance resource availability and cost."
-    },
-    {
-        "symbol": "Cm",
-        "name": "Crafting Materials",
-        "category": "Resources",
-        "short_description": "Materials for crafting items."
-    },
-    {
-        "symbol": "Ur",
-        "name": "Upgrade Resources",
-        "category": "Resources",
-        "short_description": "Special resources for upgrades."
-    },
-    {
-        "symbol": "Gc",
-        "name": "In-Game Chat",
-        "category": "Social",
-        "short_description": "Real-time text communication."
-    },
-    {
-        "symbol": "Gs",
-        "name": "Guild Systems",
-        "category": "Social",
-        "short_description": "Form and manage guilds."
-    },
-    {
-        "symbol": "Shb",
-        "name": "Social Hubs",
-        "category": "Social",
-        "short_description": "Central locations for player interaction."
-    },
-    {
-        "symbol": "Fl",
-        "name": "Friend Lists",
-        "category": "Social",
-        "short_description": "Manage your in-game friends."
-    },
-    {
-        "symbol": "Pt",
-        "name": "Player Trading",
-        "category": "Social",
-        "short_description": "Trade items with other players."
-    },
-    {
-        "symbol": "Bb",
-        "name": "Base Building",
-        "category": "Building",
-        "short_description": "Construct and customize bases."
-    },
-    {
-        "symbol": "Mc",
-        "name": "Modular Construction",
-        "category": "Building",
-        "short_description": "Flexible building with modular parts."
-    },
-    {
-        "symbol": "Df",
-        "name": "Defensive Fortification",
-        "category": "Building",
-        "short_description": "Strengthen structures for defense."
-    },
-    {
-        "symbol": "Bp",
-        "name": "Blueprints",
-        "category": "Building",
-        "short_description": "Pre-designed construction plans."
-    },
-    {
-        "symbol": "Zn",
-        "name": "Zoning",
-        "category": "Building",
-        "short_description": "Designate areas for different functions."
-    },
-    {
-        "symbol": "Dt",
-        "name": "Dynamic Tooltips",
-        "category": "UI",
-        "short_description": "Real-time detailed information popups."
-    },
-    {
-        "symbol": "Cpr",
-        "name": "Contextual Prompts",
-        "category": "UI",
-        "short_description": "On-screen action prompts."
-    },
-    {
-        "symbol": "Mm",
-        "name": "Minimap",
-        "category": "UI",
-        "short_description": "Miniature map for navigation."
-    },
-    {
-        "symbol": "Rmn",
-        "name": "Radial Menus",
-        "category": "UI",
-        "short_description": "Circular menu for option selection."
-    },
-    {
-        "symbol": "Hud",
-        "name": "HUD",
-        "category": "UI",
-        "short_description": "On-screen game information display."
-    },
-    {
-        "symbol": "Dw",
-        "name": "Dialogue Wheel",
-        "category": "Narrative",
-        "short_description": "Radial menu for dialogue selection."
-    },
-    {
-        "symbol": "Lrc",
-        "name": "Lore Collection",
-        "category": "Narrative",
-        "short_description": "Collect lore to uncover history."
-    },
-    {
-        "symbol": "Env",
-        "name": "Environmental Storytelling",
-        "category": "Narrative",
-        "short_description": "Story told through environment."
-    },
-    {
-        "symbol": "Nls",
-        "name": "Non-linear Story",
-        "category": "Narrative",
-        "short_description": "Experience the story out of order."
-    },
-    {
-        "symbol": "Bnd",
-        "name": "Branching Dialogue",
-        "category": "Narrative",
-        "short_description": "Dialogue choices that affect the story."
-    },
-    {
-        "symbol": "Sd",
-        "name": "Supply and Demand",
-        "category": "Economy",
-        "short_description": "Dynamic economic fluctuations."
-    },
-    {
-        "symbol": "Mtx",
-        "name": "Microtransactions",
-        "category": "Economy",
-        "short_description": "Real money purchases for in-game items."
-    },
-    {
-        "symbol": "TrD",
-        "name": "Trade System",
-        "category": "Economy",
-        "short_description": "Exchange goods via trade."
-    },
-    {
-        "symbol": "IgC",
-        "name": "In-Game Currency",
-        "category": "Economy",
-        "short_description": "Currency for in-game transactions."
-    },
-    {
-        "symbol": "Ah",
-        "name": "Auction House",
-        "category": "Economy",
-        "short_description": "Marketplace for player auctions."
-    },
-    {
-        "symbol": "Sa",
-        "name": "Secret Areas",
-        "category": "Exploration",
-        "short_description": "Hidden areas with rewards."
-    },
-    {
-        "symbol": "Me",
-        "name": "Map Expansion",
-        "category": "Exploration",
-        "short_description": "Progressively reveal the game world."
-    },
-    {
-        "symbol": "Ow",
-        "name": "Open World",
-        "category": "Exploration",
-        "short_description": "Seamless, expansive environments."
-    },
-    {
-        "symbol": "Dsc",
-        "name": "Discovery",
-        "category": "Exploration",
-        "short_description": "Uncover hidden locations and secrets."
-    },
-    {
-        "symbol": "Ft",
-        "name": "Fast Travel",
-        "category": "Exploration",
-        "short_description": "Instant travel between known points."
+        "symbol": "Ast",
+        "name": "Asset Import",
+        "category": "Modding",
+        "short_description": "Import custom models and textures."
     },
     {
         "symbol": "Cst",
         "name": "Customization Tools",
         "category": "Modding",
         "short_description": "Tools for in-game customization."
+    },
+    {
+        "symbol": "ScE",
+        "name": "Script Extensibility",
+        "category": "Modding",
+        "short_description": "Extend game functionality with custom scripts."
     },
     {
         "symbol": "UgC",
@@ -408,52 +360,16 @@
         "short_description": "Easy access to community mods."
     },
     {
-        "symbol": "Ast",
-        "name": "Asset Import",
-        "category": "Modding",
-        "short_description": "Import custom models and textures."
-    },
-    {
-        "symbol": "ScE",
-        "name": "Script Extensibility",
-        "category": "Modding",
-        "short_description": "Extend game functionality with custom scripts."
-    },
-    {
-        "symbol": "Cus",
-        "name": "Customization",
-        "category": "Crafting",
-        "short_description": "Modify items to suit your style."
-    },
-    {
-        "symbol": "McR",
-        "name": "Modular Crafting",
-        "category": "Crafting",
-        "short_description": "Customize items with interchangeable parts."
-    },
-    {
-        "symbol": "Rec",
-        "name": "Recipe System",
-        "category": "Crafting",
-        "short_description": "Craft items using predefined recipes."
-    },
-    {
-        "symbol": "Rc",
-        "name": "Resource Combination",
-        "category": "Crafting",
-        "short_description": "Combine resources to craft items."
-    },
-    {
-        "symbol": "UpG",
-        "name": "Upgrading",
-        "category": "Crafting",
-        "short_description": "Enhance items with upgrades."
-    },
-    {
-        "symbol": "Wr",
-        "name": "Wall Run",
+        "symbol": "Dj",
+        "name": "Double Jump",
         "category": "Movement",
-        "short_description": "Run along walls for dynamic traversal."
+        "short_description": "Perform a second jump mid-air."
+    },
+    {
+        "symbol": "Ds",
+        "name": "Dash",
+        "category": "Movement",
+        "short_description": "Quick burst of speed."
     },
     {
         "symbol": "Gl",
@@ -462,22 +378,148 @@
         "short_description": "Slow descent by gliding."
     },
     {
-        "symbol": "Dj",
-        "name": "Double Jump",
-        "category": "Movement",
-        "short_description": "Perform a second jump mid-air."
-    },
-    {
         "symbol": "Tp",
         "name": "Teleport",
         "category": "Movement",
         "short_description": "Instantaneous relocation."
     },
     {
-        "symbol": "Ds",
-        "name": "Dash",
+        "symbol": "Wr",
+        "name": "Wall Run",
         "category": "Movement",
-        "short_description": "Quick burst of speed."
+        "short_description": "Run along walls for dynamic traversal."
+    },
+    {
+        "symbol": "Coop",
+        "name": "Co-op Play",
+        "category": "Multiplayer",
+        "short_description": "Play cooperatively with others."
+    },
+    {
+        "symbol": "Mtch",
+        "name": "Matchmaking",
+        "category": "Multiplayer",
+        "short_description": "Automatic player pairing."
+    },
+    {
+        "symbol": "PvP",
+        "name": "PvP",
+        "category": "Multiplayer",
+        "short_description": "Player versus player combat."
+    },
+    {
+        "symbol": "Spc",
+        "name": "Spectator Mode",
+        "category": "Multiplayer",
+        "short_description": "Watch games as a spectator."
+    },
+    {
+        "symbol": "Vch",
+        "name": "Voice Chat",
+        "category": "Multiplayer",
+        "short_description": "Real-time voice communication."
+    },
+    {
+        "symbol": "Bnd",
+        "name": "Branching Dialogue",
+        "category": "Narrative",
+        "short_description": "Dialogue choices that affect the story."
+    },
+    {
+        "symbol": "Dw",
+        "name": "Dialogue Wheel",
+        "category": "Narrative",
+        "short_description": "Radial menu for dialogue selection."
+    },
+    {
+        "symbol": "Env",
+        "name": "Environmental Storytelling",
+        "category": "Narrative",
+        "short_description": "Story told through environment."
+    },
+    {
+        "symbol": "Lrc",
+        "name": "Lore Collection",
+        "category": "Narrative",
+        "short_description": "Collect lore to uncover history."
+    },
+    {
+        "symbol": "Nls",
+        "name": "Non-linear Story",
+        "category": "Narrative",
+        "short_description": "Experience the story out of order."
+    },
+    {
+        "symbol": "De",
+        "name": "Destructible Environments",
+        "category": "Physics",
+        "short_description": "Environmental elements that can be destroyed."
+    },
+    {
+        "symbol": "Fd",
+        "name": "Fluid Dynamics",
+        "category": "Physics",
+        "short_description": "Realistic simulation of liquids."
+    },
+    {
+        "symbol": "Gm",
+        "name": "Gravity Manipulation",
+        "category": "Physics",
+        "short_description": "Alter gameplay through gravity changes."
+    },
+    {
+        "symbol": "Rlc",
+        "name": "Realistic Collision",
+        "category": "Physics",
+        "short_description": "Accurate physical collision simulation."
+    },
+    {
+        "symbol": "Rp",
+        "name": "Ragdoll Physics",
+        "category": "Physics",
+        "short_description": "Realistic physics-based body movement."
+    },
+    {
+        "symbol": "Lu",
+        "name": "Leveling Up",
+        "category": "Progression",
+        "short_description": "Advance levels to enhance abilities."
+    },
+    {
+        "symbol": "Ps",
+        "name": "Perk System",
+        "category": "Progression",
+        "short_description": "Unique bonuses for character builds."
+    },
+    {
+        "symbol": "St",
+        "name": "Skill Trees",
+        "category": "Progression",
+        "short_description": "Branching upgrade paths for abilities."
+    },
+    {
+        "symbol": "Ul",
+        "name": "Unlockables",
+        "category": "Progression",
+        "short_description": "Additional content unlocked over time."
+    },
+    {
+        "symbol": "Xp",
+        "name": "Experience Points",
+        "category": "Progression",
+        "short_description": "Earn points to grow stronger."
+    },
+    {
+        "symbol": "Ch",
+        "name": "Critical Hits",
+        "category": "Randomness",
+        "short_description": "Chance-based extra damage."
+    },
+    {
+        "symbol": "Dr",
+        "name": "Dice Roll",
+        "category": "Randomness",
+        "short_description": "Random outcome determination."
     },
     {
         "symbol": "Ld",
@@ -492,52 +534,100 @@
         "short_description": "Algorithmic generation of content."
     },
     {
-        "symbol": "Dr",
-        "name": "Dice Roll",
-        "category": "Randomness",
-        "short_description": "Random outcome determination."
-    },
-    {
-        "symbol": "Ch",
-        "name": "Critical Hits",
-        "category": "Randomness",
-        "short_description": "Chance-based extra damage."
-    },
-    {
         "symbol": "Re",
         "name": "Random Events",
         "category": "Randomness",
         "short_description": "Unexpected in-game events."
     },
     {
-        "symbol": "Spc",
-        "name": "Spectator Mode",
-        "category": "Multiplayer",
-        "short_description": "Watch games as a spectator."
+        "symbol": "Cm",
+        "name": "Crafting Materials",
+        "category": "Resources",
+        "short_description": "Materials for crafting items."
     },
     {
-        "symbol": "PvP",
-        "name": "PvP",
-        "category": "Multiplayer",
-        "short_description": "Player versus player combat."
+        "symbol": "Eb",
+        "name": "Economy Balancing",
+        "category": "Resources",
+        "short_description": "Balance resource availability and cost."
     },
     {
-        "symbol": "Mtch",
-        "name": "Matchmaking",
-        "category": "Multiplayer",
-        "short_description": "Automatic player pairing."
+        "symbol": "Im",
+        "name": "Inventory Management",
+        "category": "Resources",
+        "short_description": "Organize collected items."
     },
     {
-        "symbol": "Coop",
-        "name": "Co-op Play",
-        "category": "Multiplayer",
-        "short_description": "Play cooperatively with others."
+        "symbol": "Rgh",
+        "name": "Resource Gathering",
+        "category": "Resources",
+        "short_description": "Collect raw materials."
     },
     {
-        "symbol": "Vch",
-        "name": "Voice Chat",
-        "category": "Multiplayer",
-        "short_description": "Real-time voice communication."
+        "symbol": "Ur",
+        "name": "Upgrade Resources",
+        "category": "Resources",
+        "short_description": "Special resources for upgrades."
+    },
+    {
+        "symbol": "Fl",
+        "name": "Friend Lists",
+        "category": "Social",
+        "short_description": "Manage your in-game friends."
+    },
+    {
+        "symbol": "Gc",
+        "name": "In-Game Chat",
+        "category": "Social",
+        "short_description": "Real-time text communication."
+    },
+    {
+        "symbol": "Gs",
+        "name": "Guild Systems",
+        "category": "Social",
+        "short_description": "Form and manage guilds."
+    },
+    {
+        "symbol": "Pt",
+        "name": "Player Trading",
+        "category": "Social",
+        "short_description": "Trade items with other players."
+    },
+    {
+        "symbol": "Shb",
+        "name": "Social Hubs",
+        "category": "Social",
+        "short_description": "Central locations for player interaction."
+    },
+    {
+        "symbol": "Cpr",
+        "name": "Contextual Prompts",
+        "category": "UI",
+        "short_description": "On-screen action prompts."
+    },
+    {
+        "symbol": "Dt",
+        "name": "Dynamic Tooltips",
+        "category": "UI",
+        "short_description": "Real-time detailed information popups."
+    },
+    {
+        "symbol": "Hud",
+        "name": "HUD",
+        "category": "UI",
+        "short_description": "On-screen game information display."
+    },
+    {
+        "symbol": "Mm",
+        "name": "Minimap",
+        "category": "UI",
+        "short_description": "Miniature map for navigation."
+    },
+    {
+        "symbol": "Rmn",
+        "name": "Radial Menus",
+        "category": "UI",
+        "short_description": "Circular menu for option selection."
     },
     {
         "symbol": "DEc",
@@ -546,16 +636,16 @@
         "short_description": "Living, responsive ecosystems."
     },
     {
-        "symbol": "Eh",
-        "name": "Environmental Hazards",
-        "category": "World",
-        "short_description": "Natural hazards in the game world."
-    },
-    {
         "symbol": "Dnc",
         "name": "Day-Night Cycle",
         "category": "World",
         "short_description": "Cycle between day and night."
+    },
+    {
+        "symbol": "Eh",
+        "name": "Environmental Hazards",
+        "category": "World",
+        "short_description": "Natural hazards in the game world."
     },
     {
         "symbol": "Owm",
@@ -568,95 +658,5 @@
         "name": "Weather Systems",
         "category": "World",
         "short_description": "Dynamic weather effects."
-    },
-    {
-        "symbol": "Per",
-        "name": "Perception",
-        "category": "AI",
-        "short_description": "AI detection of player actions."
-    },
-    {
-        "symbol": "AaI",
-        "name": "Adaptive AI",
-        "category": "AI",
-        "short_description": "Dynamic adjustment of AI behaviour & difficulty."
-    },
-    {
-        "symbol": "Flk",
-        "name": "Flocking",
-        "category": "AI",
-        "short_description": "AI entities coordinate in flocks."
-    },
-    {
-        "symbol": "Pf",
-        "name": "Pathfinding",
-        "category": "AI",
-        "short_description": "NPC navigation between different points."
-    },
-    {
-        "symbol": "CvR",
-        "name": "Cover System",
-        "category": "AI",
-        "short_description": "AI takes cover during combat."
-    },
-    {
-        "symbol": "PrY",
-        "name": "Parry",
-        "category": "Actions",
-        "short_description": "Timed counter to enemy attacks."
-    },
-    {
-        "symbol": "Dg",
-        "name": "Dodge",
-        "category": "Actions",
-        "short_description": "Quick evasion to avoid attacks."
-    },
-    {
-        "symbol": "Int",
-        "name": "Interact",
-        "category": "Actions",
-        "short_description": "Contextual actions for interacting with the world."
-    },
-    {
-        "symbol": "Blk",
-        "name": "Block",
-        "category": "Actions",
-        "short_description": "Defensive maneuver to mitigate damage."
-    },
-    {
-        "symbol": "QtE",
-        "name": "Quick Time Event",
-        "category": "Actions",
-        "short_description": "Timed button prompts for cinematic actions."
-    },
-    {
-        "symbol": "Bt",
-        "name": "Bullet Time",
-        "category": "Abilities",
-        "short_description": "Slow time for precision and evasion."
-    },
-    {
-        "symbol": "Rm",
-        "name": "Rage Mode",
-        "category": "Abilities",
-        "short_description": "Temporary power surge in combat."
-    },
-    {
-        "symbol": "Rg",
-        "name": "Regeneration",
-        "category": "Abilities",
-        "short_description": "Health regenerates over time."
-    },
-    {
-        "symbol": "Sh",
-        "name": "Shield",
-        "category": "Abilities",
-        "short_description": "Temporary damage absorption."
-    },
-    {
-        "symbol": "InV",
-        "name": "Invisibility",
-        "category": "Abilities",
-        "short_description": "Become unseen to stealth past enemies."
     }
 ]

@@ -1,14 +1,27 @@
 mechanic:
-  symbol: Dg
-  name: Dodge
-  category: Actions
+  symbol: "Dg"
+  name: "Dodge"
+  category: "Actions"
   long_description: |
-    Dodging allows players to evade incoming attacks by quickly moving out of harm’s way. It is commonly executed as a roll, dash, or side-step, depending on the game’s movement system. The dodge mechanic is typically tied to stamina or cooldowns to prevent players from overusing it. 
-    
-    Games like Dark Souls rely on dodging as a core defensive mechanic, where mastering invincibility frames (i-frames) is crucial for survival. Assassin’s Creed, on the other hand, uses dodging for quick combat maneuvers, letting players avoid attacks and counter in fluid motion. Different implementations of dodging can balance between accessibility and precision-based skill expression.
-  short_description: Quick evasion to avoid attacks.
-  solved_problems: |
-     - Stale combat: When combat in your game boils down to repeatedly attacking the enemy, it can get boring. A Dodge action adds a new dimension to combat, and usually becomes as important to gameplay as your Attack action.
+    Dodge is a defensive action that allows a character to avoid damage by rapidly changing their position. The core of the mechanic lies in "invincibility frames" (i-frames)—a brief window during the animation where the character is completely immune to damage. This allows players to pass through attacks unharmed, not just move out of their way. Its usage is almost always tied to a Stamina resource to prevent spamming and enforce tactical decision-making.
+
+    Implementations vary in speed and distance, from long-distance rolls with larger i-frame windows to quick, short-range dashes or side-steps with tighter timing. Unlike blocking, which absorbs damage at a fixed position, dodging is a commitment of movement that rewards precise timing and spatial awareness.
+  short_description: "Quick evasion to avoid attacks."
+  solved_problems:
+    - title: "Unavoidable damage"
+      description: |
+        Designers want to create large, intimidating attacks, but if the hitbox is too big, players can't simply walk out of the way. A dodge, with its i-frames, provides a skill-based solution, allowing players to phase through an attack rather than just out-positioning it. This enables more spectacular enemy attack design.
+    - title: "Limited mobility in combat"
+      description: |
+        Combat can feel static if players are locked into slow movement. A dodge acts as a quick, contextual burst of speed. This allows players to rapidly close distances, escape being cornered, or reposition for a better angle, making the battlefield more dynamic.
   examples:
-  - 'Dark Souls: Rolling dodge to avoid enemy hits, requiring precise timing and stamina management.'
-  - Assassin's Creed: Agile dodging in close combat, allowing fluid enemy evasion and counterattacks.
+    - title: "Dark Souls"
+      description: |
+        The dodge roll is the primary defensive tool, with its effectiveness tied to the player's 'Equip Load' stat. A lower load grants a faster roll with more i-frames, while a higher load results in a slow 'fat roll.' This design directly links the dodge mechanic to character building and player expression.
+    - title: "Bloodborne"
+      description: |
+        This game replaces the defensive roll with an aggressive, shorter-range 'quick-step.' This encourages players to stay close to enemies and dodge *into* attacks to set up counter-hits with the Regain system. It transforms dodging from a purely defensive act into a core part of the offensive rhythm.
+    - title: "Hades"
+      description: |
+        The Dash is central to the game's fluid, high-speed combat. It can be chained multiple times and augmented with 'Boons' that add effects like reflecting projectiles or dealing damage. This turns the dodge from a simple evasion into a multi-purpose tool that is integral to both offense and defense.
+  isHumanWritten: false
